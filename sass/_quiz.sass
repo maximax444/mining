@@ -1,0 +1,241 @@
+.quiz
+    background: #F4F5F6
+    padding-top: 80px
+    padding-bottom: 120px
+    &__subtitle
+        font-size: 16px
+        line-height: 24px
+        text-align: center
+        color: #909090
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        text-align: center
+        color: #1A1C23
+        margin-bottom: 40px
+        .month
+            display: inline-block
+            width: 119px
+            line-height: 46px
+            background: #7FDCBE
+            border-radius: 50px
+            font-weight: 600
+            font-size: 24px
+            color: #000000
+            transform: rotate(-6.93deg)
+            &::before
+                content: "за 9-12"
+                font-size: 24px
+                line-height: 46px
+                width: 119px
+                color: #fff
+                position: absolute
+                top: 1px
+                left: 1px
+                z-index: -1
+        .price
+            display: inline-block
+            width: 140px
+            line-height: 46px
+            background: #4D6FF1
+            border-radius: 50px
+            font-weight: 600
+            font-size: 24px
+            color: #FFFFFF
+            transform: rotate(4.15deg)
+            &::before
+                content: "40.000"
+                font-size: 24px
+                line-height: 46px
+                width: 140px
+                color: #000
+                position: absolute
+                top: 2px
+                left: 2px
+                z-index: -1
+    &__all
+        background-color: #fff
+        border-radius: 32px
+        overflow: hidden
+        display: flex
+        justify-content: space-between
+    &__col
+        background: #1C1B26
+        border-radius: 0 32px 32px 0
+        width: 296px
+        padding: 24px 32px
+        position: relative
+        z-index: 1
+        padding-bottom: 80px
+    &__autor
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+        &-img
+            margin-right: 16px
+        &-text
+            font-size: 12px
+            line-height: 20px
+            color: rgba(255, 255, 255, 0.6)
+            span
+                font-size: 18px
+                line-height: 20px
+                color: #FFFFFF
+                display: block
+                margin-bottom: 4px
+    &__quote
+        background: #32313a
+        box-shadow: 0px 64px 64px rgba(31, 47, 70, 0.12)
+        padding: 12px 16px
+        margin-bottom: 12px
+        font-size: 12px
+        line-height: 20px
+        color: #FFFFFF
+        border-radius: 16px
+        position: relative
+        &::before
+            content: ""
+            width: 16px
+            height: 16px
+            display: block
+            background: rgba(252, 252, 253, 0.1)
+            box-shadow: 0px 64px 64px rgba(31, 47, 70, 0.12)
+            border-radius: 4px
+            transform: rotate(45deg)
+            position: absolute
+            left: 18px
+            top: -7px
+            z-index: -1
+    &__prize
+        height: 80px
+        margin-bottom: 12px
+        background: #4D6FF1
+        border-radius: 16px
+        display: flex
+        align-items: center
+        &-img
+            width: 77px
+            display: flex
+            align-items: center
+            justify-content: center
+        span
+            width: calc(100% - 77px)
+            font-size: 12px
+            line-height: 20px
+            color: #FFFFFF
+    &__marq
+        position: absolute
+        bottom: 24px
+        left: 0
+        width: 100%
+        text-align: center
+        font-size: 12px
+        line-height: 24px
+        color: #FFFFFF
+    &__main
+        width: calc(100% - 296px)
+        &-subtitle
+            font-size: 16px
+            line-height: 24px
+            color: #909090
+            margin-bottom: 24px
+        &-title
+            font-weight: 600
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 24px
+            color: #1A1C23
+        &-wrap
+            display: flex
+            flex-wrap: wrap
+            grid-gap: 24px
+            label
+                position: relative
+                cursor: pointer
+                span
+                    width: 360px
+                    height: 80px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    font-size: 16px
+                    line-height: 24px
+                    color: #1A1C23
+                    border: 1px solid rgba(#A9A9A9, 0.3)
+                    border-radius: 16px
+                    padding: 0 24px
+                    transition: all 0.3s
+                    &:hover
+                        color: #1A56FF
+                        border: 1px solid #1A56FF
+                input
+                    opacity: 0
+                    height: 0
+                    width: 0
+                    overflow: hidden
+                    visibility: hidden
+                    margin: 0
+                    padding: 0
+                    position: absolute
+                    top: 0
+                    left: 0
+                    &:checked + span
+                        color: #1A56FF
+                        border: 1px solid #1A56FF
+    &__slide
+        padding: 24px 56px
+        height: 490px
+    &__controls
+        border-top: 1px solid rgba(#A9A9A9, 0.3)
+        height: 112px
+        padding: 24px 56px
+        padding-right: 82px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__timeline
+        padding-bottom: 16px
+        &-line
+            height: 4px
+            width: 485px
+            background: #F4F5F6
+            border-radius: 400px
+            span
+                height: 4px
+                border-radius: 400px
+                background: #1A56FF
+                display: block
+        &-title
+            font-size: 12px
+            line-height: 14px
+            color: #1A1C23
+            display: block
+            margin-bottom: 8px
+            span
+                color: #1A56FF
+    &__prev
+        border: 1.5px solid rgba(#A9A9A9, 0.3)
+        margin-right: 24px
+        background: transparent
+        border-radius: 50%
+        width: 52px
+        height: 52px
+    &__next
+        background: #4D6FF1
+        border-radius: 80px
+        font-size: 18px
+        line-height: 20px
+        color: #FFFFFF
+        border: 0
+        width: 113px
+        height: 56px
+    &__right
+        span
+            font-size: 12px
+            line-height: 14px
+            color: #A9A9A9
+            text-align: right
+            display: block
+            padding-top: 8px
