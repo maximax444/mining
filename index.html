@@ -48,23 +48,27 @@
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="header-bottom__menu"><img src="img/header/burger.svg" alt=""> Каталог оборудования</div>
+                <div class="header-bottom__menu"><img src="img/header/burger.svg" alt=""> <span>Каталог
+                        оборудования</span></div>
                 <form action="" class="header-bottom__search">
                     <input type="text" placeholder="Поиск по товарам или категориям....">
                     <button class="header-bottom__search-btn"><img src="img/header/search.svg" alt=""></button>
                 </form>
-                <a href="" class="header-bottom__link"><img src="img/header/wishlist.svg" alt=""></a>
-                <a href="" class="header-bottom__link"><img src="img/header/compare.svg" alt=""></a>
-                <a href="" class="header-bottom__cart"><img src="img/header/header-cart.svg" alt=""><span>В корзине нет
-                        товаров</span></a>
+                <div class="header-bottom__last">
+                    <a href="" class="header-bottom__link"><img src="img/header/wishlist.svg" alt=""></a>
+                    <a href="" class="header-bottom__link"><img src="img/header/compare.svg" alt=""></a>
+                    <a href="" class="header-bottom__cart"><img src="img/header/header-cart.svg" alt=""><span>В корзине
+                            нет
+                            товаров</span></a>
+                </div>
             </div>
         </div>
     </header>
     <section class="main">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-8">
-                    <div class="main__block"
+                <div class="col-12 col-xl-8">
+                    <div class="main__block main__block_big"
                         style="background: url('img/home/main1_bg.png') center no-repeat;background-size: cover;">
 
                         <h3>ASIC-майнеры напрямую <br> от производителя</h3>
@@ -77,49 +81,72 @@
                         <a href="" class="main__btn btn-o">В каталог</a>
                     </div>
                 </div>
-                <div class="col-xxl-4">
-                    <div class="main__block main__block-small"
-                        style="background: url('img/home/main2_bg.png') center no-repeat;background-size: cover;">
-                        <h3>ASIC-майнеры</h3>
-                        <p class="main__text">Более 120 моделей в наличии и под заказ</p>
-                        <a href="" class="main__btn main__btn_small">В каталог</a>
-                    </div>
-                    <div class="main__block main__block-small"
-                        style="background: url('img/home/main3_bg.png') center no-repeat;background-size: cover;">
-                        <h3>GPU-майнеры</h3>
-                        <p class="main__text">Более 120 моделей в наличии и под заказ</p>
-                        <a href="" class="main__btn main__btn_small btn-o">В каталог</a>
+                <div class="col-12 col-xl-4">
+                    <div class="main__small-blocks">
+                        <div class="main__block main__block-small"
+                            style="background: url('img/home/main2_bg.png') center no-repeat;background-size: cover;">
+                            <h3>ASIC-майнеры</h3>
+                            <p class="main__text">Более 120 моделей в наличии и под заказ</p>
+                            <a href="" class="main__btn main__btn_small">В каталог</a>
+                        </div>
+                        <div class="main__block main__block-small"
+                            style="background: url('img/home/main3_bg.png') center no-repeat;background-size: cover;">
+                            <h3>GPU-майнеры</h3>
+                            <p class="main__text">Более 120 моделей в наличии и под заказ</p>
+                            <a href="" class="main__btn main__btn_small btn-o">В каталог</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <div class="features">
         <div class="container">
             <div class="features__wrap">
-                <div class="features__block"><img src="img/home/features1.svg" alt=""><span>Сертификаты <br> от
-                        производителя</span></div>
-                <div class="features__block"><img src="img/home/features2.svg" alt=""><span>Легальный ввоз <br> через
-                        таможню</span></div>
-                <div class="features__block"><img src="img/home/features3.svg" alt=""><span>5 способов оплаты. <br> Даже
-                        криптовалютой</span></div>
-                <div class="features__block"><img src="img/home/features4.svg" alt=""><span>Предпродажная проверка перед
-                        отправкой и в офисе</span></div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features1.svg" alt="">
+                    </div>
+                    <span>Сертификаты <br> от производителя</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features2.svg" alt="">
+                    </div>
+                    <span>Легальный ввоз <br> через таможню</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features3.svg" alt="">
+                    </div>
+                    <span>5 способов оплаты. <br> Даже криптовалютой</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features4.svg" alt="">
+                    </div>
+                    <span>Предпродажная проверка перед отправкой и в офисе</span>
+
+                </div>
             </div>
         </div>
     </div>
+
     <section class="home-catalog">
         <div class="container">
             <h2 class="home-catalog__title">Более 120 моделей в наличии и под заказ</h2>
-            <div class="home-catalog__tabs">
-                <button class="home-catalog__tabs-block active">ASIC–майнеры</button>
-                <button class="home-catalog__tabs-block">GPU–майнеры</button>
-                <button class="home-catalog__tabs-block">Жесткие диски</button>
+            <div class="home-catalog__tabs-wrap">
+                <div class="home-catalog__tabs">
+                    <button class="home-catalog__tabs-block active">ASIC–майнеры</button>
+                    <button class="home-catalog__tabs-block">GPU–майнеры</button>
+                    <button class="home-catalog__tabs-block">Жесткие диски</button>
+                </div>
             </div>
             <div class="home-catalog__cont">
                 <div class="home-catalog__cont-block active">
                     <div class="row">
-                        <div class="col-xxl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="cat-card">
                                 <div class="cat-card__new">новинки</div>
                                 <div class="cat-card__img"><img src="img/product.png" alt=""></div>
@@ -133,7 +160,7 @@
                                 <div class="cat-card__price">850 000 <span>₽</span></div>
                             </div>
                         </div>
-                        <div class="col-xxl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div class="cat-card">
                                 <div class="cat-card__hit">ХИТ</div>
                                 <div class="cat-card__img"><img src="img/product.png" alt=""></div>
@@ -147,7 +174,7 @@
                                 <div class="cat-card__price">850 000 <span>₽</span></div>
                             </div>
                         </div>
-                        <div class="col-xxl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <a href="" class="home-catalog__more">
                                 <span class="home-catalog__more-title">Еще 113 моделей <br> в наличии <br> и под
                                     заказ</span>
@@ -165,7 +192,7 @@
     <section class="home-offers">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-6">
+                <div class="col-xl-6">
                     <div class="home-offers__block"
                         style="background:url('img/home/offer1.jpg') center no-repeat;background-size: cover;">
                         <div class="home-offers__cont">
@@ -188,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-6">
+                <div class="col-xl-6">
                     <div class="home-offers__block"
                         style="background:url('img/home/offer2.jpg') center no-repeat;background-size: cover;">
                         <div class="home-offers__cont">
@@ -213,42 +240,45 @@
     <section class="home-how">
         <div class="container">
             <h2 class="home-how__title">Как мы работаем?</h2>
-            <div class="home-how__wrap home-how__wrap_bordered">
-                <div class="home-how__block">
-                    <div class="home-how__icon"><img src="img/home/how1.svg" alt=""><span>1</span></div>
-                    <div class="home-how__name">Заказываете в 3 клика</div>
-                    <div class="home-how__descr">Вы оформляете заказ через <a href="">личный кабинет</a>, <br>
-                        оплачиваете любым удобным способом</div>
+            <div class="home-how__all">
+                <div class="home-how__wrap home-how__wrap_bordered">
+                    <div class="home-how__block">
+                        <div class="home-how__icon"><img src="img/home/how1.svg" alt=""><span>1</span></div>
+                        <div class="home-how__name">Заказываете в 3 клика</div>
+                        <div class="home-how__descr">Вы оформляете заказ через <a href="">личный кабинет</a>, <br>
+                            оплачиваете любым удобным способом</div>
+                    </div>
+                    <div class="home-how__block">
+                        <div class="home-how__icon"><img src="img/home/how22.svg" alt=""><span>2</span></div>
+                        <div class="home-how__name">Отгружаем за 1 день</div>
+                        <div class="home-how__descr">Если товар в наличии, то отгружаем Вам в течение 1 дня после
+                            оплаты. По
+                            предзаказу – до 10 дней доставка из Китая</div>
+                    </div>
+                    <div class="home-how__block">
+                        <div class="home-how__icon"><img src="img/home/how3.svg" alt=""><span>3</span></div>
+                        <div class="home-how__name">Предпродажная проверка</div>
+                        <div class="home-how__descr">Проверяем товар в Вашем присутствии или онлайн по видеосвязи</div>
+                    </div>
                 </div>
-                <div class="home-how__block">
-                    <div class="home-how__icon"><img src="img/home/how22.svg" alt=""><span>2</span></div>
-                    <div class="home-how__name">Отгружаем за 1 день</div>
-                    <div class="home-how__descr">Если товар в наличии, то отгружаем Вам в течение 1 дня после оплаты. По
-                        предзаказу – до 10 дней доставка из Китая</div>
-                </div>
-                <div class="home-how__block">
-                    <div class="home-how__icon"><img src="img/home/how3.svg" alt=""><span>3</span></div>
-                    <div class="home-how__name">Предпродажная проверка</div>
-                    <div class="home-how__descr">Проверяем товар в Вашем присутствии или онлайн по видеосвязи</div>
-                </div>
-            </div>
-            <div class="home-how__wrap home-how__wrap_sec">
-                <div class="home-how__block">
-                    <div class="home-how__icon"><img src="img/home/how4.svg" alt=""><span>4</span></div>
-                    <div class="home-how__name">Закрепляем сделку договором</div>
-                    <div class="home-how__descr">Оформляем договор на покупку с гарантией на новое оборудование 6-12
-                        месяцев</div>
-                </div>
-                <div class="home-how__block home-how__block_del">
-                    <div class="home-how__icon"><img src="img/home/how5.svg" alt=""><span>5</span></div>
-                    <div class="home-how__name">Доставляем по РФ до 10 дней</div>
-                    <div class="home-how__descr">Любой транспортной компанией в срок
-                        до 10 дней. Статус заказа можете отслеживать в личном кабинете</div>
-                </div>
-                <div class="home-how__block home-how__block_last">
-                    <div class="home-how__icon"><img src="img/home/how6.svg" alt=""><span></span></div>
-                    <div class="home-how__name">Вы получаете ASIC</div>
-                    <div class="home-how__descr">Забираете товар в пункте выдачи в своем городе</div>
+                <div class="home-how__wrap home-how__wrap_sec">
+                    <div class="home-how__block">
+                        <div class="home-how__icon"><img src="img/home/how4.svg" alt=""><span>4</span></div>
+                        <div class="home-how__name">Закрепляем сделку договором</div>
+                        <div class="home-how__descr">Оформляем договор на покупку с гарантией на новое оборудование 6-12
+                            месяцев</div>
+                    </div>
+                    <div class="home-how__block home-how__block_del">
+                        <div class="home-how__icon"><img src="img/home/how5.svg" alt=""><span>5</span></div>
+                        <div class="home-how__name">Доставляем по РФ до 10 дней</div>
+                        <div class="home-how__descr">Любой транспортной компанией в срок
+                            до 10 дней. Статус заказа можете отслеживать в личном кабинете</div>
+                    </div>
+                    <div class="home-how__block home-how__block_last">
+                        <div class="home-how__icon"><img src="img/home/how6.svg" alt=""><span></span></div>
+                        <div class="home-how__name">Вы получаете ASIC</div>
+                        <div class="home-how__descr">Забираете товар в пункте выдачи в своем городе</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,14 +288,16 @@
             <div class="home-calc__all">
                 <h2 class="home-calc__title">Подберите ASIC-майнер<br> и рассчитайте сроки окупаемости<br> и Вашу
                     будущую прибыль <span>за период 2021-2023 год</span> </h2>
-                <div class="home-calc__features">
-                    <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Чек-лист
-                            «‎ТОП5 <br> ASIC-майнеров <br> 2021 года»</span></div>
-                    <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>«‎Как
-                            оптимизировать <br> домашнюю майнинг-ферму <br> с минимальными вложениями»</span></div>
-                    <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Подборка
-                            ASIC-майнеров <br> в 3х вариантов с расчетом <br> прибыльности </span></div>
-                    <div class="home-calc__features-dop">+ получите бонусы</div>
+                <div class="home-calc__features-wrap">
+                    <div class="home-calc__features">
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Чек-лист
+                                «‎ТОП5 <br> ASIC-майнеров <br> 2021 года»</span></div>
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>«‎Как
+                                оптимизировать <br> домашнюю майнинг-ферму <br> с минимальными вложениями»</span></div>
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Подборка
+                                ASIC-майнеров <br> в 3х вариантов с расчетом <br> прибыльности </span></div>
+                        <div class="home-calc__features-dop">+ получите бонусы</div>
+                    </div>
                 </div>
                 <form action="" class="home-calc__form">
                     <div class="home-calc__form-title">Какую сумму вы хотите инвестировать в майнинг?</div>
@@ -430,30 +462,33 @@
         <div class="container">
             <h2 class="home-info__title">Продаем и обслуживанием оборудование<br> за счет собственных мощностей для
                 прибыльного<br> и безопасного майнинга</h2>
-            <div class="home-info__tabs">
-                <button class="home-info__tabs-block active">Интернет-магазин</button>
-                <button class="home-info__tabs-block">Хостинг</button>
-                <button class="home-info__tabs-block">Сервисный центр</button>
-                <button class="home-info__tabs-block">Личный кабинет</button>
+            <div class="home-info__tabs-wrap">
+                <div class="home-info__tabs">
+                    <button class="home-info__tabs-block active">Интернет-магазин</button>
+                    <button class="home-info__tabs-block">Хостинг</button>
+                    <button class="home-info__tabs-block">Сервисный центр</button>
+                    <button class="home-info__tabs-block">Личный кабинет</button>
+                </div>
             </div>
+
             <div class="home-info__cont">
                 <div class="home-info__cont-block active">
                     <div class="row">
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <div class="home-info__block">
                                 <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
                                 <div class="home-info__text"><span>Более 120 моделей в каталоге</span>Если товара нет в
                                     наличии, то доставим его специально для Вас напрямую из Китая за 14 дней</div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <div class="home-info__block">
                                 <div class="home-info__img"><img src="img/home/home-info2.svg" alt=""></div>
                                 <div class="home-info__text"><span>5 удобных способов оплаты </span>Наличные, банковской
                                     картой, BTC по курсу Binance, USDT, безналичный расчет + 15%</div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <div class="home-info__block">
                                 <div class="home-info__img"><img src="img/home/home-info3.svg" alt=""></div>
                                 <div class="home-info__text"><span>Гарантия 6 месяцев и полная
@@ -461,14 +496,14 @@
                                     уверены в качестве и состоянии оборудования <a href="">Смотреть документы</a></div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <div class="home-info__block">
                                 <div class="home-info__img"><img src="img/home/home-info4.svg" alt=""></div>
                                 <div class="home-info__text"><span>Доставка по всей РФ до 10 дней</span>Доставляем по
                                     всей России транспортными компаниями по тарифам перевозчиков</div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <div class="home-info__block">
                                 <div class="home-info__img"><img src="img/home/home-info5.svg" alt=""></div>
                                 <div class="home-info__text"><span>Проверка оборудования</span>Вместе с Вами проверим
@@ -476,7 +511,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xl-6">
                             <a href="" class="home-info__catalog">Перейти в каталог <img
                                     src="img/home/home-info__arr.svg" alt=""></a>
                         </div>
@@ -741,15 +776,15 @@
         <div class="container">
             <div class="footer__top">
                 <div class="row">
-                    <div class="col-xxl-6">
+                    <div class="col-md-6">
                         <div class="footer__top-title">Получите консультацию <span>по телефону или в мессенджерах</span>
                         </div>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-md-3">
                         <a href="tel:+7 (499) 229-22-89" class="footer__top-phone">+7 (499) 229-22-89</a>
                         <a href="mailto:order@qubity.ru" class="footer__top-mail">order@qubity.ru</a>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-md-3">
                         <div class="footer__top-soc">
                             <a class="wa" href=""><img src="img/header/header-wa.svg" alt=""></a>
                             <a class="viber" href=""><img src="img/header/header-viber.svg" alt=""></a>
@@ -760,34 +795,38 @@
             </div>
             <div class="footer__main">
                 <div class="row">
-                    <div class="col-xxl-3">
+                    <div class="col-sm-4 col-lg-3">
                         <a href="" class="footer__main-link footer__main-link_bold">Магазин</a>
                         <a href="" class="footer__main-link">Доставка</a>
                         <a href="" class="footer__main-link">Оплата</a>
                         <a href="" class="footer__main-link">Обмен и возврат</a>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-sm-4 col-lg-3">
                         <a href="" class="footer__main-link footer__main-link_bold">Сервисный центр</a>
                         <a href="" class="footer__main-link">Условия ремонта</a>
                         <a href="" class="footer__main-link">Условия гарантии</a>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-sm-4 col-lg-3">
                         <a href="" class="footer__main-link footer__main-link_bold">Хостинг</a>
                         <a href="" class="footer__main-link">Панель управления</a>
                         <a href="" class="footer__main-link">Мои устройства</a>
                     </div>
-                    <div class="col-xxl-3">
-                        <div class="footer__main-adress">Офис в Москве:<span><img src="img/footer/footer-location.png"
-                                    alt=""> ул. Пресненская Набережная, д. 12</span></div>
-                        <div class="footer__main-adress">Офис в Иркутске:<span><img src="img/footer/footer-location.png"
-                                    alt=""> ул. Пресненская Набережная, д. 12</span></div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="footer__main-adresses">
+                            <div class="footer__main-adress">Офис в Москве:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                            <div class="footer__main-adress">Офис в Иркутске:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer__courses">
                 <div class="footer__courses-title">Курсы криптовалют <span>(на 25.04.2021)</span></div>
                 <div class="row">
-                    <div class="col-xxl-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer__courses-block">
                             <div class="footer__courses-img"><img src="img/footer/footer-courses1.png" alt=""></div>
                             <div class="footer__courses-name">LTC</div>
@@ -796,7 +835,7 @@
                             <div class="footer__courses-price">376,07 $</div>
                         </div>
                     </div>
-                    <div class="col-xxl-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer__courses-block">
                             <div class="footer__courses-img"><img src="img/footer/footer-courses2.png" alt=""></div>
                             <div class="footer__courses-name">XRP</div>
@@ -805,7 +844,7 @@
                             <div class="footer__courses-price">1 489 $</div>
                         </div>
                     </div>
-                    <div class="col-xxl-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer__courses-block">
                             <div class="footer__courses-img"><img src="img/footer/footer-courses3.png" alt=""></div>
                             <div class="footer__courses-name">BTC</div>
@@ -814,7 +853,7 @@
                             <div class="footer__courses-price">56 468,40$</div>
                         </div>
                     </div>
-                    <div class="col-xxl-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer__courses-block">
                             <div class="footer__courses-img"><img src="img/footer/footer-courses4.png" alt=""></div>
                             <div class="footer__courses-name">BCH</div>
@@ -823,7 +862,7 @@
                             <div class="footer__courses-price">1 455,68 $</div>
                         </div>
                     </div>
-                    <div class="col-xxl-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer__courses-block">
                             <div class="footer__courses-img"><img src="img/footer/footer-courses5.png" alt=""></div>
                             <div class="footer__courses-name">ETH</div>
@@ -836,16 +875,16 @@
             </div>
             <div class="footer__end">
                 <div class="row">
-                    <div class="col-xxl-3">
+                    <div class="col-md-5 col-lg-3">
                         <div class="footer__end-text">©2021 ООО «Кьюбити Майнинг»»</div>
                     </div>
-                    <div class="col-xxl-6">
+                    <div class="col-md-7 col-lg-6">
                         <div class="footer__end-links">
                             <a href="">Реквизиты</a>
                             <a href="">Политика конфиденциальности</a>
                         </div>
                     </div>
-                    <div class="col-xxl-3">
+                    <div class="col-md-6 col-lg-3">
                         <div class="footer__end-text footer__end-text_right">Разработка сайта – <a
                                 href="">NameCompany</a></div>
                     </div>

@@ -114,6 +114,8 @@
         border: 1px solid #EDEDED
         border-radius: 8px
         display: flex
+        &__last
+            display: flex
         &__menu
             background: #F4F5F6
             border-radius: 8px 0 0 8px
@@ -170,4 +172,91 @@
                 background-color: transparent
                 width: 54px
                 height: 54px
-        
+
+@media(max-width: 1399px)
+    .header-main__menu
+        li
+            margin-right: 10px
+@media(max-width: 1199px)
+    .header-main__menu
+        flex-wrap: wrap
+        max-width: 350px
+        li
+            margin-right: 15px
+@media(max-width: 991px)
+    .header
+        &-top
+            display: none
+        &-main
+            position: relative
+            height: 0
+            padding: 0
+            &__menu,&__consult
+                display: none
+            &__nav
+                position: absolute
+                top: 24px
+                left: 52px
+        &-bottom
+            justify-content: space-between
+            border-radius: 0
+            border-left: 0
+            border-right: 0
+            &__link
+                height: 80px
+                width: 80px
+            &__cart
+                height: 80px
+                width: 80px
+                span
+                    display: none
+                img
+                    margin-right: 0
+            &__menu
+                background: transparent
+                width: 20px
+                height: 80px
+                span
+                    display: none
+                img
+                    margin-right: 0
+            &__search
+                width: calc(100% - 260px)
+                height: 80px
+                button
+                    height: 80px
+                input
+                    display: none
+@media(max-width: 767px)
+    .header
+        &-main
+            &__subtitle
+                display: none
+@media(max-width: 575px)
+    .header
+        &-main
+            &__nav
+                top: 16px
+                left: 30px
+            &__logo img
+                max-width: 120px
+        &-bottom
+            height: 64px
+            margin-right: -12px
+            &__menu
+                height: 64px
+            &__link, &__cart
+                height: 65px
+                width: 50px
+            &__search
+                height: 64px
+                width: calc(100% - 170px)
+                button
+                    height: 64px
+@media(max-width: 360px)
+    .header
+        &-main
+            &__nav
+                top: 20px
+            &__logo img
+                max-width: 80px

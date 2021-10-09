@@ -13,7 +13,7 @@
         align-items: center
         font-size: 16px
         line-height: 24px
-        img
+        &-img
             margin-right: 25px
 .main
     padding-bottom: 30px
@@ -907,6 +907,7 @@
             font-size: 24px
             line-height: 36px
             padding: 28px 0
+            padding-right: 35px
             cursor: pointer
             position: relative
             &::after
@@ -935,3 +936,474 @@
                         transform: rotate(45deg)
                     &__cont
                         display: block
+@media(max-width: 1399px)
+    .home
+        &-offers
+            &__cont
+                padding-left: 25px
+                padding-right: 25px
+        &-calc
+            &__features-block span
+                font-size: 14px
+                line-height: normal
+            &__form
+                padding-left: 50px
+                padding-right: 50px
+        &-earn
+            &__wrap
+                background: url(../img/home/home-earn-bg.png) center no-repeat
+                background-size: contain
+@media(max-width: 1199px)
+    .main
+        &__small
+            &-blocks
+                padding-top: 25px
+                display: flex
+                justify-content: space-between
+        &__block
+            &-small
+                border-radius: 32px
+                width: 48%
+    .features
+        &__wrap
+            flex-wrap: wrap
+            height: auto
+            padding: 20px
+            grid-gap: 20px 0
+        &__block
+            width: 45%
+            justify-content: space-between
+            &:last-child
+                .features__block-img
+                    padding-left: 10px
+            span
+                width: 85%
+            &-img
+                width: 15%
+                text-align: center
+    .home
+        &-offers
+            &__block
+                margin-bottom: 24px
+                height: auto
+            &__cont
+                padding: 32px 24px
+        &-calc
+            margin-bottom: 100px
+            &__form
+                height: auto
+                &-sum
+                    flex-wrap: wrap
+                    margin-bottom: 12px
+                    label
+                        height: 44px
+                        margin-bottom: 16px
+            &__form-tel, &__form-soc
+                width: 47%
+        &-earn
+            padding-bottom: 0
+        &-mobile
+            &__wrap
+                height: auto
+            &__img
+                height: auto
+                width: 40%
+                margin-right: 10%
+        &-offer
+            &__subtitle
+                margin-bottom: 90px
+            &__form
+                padding: 32px 24px
+                .home-calc__form-tel, .home-calc__form-soc
+                    width: 100%
+@media(max-width: 991px)
+    .home
+
+        &-calc
+            &__all
+                padding: 32px 24px
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 55px
+            &__features
+                flex-wrap: wrap
+                &-block
+                    max-width: 50%
+                    &:nth-child(3)
+                        max-width: 75%
+                        width: auto
+                        padding-top: 20px
+                        span
+                            br
+                                display: none
+        &-earn
+            &__wrap
+                height: 525px
+        &-mobile
+            padding-top: 88px
+            &__img
+                img
+                    max-width: 310px
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 12px
+            &__text
+                margin-bottom: 24px
+        &-info
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 20px
+            &__tabs
+                margin-bottom: 32px
+                &-block
+                    font-size: 14px
+                    margin: 0 8px
+        &-cupon
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 24px
+            &__wrap
+                background: url('../img/home/home-coupon-md.png') center no-repeat
+                background-size: contain
+                height: 285px
+                padding-left: 24px
+            &__subtitle
+                max-width: 315px
+                font-size: 20px
+                line-height: 28px
+                margin-bottom: 12px
+            &__descr
+                max-width: 315px
+                margin-bottom: 24px
+            &__btn
+                padding: 18px 32px
+        &-offer
+            padding-top: 88px
+            padding-bottom: 410px
+            &__wrap
+                display: block
+            &__main
+                width: 100%
+            &__form
+                width: calc(100% - 48px)
+                margin-left: 24px
+                height: auto
+                &-main
+                    display: flex
+                    justify-content: space-between
+                    flex-direction: row-reverse
+            &__title
+                font-size: 24px
+                line-height: 32px
+                br:first-child
+                    display: none
+@media(max-width: 767px)
+    .main
+        &__small-blocks
+            display: block
+        &__block
+            padding: 20px
+            height: auto
+            &-small
+                width: 100%
+        &__list
+            padding-left: 10px
+            max-width: 180px
+        &__btn
+            position: static
+            max-width: 140px
+            margin-top: 30px
+    .home
+        &-how
+            &__all
+                overflow-x: scroll
+                display: flex
+                padding-top: 35px
+            &__wrap
+                width: 755px
+                &_sec
+                    padding-top: 45px
+                    border-radius: 0
+                    border-top: 6px solid #F4F5F6
+                &_bordered
+                    border-right: 0
+                    padding-bottom: 0
+                    border-bottom: 0
+                    padding-top: 45px
+                    border-radius: 0
+                    &::after
+                        display: none
+            &__block
+                width: 270px
+                margin-right: 15px
+                &_del::before
+                    display: none
+        &-calc
+            padding-bottom: 250px
+            &__title
+                margin-bottom: 40px
+            &__form
+                &-main
+                    display: block
+                &-tel, &-soc
+                    width: 100%
+                &-tel
+                    margin-bottom: 20px
+            &__features
+                width: 800px
+                &-wrap
+                    overflow-x: scroll
+                &-block
+                    max-width: 250px
+                    width: auto
+                    img
+                        margin-right: 12px
+                    span
+                        font-size: 12px
+                        br
+                            display: none
+                    &:nth-child(3)
+                        padding-top: 0
+                        max-width: 250px
+                &-dop
+                    display: none
+        &-earn
+            padding-bottom: 120px
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 70px
+            &__wrap
+                background: url('../img/home/home-earn-mob.png') right center no-repeat
+                background-size: contain
+                height: 615px
+            &__cloud
+                font-size: 13px
+                line-height: 20px
+                padding: 16px
+                max-width: 220px
+                &1
+                    top: -60px
+                    left: auto
+                    right: 0
+                &2
+                    bottom: 330px
+                &3
+                    right: 0
+                    left: auto
+                    bottom: -75px
+        &-mobile
+            &__wrap
+                display: block
+                padding: 0 16px
+            &__img
+                text-align: center
+                width: 100%
+                position: relative
+                top: -80px
+            &__cont
+                padding-bottom: 24px
+                margin-top: -60px
+            &__btn
+                width: 100%
+                max-width: 100%
+        &-info
+            &__title
+                br
+                    display: none
+            &__tabs
+                width: 700px
+                &-wrap
+                    overflow-x: scroll
+                &-block
+                    margin-bottom: 12px
+                    margin-right: 20px
+                    margin-left: 0
+        &-cupon
+            padding-bottom: 64px
+            &__wrap
+                background: url('../img/home/home-cupon-mob.png') center no-repeat
+                background-size: contain
+                height: 404px
+                margin: 0 auto
+                max-width: 320px
+                padding: 16px
+                justify-content: flex-start
+            &__subtitle
+                width: 100%
+                line-height: 24px
+            &__descr
+                width: 100%
+        &-offer
+            display: none
+@media(max-width: 575px)
+    .main
+        &__block
+            height: 230px
+            margin-bottom: 330px
+            padding-top: 230px
+            padding-bottom: 0
+            margin-left: -12px
+            margin-right: -12px
+            border-radius: 0
+            &-small
+                margin: 0
+                padding-top: 16px
+                padding-bottom: 16px
+                border-radius: 16px
+                margin-bottom: 16px
+                height: auto
+            &_big
+                overflow: visible
+                h3
+                    font-size: 24px
+                    line-height: 28px
+                    color: #1A1C23
+                    padding-top: 16px
+                    margin-bottom: 12px
+        &__list
+            max-width: 100%
+            padding-left: 20px
+            li
+                color: #1A1C23
+                margin-bottom: 4px
+        &__btn
+            margin-top: 20px
+    .features
+        &__wrap
+            padding: 20px 16px
+        &__block
+            width: 100%
+            &-img
+                width: 17%
+                margin-right: 3%
+            span
+                width: 80%
+            &:last-child
+                .features__block-img
+                    padding-left: 0
+    .home
+        &-catalog
+            padding: 64px 0
+            &__title
+                font-size: 24px
+                line-height: 32px
+            &__more
+                max-width: 296px
+                margin: 0 auto
+                height: auto
+                padding: 16px
+                border-radius: 32px
+                &-title
+                    font-size: 20px
+                    line-height: 28px
+                    br
+                        display: none
+            &__tabs
+                width: 560px
+                &-wrap
+                    overflow-x: scroll
+        &-offers
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 12px
+            &__text
+                margin-bottom: 24px
+            &__list
+                display: block
+                margin-bottom: 24px
+                li
+                    width: 100%
+            &__bottom
+                display: block
+            &__btn
+                width: 100%
+            &__play
+                padding-top: 20px
+                justify-content: center
+        &-how
+            padding: 64px 0
+            &__title
+                margin-bottom: 20px
+                font-size: 24px
+                line-height: 32px
+        &-calc
+            padding-bottom: 120px
+            &__all
+                margin-left: -12px
+                margin-right: -12px
+                border-radius: 0
+                padding: 24px 16px
+            &__title
+                font-size: 22px
+                line-height: normal
+            &__form
+                padding: 16px
+                &-title
+                    font-size: 18px
+                    line-height: 24px
+                    margin-bottom: 16px
+                &-sum
+                    margin-bottom: 2px
+                    label
+                        margin: 0 4px
+                        margin-bottom: 14px
+                        span
+                            font-size: 14px
+                            padding: 12px 18px
+                &-btn
+                    font-size: 13px
+                    line-height: 16px
+                &-small
+                    font-size: 16px
+        &-info
+            padding: 64px 0
+            &__catalog
+                font-size: 20px
+                padding: 24px 16px
+                height: auto
+                border-radius: 16px
+            &__block
+                padding: 16px
+                display: block
+                border-radius: 16px
+            &__img
+                width: 56px
+                height: 56px
+                margin-bottom: 12px
+                img
+                    max-width: 70%
+            &__text
+                max-width: 100%
+                span
+                    margin-bottom: 4px
+                    font-size: 16px
+        &-faq
+            padding-bottom: 64px
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 12px
+            &__name
+                padding-top: 16px
+                padding-bottom: 16px
+                font-size: 20px
+                line-height: 24px
+        &-cupon
+            &__title
+                margin-bottom: 16px
+            &__subtitle
+                width: 100%
+                line-height: 22px
+                font-size: 18px
+                margin-bottom: 10px
+                padding-top: 10px
+            &__descr
+                width: 100%
+                font-size: 14px
+                line-height: 18px

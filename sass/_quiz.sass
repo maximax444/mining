@@ -153,6 +153,7 @@
             label
                 position: relative
                 cursor: pointer
+                max-width: 47%
                 span
                     width: 360px
                     height: 80px
@@ -165,8 +166,9 @@
                     color: #1A1C23
                     border: 1px solid rgba(#A9A9A9, 0.3)
                     border-radius: 16px
-                    padding: 0 24px
+                    padding: 0 22px
                     transition: all 0.3s
+                    max-width: 100%
                     &:hover
                         color: #1A56FF
                         border: 1px solid #1A56FF
@@ -239,3 +241,42 @@
             text-align: right
             display: block
             padding-top: 8px
+@media(max-width: 1199px)
+    .quiz__timeline
+        max-width: calc(100% - 200px)
+        &-line
+            max-width: 100%
+@media(max-width: 991px)
+    .quiz
+        &__all
+            display: block
+        &__main
+            width: 100%
+        &__col
+            width: 100%
+            border-radius: 0
+        &__slide
+            height: auto
+@media(max-width: 575px)
+    .quiz
+        padding: 24px 0
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 16px
+        &__slide
+            padding: 16px
+        &__controls
+            padding: 16px
+            display: block
+            height: auto
+        &__timeline
+            max-width: 100%
+        &__btns
+            display: flex
+            justify-content: flex-end
+        &__main
+            &-wrap
+                grid-gap: 12px
+                label
+                    max-width: 100%

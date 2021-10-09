@@ -142,3 +142,60 @@
                 &:hover
                     color: #FFFFFF
                     opacity: 0.8
+@media(max-width: 991px)
+    .footer
+        &__top
+            &-title
+                font-size: 19px
+                line-height: 28px
+        &__main
+            &-adresses
+                display: flex
+                justify-content: space-between
+                padding-top: 30px
+            &-adress
+                width: 50%
+        &__end
+            &-text
+                &_right
+                    text-align: left
+@media(max-width: 575px)
+    .footer
+        &__top
+            padding-top: 24px
+            padding-bottom: 20px
+            &-title
+                margin-bottom: 16px
+            &-phone, &-mail
+                display: inline-block
+                font-size: 16px
+                line-height: 24px
+                margin-right: 10px
+        &__main
+            padding-top: 20px
+            &-link
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 12px
+                &_bold
+                    margin-top: 16px
+            &-adresses
+                display: block
+            &-adress
+                width: 100%
+        &__courses
+            &-name
+                font-size: 14px
+            &-full
+                font-size: 14px
+            &-proc
+                font-size: 14px
+            &-price
+                width: 35%
+        &__end
+            &-text
+                font-size: 12px
+            &-links
+                a
+                    font-size: 12px
+                    margin-right: 15px
