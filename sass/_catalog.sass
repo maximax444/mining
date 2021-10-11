@@ -83,11 +83,13 @@
         margin-top: 0
     &__cats
         display: flex
-        margin-bottom: 56px
+        flex-wrap: wrap
+        margin-bottom: 44px
         a
             margin-right: 20px
             text-decoration: none
             font-size: 16px
+            margin-bottom: 12px
             line-height: 24px
             color: #1A1C23
             padding: 12px 24px
@@ -108,11 +110,18 @@
     &-sort
         border-bottom: 1px solid rgba(#A9A9A9, 0.3)
         padding-bottom: 18px
+        position: relative
+        &__filter
+            display: none
+            cursor: pointer
         select
             visibility: hidden
             height: 0
             width: 0
             overflow: hidden
+            position: absolute
+            top: 0
+            left: 0
         &__desct
             a
                 font-size: 16px
@@ -143,7 +152,7 @@
             color: #FFFFFF
             opacity: 0.8
         &__link
-            width: 232px
+            width: calc(100% - 64px)
             height: 56px
             background: #4576FF
             border-radius: 8px
@@ -235,6 +244,7 @@
             display: flex
             align-items: center
             justify-content: center
+            width: 100%
             label
                 margin: 0 10px
         input[type="tel"]
@@ -257,8 +267,304 @@
             line-height: 20px
             border: 0
             color: #FFFFFF
+    &-filter
+        background: #F4F5F6
+        border-radius: 24px
+        padding: 24px
+        margin-bottom: 24px
+        &__top, &__clear
+            display: none
+        &__check
+            display: flex
+            align-items: center
+            margin-bottom: 16px
+            position: relative
+            font-size: 16px
+            line-height: 20px
+            color: #1A1C23
+            img
+                margin-left: 6px
+            span
+                width: 24px
+                height: 24px
+                border: 2px solid #DBDBDB
+                margin-right: 16px
+            input
+                width: 0
+                height: 0
+                overflow: hidden
+                visibility: hidden
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                margin: 0
+                padding: 0
+                &:checked + span
+                    border: 2px solid #1A56FF
+                    background: #1A56FF url('../img/catalog/check.png') center no-repeat
+                    border-radius: 2px
+        &__sklad
+            margin-bottom: 24px
+            border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+            padding-bottom: 16px
+        &__block
+            margin-bottom: 32px
+        &__name
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 16px
+            color: #1A1C23
+        &__btn
+            padding: 18px 24px
+            display: block
+            width: 100%
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+            border: 0
+            background: #1A56FF
+            border-radius: 8px
+        &__radio
+            display: flex
+            align-items: center
+            margin-bottom: 16px
+            position: relative
+            font-size: 16px
+            line-height: 20px
+            color: #1A1C23
+            span
+                width: 24px
+                height: 24px
+                border: 2px solid #DBDBDB
+                margin-right: 16px
+                border-radius: 50%
+            input
+                width: 0
+                height: 0
+                overflow: hidden
+                visibility: hidden
+                position: absolute
+                top: 0
+                left: 0
+                opacity: 0
+                margin: 0
+                padding: 0
+                &:checked + span
+                    border: 2px solid #1A56FF
+                    position: relative
+                    &::after
+                        content: ""
+                        border-radius: 50%
+                        width: 14px
+                        height: 14px
+                        position: absolute
+                        background-color: #1A56FF
+                        display: block
+                        left: 3px
+                        top: 3px
+        &__ranges
+            &-inputs
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 24px
+                input
+                    padding: 10px 12px
+                    width: 112px
+                    font-family: Suisse Intl
+                    line-height: 20px
+                    background: rgba(255, 255, 255, 0.95)
+                    border: 1px solid #EDEDED
+                    border-radius: 8px
+            &-wrap
+                position: relative
+                padding: 15px 0
+                margin-bottom: 24px
+            .slider-track
+                border-radius: 3px
+                height: 2px
+            input[type=range]
+                -webkit-appearance: none
+                appearance: none
+                width: 100%
+                height: 5px
+                padding: 0
+                margin: 0
+                background: transparent
+                position: absolute
+                top: 12px
+                pointer-events: none
+                left: 0
+                width: 100%
+                border-radius: 30px
+
+                &:focus
+                    outline: none
+
+            input[type=range]::-moz-range-track
+                background: none
+                border: none
+            input[type=range]::-moz-range-thumb
+                -moz-appearance: none
+                width: 24px
+                height: 24px
+                background: #FFFFFF
+                box-shadow: 0px 4px 4px rgba(114, 114, 114, 0.3)
+                border-radius: 50%
+                background-size: contain
+                position: relative
+                pointer-events: auto
+                z-index: 4
+
+            input[type=range]::-webkit-slider-thumb
+                -webkit-appearance: none
+                width: 24px
+                height: 24px
+                cursor: pointer
+                background: #FFFFFF
+                box-shadow: 0px 4px 4px rgba(114, 114, 114, 0.3)
+                border-radius: 50%
+                position: relative
+                pointer-events: auto
+                z-index: 4
+@media(max-width: 767px)
+    .catalog
+        &__title
+            br
+                display: none
+        &__cats
+            width: 1200px
+            &-wrap
+                overflow-x: scroll
+        &-main
+            width: 100%
+        &__wrap
+            display: block
+        &-filter
+            width: 100vw
+            height: 100vh
+            position: fixed
+            top: 0
+            left: -100vw
+            transition: all 0.3s
+            margin-bottom: 0
+            border-radius: 0
+            background-color: #fff
+            overflow-y: scroll
+            padding-bottom: 0px
+            padding-top: 80px
+            padding-left: 16px
+            padding-right: 16px
+            &__title
+                font-weight: 600
+                font-size: 24px
+                line-height: 32px
+                color: #1A1C23
+            &__btns
+                width: calc(100% + 32px)
+                height: 80px
+                background: #FFFFFF
+                box-shadow: 0px -8px 64px rgba(31, 47, 70, 0.12)
+                border-radius: 24px 24px 0 0
+                margin-left: -16px
+                margin-right: -16px
+                position: relative
+                z-index: 2
+                padding: 12px 16px
+                display: flex
+                justify-content: space-between
+            &__clear
+                font-size: 16px
+                line-height: 20px
+                display: block
+                color: #1A56FF
+                background-color: transparent
+                border: 1px solid #1A56FF
+                border-radius: 8px
+                max-width: 48%
+                width: 150px
+            &__btn
+                max-width: 48%
+                width: 150px
+            &__top
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 64px
+                border-bottom: 1px solid #A9A9A9
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding-left: 16px
+                padding-right: 20px
+            &__close
+                cursor: pointer
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background-color: rgba(#A9A9A9, 0.3)
+                display: flex
+                justify-content: center
+                align-items: center
+            &.active
+                left: 0
+        &-aside
+            width: 100%
+        &-feedback
+            margin: 0 auto
+            max-width: 100%
+            margin-top: 56px
+        &-sort
+            display: flex
+            justify-content: space-between
+            &__filter
+                display: block
+            &__select
+                position: relative
+                padding-right: 20px
+                &::after
+                    content: ""
+                    width: 16px
+                    height: 16px
+                    background: url('../img/catalog/drop.png') center no-repeat
+                    position: absolute
+                    right: 0
+                    top: 4px
+                    display: block
+            select
+                position: static
+                width: auto
+                height: auto
+                visibility: visible
+                font-size: 14px
+                line-height: 20px
+                color: #1A1C23
+                font-family: Suisse Intl
+                appearance: none
+                border: 0
+                &:focus
+                    outline: none
+            &__desct
+                display: none
+        &__controls
+            flex-wrap: wrap
+            &-more
+                margin-bottom: 12px
 @media(max-width: 575px)
     .cat-card
         max-width: 296px
         margin: 0 auto
         margin-bottom: 10px
+    .catalog
+        padding-top: 4px
+        padding-bottom: 88px
+        &__cats
+            margin-bottom: 32px
+        &__title
+            margin-bottom: 20px
+            font-size: 24px
+            line-height: 32px

@@ -77,27 +77,35 @@
     <section class="catalog">
         <div class="container">
             <h1 class="catalog__title">Более 120 ASIC-майнеров в каталоге <br> в наличии и под заказ</h1>
-            <div class="catalog__cats">
-                <a class="active" href="/catalog.html">ASIC–майнеры</a>
-                <a href="/catalog.html">GPU–майнеры</a>
-                <a href="/catalog.html">Жесткие диски</a>
-                <a href="/catalog.html">Фермы для майнинга</a>
-                <a href="/catalog.html">Комплектующие и аксессуары</a>
+            <div class="catalog__cats-wrap">
+                <div class="catalog__cats">
+                    <a class="active" href="/catalog.html">ASIC–майнеры</a>
+                    <a href="/catalog.html">GPU–майнеры</a>
+                    <a href="/catalog.html">Жесткие диски</a>
+                    <a href="/catalog.html">Фермы для майнинга</a>
+                    <a href="/catalog.html">Комплектующие и аксессуары</a>
+                </div>
             </div>
             <div class="catalog__wrap">
                 <div class="catalog-main">
                     <div class="catalog-sort">
-                        <select name="" id="">
-                            <option value="">Сначала популярные</option>
-                            <option value="">Сначала дешевле</option>
-                            <option value="">Сначала дороже</option>
-                            <option value="">С высоким рейтингом</option>
-                        </select>
+                        <div class="catalog-sort__select">
+                            <select name="" id="">
+                                <option value="">Сначала популярные</option>
+                                <option value="">Сначала дешевле</option>
+                                <option value="">Сначала дороже</option>
+                                <option value="">С высоким рейтингом</option>
+                            </select>
+                        </div>
+
                         <div class="catalog-sort__desct">
                             <a class="active" href="">Сначала популярные</a>
                             <a href="">Сначала дешевле</a>
                             <a href="">Сначала дороже</a>
                             <a href="">С высоким рейтингом</a>
+                        </div>
+                        <div class="catalog-sort__filter">
+                            <img src="img/catalog/filter.png" alt="">
                         </div>
                     </div>
                     <div class="catalog-all">
@@ -208,7 +216,146 @@
                     </div>
                 </div>
                 <div class="catalog-aside">
-                    <div class="catalog-filter"></div>
+                    <form class="catalog-filter">
+                        <div class="catalog-filter__top">
+                            <div class="catalog-filter__title">Фильтр</div>
+                            <div class="catalog-filter__close"><img src="img/catalog/close.png" alt=""></div>
+                        </div>
+                        <label class="catalog-filter__check catalog-filter__sklad">
+                            <input type="checkbox" name="" id="">
+                            <span></span>
+                            Товары в наличии
+                        </label>
+                        <div class="catalog-filter__block">
+                            <div class="catalog-filter__name">Состояние </div>
+                            <label class="catalog-filter__radio">
+                                <input type="radio" name="r1">
+                                <span></span>
+                                Новое
+                            </label>
+                            <label class="catalog-filter__radio">
+                                <input type="radio" name="r1">
+                                <span></span>
+                                Б/у
+                            </label>
+                        </div>
+                        <div class="catalog-filter__name">Окупаемость, месяц</div>
+                        <div class="catalog-filter__ranges">
+                            <div class="catalog-filter__ranges-inputs">
+                                <input type="text" class="inp1" placeholder="0" value="30"> — <input type="text"
+                                    class="inp2" placeholder="100" value="70">
+                            </div>
+                            <div class="catalog-filter__ranges-wrap">
+                                <div class="slider-track"
+                                    style="background: linear-gradient(to right, rgb(218, 218, 229) 30%, rgb(50, 100, 254) 30%, rgb(50, 100, 254) 70%, rgb(218, 218, 229) 70%);">
+                                </div>
+                                <input type="range" min="0" max="100" value="30" class="slider-1">
+                                <input type="range" min="0" max="100" value="70" class="slider-2">
+                            </div>
+
+                        </div>
+                        <div class="catalog-filter__name">Окупаемость, месяц</div>
+                        <div class="catalog-filter__ranges">
+                            <div class="catalog-filter__ranges-inputs">
+                                <input type="text" class="inp1" placeholder="0" value="30"> — <input type="text"
+                                    class="inp2" placeholder="100" value="70">
+                            </div>
+                            <div class="catalog-filter__ranges-wrap">
+                                <div class="slider-track"
+                                    style="background: linear-gradient(to right, rgb(218, 218, 229) 30%, rgb(50, 100, 254) 30%, rgb(50, 100, 254) 70%, rgb(218, 218, 229) 70%);">
+                                </div>
+                                <input type="range" min="0" max="100" value="30" class="slider-1">
+                                <input type="range" min="0" max="100" value="70" class="slider-2">
+                            </div>
+
+                        </div>
+                        <div class="catalog-filter__name">Окупаемость, месяц</div>
+                        <div class="catalog-filter__ranges">
+                            <div class="catalog-filter__ranges-inputs">
+                                <input type="text" class="inp1" placeholder="0" value="30"> — <input type="text"
+                                    class="inp2" placeholder="100" value="70">
+                            </div>
+                            <div class="catalog-filter__ranges-wrap">
+                                <div class="slider-track"
+                                    style="background: linear-gradient(to right, rgb(218, 218, 229) 30%, rgb(50, 100, 254) 30%, rgb(50, 100, 254) 70%, rgb(218, 218, 229) 70%);">
+                                </div>
+                                <input type="range" min="0" max="100" value="30" class="slider-1">
+                                <input type="range" min="0" max="100" value="70" class="slider-2">
+                            </div>
+
+                        </div>
+                        <div class="catalog-filter__name">Окупаемость, месяц</div>
+                        <div class="catalog-filter__ranges">
+                            <div class="catalog-filter__ranges-inputs">
+                                <input type="text" class="inp1" placeholder="0" value="30"> — <input type="text"
+                                    class="inp2" placeholder="100" value="70">
+                            </div>
+                            <div class="catalog-filter__ranges-wrap">
+                                <div class="slider-track"
+                                    style="background: linear-gradient(to right, rgb(218, 218, 229) 30%, rgb(50, 100, 254) 30%, rgb(50, 100, 254) 70%, rgb(218, 218, 229) 70%);">
+                                </div>
+                                <input type="range" min="0" max="100" value="30" class="slider-1">
+                                <input type="range" min="0" max="100" value="70" class="slider-2">
+                            </div>
+
+                        </div>
+
+                        <div class="catalog-filter__block">
+                            <div class="catalog-filter__name">Производитель </div>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Canaan
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Bitmain
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Whatsminer
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Innosilicon
+                            </label>
+                        </div>
+                        <div class="catalog-filter__block">
+                            <div class="catalog-filter__name">Алгоритм </div>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Blake2B+SHA3 <img src="img/catalog/info.png" data-toggle="tooltip" data-placement="top"
+                                    title="123" alt="">
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                DaggerHashimoto <img src="img/catalog/info.png" data-toggle="tooltip"
+                                    data-placement="top" title="123" alt="">
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                SHA256 <img src="img/catalog/info.png" data-toggle="tooltip" data-placement="top"
+                                    title="123" alt="">
+                            </label>
+                            <label class="catalog-filter__check">
+                                <input type="checkbox" name="" id="">
+                                <span></span>
+                                Equihash <img src="img/catalog/info.png" data-toggle="tooltip" data-placement="top"
+                                    title="123" alt="">
+                            </label>
+                        </div>
+                        <div class="catalog-filter__btns">
+                            <button class="catalog-filter__clear" type="reset">Очистить</button>
+                            <button class="catalog-filter__btn">Применить</button>
+                        </div>
+                        
+                    </form>
                     <form class="catalog-feedback">
                         <div class="catalog-feedback__title">Не нашли нужный товар?</div>
                         <div class="catalog-feedback__subtitle">Оставьте заявку нашему менеджеру и получите бесплатную

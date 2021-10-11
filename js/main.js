@@ -54,3 +54,50 @@ $('.product-left__slider').slick({
         }
     }]
 });
+
+
+
+$(".inp1").on("change", function () {
+    $(this).closest(".catalog-filter__ranges").find(".slider-1").val($(this).val());
+});
+$(".inp2").on("change", function () {
+    $(this).closest(".catalog-filter__ranges").find(".slider-2").val($(this).val());
+});
+
+$(".slider-1").on("input", function () {
+    let sliderOne = $(this).val();
+    let sliderTwo = $(this).closest(".catalog-filter__ranges-wrap").find(".slider-2").val();
+    let sliderMaxValue = $(this).attr('max');
+    let sliderTrack = $(this).closest(".catalog-filter__ranges-wrap").find(".slider-track");
+    if ((parseInt(sliderTwo) - parseInt(sliderOne)) <= 0) {
+        $(this).val(parseInt(sliderTwo));
+        $(this).closest(".catalog-filter__ranges").find(".catalog-filter__ranges-inputs .inp1").val(sliderTwo);
+    } else {
+        $(this).closest(".catalog-filter__ranges").find(".catalog-filter__ranges-inputs .inp1").val(sliderOne);
+    }
+    percent1 = (sliderOne / sliderMaxValue) * 100;
+    percent2 = (sliderTwo / sliderMaxValue) * 100;
+    sliderTrack.css('background', `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`);
+});
+$(".slider-2").on("input", function () {
+    let sliderOne = $(this).closest(".catalog-filter__ranges-wrap").find(".slider-1").val();
+    let sliderTwo = $(this).val();
+    let sliderMaxValue = $(this).attr('max');
+    let sliderTrack = $(this).closest(".catalog-filter__ranges-wrap").find(".slider-track");
+    if ((parseInt(sliderTwo) - parseInt(sliderOne)) <= 0) {
+        $(this).val(parseInt(sliderOne));
+        $(this).closest(".catalog-filter__ranges").find(".catalog-filter__ranges-inputs .inp2").val(sliderOne);
+    } else {
+        $(this).closest(".catalog-filter__ranges").find(".catalog-filter__ranges-inputs .inp2").val(sliderTwo);
+    }
+
+    percent1 = (sliderOne / sliderMaxValue) * 100;
+    percent2 = (sliderTwo / sliderMaxValue) * 100;
+    sliderTrack.css('background', `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`);
+});
+$('.catalog-sort__filter').on('click', function () {
+    $('.catalog-filter').addClass('active');
+});
+$('.catalog-filter__btn, .catalog-filter__close').on('click', function () {
+    $('.catalog-filter').removeClass('active');
+});
