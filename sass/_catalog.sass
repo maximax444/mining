@@ -1,5 +1,6 @@
 .cat
     &-card
+        text-decoration: none
         padding: 24px 32px
         position: relative
         margin-bottom: 32px
@@ -70,6 +71,192 @@
             span
                 padding-left: 4px
                 color: #A9A9A9
+.catalog
+    padding-top: 20px
+    padding-bottom: 120px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+        margin-bottom: 24px
+        margin-top: 0
+    &__cats
+        display: flex
+        margin-bottom: 56px
+        a
+            margin-right: 20px
+            text-decoration: none
+            font-size: 16px
+            line-height: 24px
+            color: #1A1C23
+            padding: 12px 24px
+            border: 1px solid rgba(169, 169, 169, 0.3)
+            border-radius: 60px
+            &.active, &:hover
+                background: #1A56FF
+                border: 1px solid #1A56FF
+                color: #FFFFFF
+    &__wrap
+        display: flex
+        justify-content: space-between
+        grid-gap: 32px
+    &-aside
+        width: 296px
+    &-main
+        width: calc(100% - 328px)
+    &-sort
+        border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+        padding-bottom: 18px
+        select
+            visibility: hidden
+            height: 0
+            width: 0
+            overflow: hidden
+        &__desct
+            a
+                font-size: 16px
+                line-height: 20px
+                text-decoration: none
+                margin-right: 12px
+                color: #A9A9A9
+                transition: all 0.3s
+                &:hover, &.active
+                    color: #1A1C23
+    &-all
+        padding-top: 24px
+    &-table
+        padding: 40px 32px
+        height: 412px
+        position: relative
+        background: #1A56FF
+        border-radius: 24px
+        &__title
+            font-weight: 600
+            font-size: 20px
+            line-height: 28px
+            color: #FFFFFF
+            margin-bottom: 12px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+            color: #FFFFFF
+            opacity: 0.8
+        &__link
+            width: 232px
+            height: 56px
+            background: #4576FF
+            border-radius: 8px
+            font-size: 16px
+            line-height: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            text-decoration: none
+            color: #FFFFFF
+            position: absolute
+            bottom: 32px
+            left: 32px
+    &__controls
+        margin-top: 12px
+        border-top: 1px solid #F4F5F6
+        padding-top: 20px
+        display: flex
+        justify-content: space-between
+        &-more
+            padding: 11px 16px
+            border: 1px solid rgba(169, 169, 169, 0.3)
+            border-radius: 8px
+            font-size: 12px
+            line-height: 18px
+            text-decoration: none
+            color: #1A1C23
+        &-pages
+            display: flex
+            span
+                width: 40px
+                height: 40px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 600
+                font-size: 12px
+                line-height: 18px
+                border: 1px solid #1A56FF
+                border-radius: 8px
+                color: #1A56FF
+            a
+                width: 40px
+                text-decoration: none
+                height: 40px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 600
+                font-size: 12px
+                line-height: 18px
+                margin-left: 4px
+                border: 1px solid rgba(169, 169, 169, 0.3)
+                border-radius: 8px
+                color: #1A1C23
+                &.active, &:hover
+                    border: 1px solid #1A56FF
+                    border-radius: 8px
+                    color: #1A56FF
+                &:last-child
+                    margin-left: 28px
+    &-feedback
+        padding: 24px
+        background: #2B2A3B
+        border-radius: 24px
+        &__title
+            font-weight: 600
+            font-size: 20px
+            line-height: 28px
+            text-align: center
+            color: #FFFFFF
+            margin-bottom: 8px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+            text-align: center
+            color: #FFFFFF
+            opacity: 0.8
+            margin-bottom: 30px
+        &__name
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 12px
+            text-align: center
+            color: #FFFFFF
+        &__soc
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            label
+                margin: 0 10px
+        input[type="tel"]
+            width: 100%
+            padding: 16px 24px
+            font-family: Suisse Intl
+            margin-bottom: 20px
+            font-size: 16px
+            line-height: 24px
+            color: #1A1C23
+            border: 0
+            background: #F4F5F6
+            border-radius: 100px
+        &__btn
+            background: #1A56FF
+            width: 100%
+            border-radius: 80px
+            padding: 18px
+            font-size: 16px
+            line-height: 20px
+            border: 0
+            color: #FFFFFF
 @media(max-width: 575px)
     .cat-card
         max-width: 296px
