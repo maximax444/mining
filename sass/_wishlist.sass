@@ -1,0 +1,121 @@
+.wishlist
+    padding-top: 40px
+    padding-bottom: 90px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+        margin-bottom: 16px
+        margin-top: 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        padding-top: 16px
+    &__notation
+        padding-bottom: 16px
+        display: flex
+        align-items: center
+        font-size: 16px
+        line-height: 20px
+        img
+            margin-right: 11px
+        a
+            text-decoration: none
+            color: #1A56FF
+    &__aside
+        width: 296px
+        margin-right: 30px
+    &__main
+        width: calc(100% - 326px)
+    &__buy
+        border: 1px solid #1A56FF
+        border-radius: 8px
+        margin-bottom: 16px
+        width: 214px
+        font-size: 16px
+        line-height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 14px
+        color: #1A56FF
+        text-decoration: none
+        transition: all 0.3s
+        svg
+            margin-right: 16px
+        &:hover
+            background-color: #1A56FF
+            color: #fff
+            path
+                fill: #fff
+    &__clear
+        width: 214px
+        text-decoration: none
+        font-size: 16px
+        line-height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 14px
+        color: #1A1C23
+        border: 1px solid #F4F5F6
+        border-radius: 8px
+        transition: all 0.3s
+        svg
+            margin-right: 16px
+        &:hover
+            border: 1px solid #1A56FF
+            background-color: #1A56FF
+            color: #fff
+            path
+                stroke: #fff
+    &__card-close
+        position: absolute
+        top: 24px
+        right: 32px
+        cursor: pointer
+        z-index: 2
+@media(max-width: 991px)
+    .wishlist
+        &__wrap
+            display: block
+        &__aside
+            width: 100%
+            position: fixed
+            bottom: 0
+            left: 0
+            background: #FFFFFF
+            box-shadow: 0px -12px 24px rgba(31, 47, 70, 0.08)
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: row-reverse
+            z-index: 4
+            background-color: #fff
+            padding: 8px 16px
+            grid-gap: 24px
+        &__main
+            width: 100%
+        &__buy
+            margin-bottom: 0
+        &__notation
+            display: block
+            line-height: 22px
+            img
+                margin-bottom: 1px
+@media(max-width: 575px)
+    .wishlist
+        &__aside
+            grid-gap: 10px
+        &__clear
+            padding: 14px 40px
+            width: auto
+            svg
+                margin-right: 0
+            span
+                display: none
+@media(max-width: 360px)
+    .wishlist
+        &__clear
+            padding: 14px 20px

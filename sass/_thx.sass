@@ -1,0 +1,443 @@
+.thx
+    padding-top: 40px
+    padding-bottom: 80px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+        margin-top: 0
+        margin-bottom: 16px
+    &__subtitle
+        margin-top: 0
+        margin-bottom: 32px
+        font-size: 16px
+        line-height: 24px
+        color: #1A1C23
+    &__btn
+        padding: 14px 83px
+        background: #1A56FF
+        border-radius: 8px
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 40px
+        display: inline-block
+        color: #FFFFFF
+        border: 1px solid #1A56FF
+        text-decoration: none
+        &:hover
+            color: #1A1C23
+            background: #fff
+    &__center
+        width: 138px
+        height: 106px
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -69px
+        margin-top: -53px
+        &-text
+            font-size: 12px
+            line-height: 16px
+            color: #FFFFFF
+            padding-top: 17px
+    &__video
+        position: relative
+        border-radius: 24px
+        overflow: hidden
+        display: flex
+        img
+            width: 100%
+        &-play
+            width: 56px
+            height: 56px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            background: #7FDCBE
+            padding-left: 5px
+            transition: all 0.3s
+            margin: 0 auto
+        &:hover
+            .thx__video-play
+                box-shadow: 0px 5px 7px rgba(#7FDCBE, 0.16)
+        &-title
+            font-size: 12px
+            line-height: 16px
+            max-width: 185px
+            color: #A9A9A9
+            margin-bottom: 45px
+            position: relative
+            &::after
+                content: ""
+                width: 137px
+                height: 23px
+                background: url('../img/thx/thx-video.png') center no-repeat
+                background-size: contain
+                position: absolute
+                top: 49px
+                left: 73px
+    &-host
+        padding: 80px 0
+        background: #F4F5F6
+        &__pre
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 16px
+            color: #909090
+        &__title
+            font-weight: 600
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 16px
+            color: #1A1C23
+            span
+                display: inline-block
+                padding: 1px 17px
+                font-size: 24px
+                line-height: 40px
+                color: #1A1C23
+                position: relative
+                b
+                    border-radius: 50px
+                    font-size: 24px
+                    line-height: 40px
+                    color: #1A1C23
+                    top: 1px
+                    left: 1px
+                    z-index: 0
+                    width: 100%
+                    position: relative
+                    z-index: 2
+                &::before
+                    content: "3 190₽"
+                    background: #7FDCBE
+                    border-radius: 50px
+                    font-size: 24px
+                    line-height: 40px
+                    padding: 1px 17px
+                    color: #fff
+                    position: absolute
+                    top: 2px
+                    left: 2px
+                    z-index: 0
+                    width: 100%
+        &__subtitle
+            font-size: 16px
+            line-height: 20px
+            color: #1A1C23
+            margin-bottom: 24px
+            a
+                text-decoration: none
+                color: #1A56FF
+        &__list
+            padding-left: 16px
+            margin: 0
+            margin-bottom: 32px
+            list-style-type: none
+            li
+                margin-bottom: 8px
+                font-size: 16px
+                line-height: 24px
+                color: #1A1C23
+                opacity: 0.8
+                position: relative
+                &::before
+                    content: ""
+                    top: 10px
+                    left: -16px
+                    position: absolute
+                    background: #1A1C23
+                    opacity: 0.6
+                    width: 4px
+                    height: 4px
+                    border-radius: 50%
+        &__btn
+            padding: 14px 62px
+            font-size: 16px
+            line-height: 20px
+            color: #1A56FF
+            border: 1px solid #1A56FF
+            border-radius: 8px
+            text-decoration: none
+            transition: all 0.3s
+            cursor: pointer
+            display: flex
+            max-width: 214px
+            &:hover
+                background: #1A56FF
+                color: #fff
+        &__video
+            height: 444px
+            a
+                height: 100%
+            img
+                height: 100%
+                object-fit: cover
+    &-cart
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #F4F5F6
+        border-radius: 16px
+        width: 625px
+        max-width: 100%
+        margin-top: 24px
+        &__cont
+            padding: 24px 32px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__name
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 22px
+            color: #141C40
+        &__link
+            padding: 14px 72px
+            font-size: 16px
+            line-height: 20px
+            color: #1A56FF
+            border: 1px solid #1A56FF
+            border-radius: 8px
+            text-decoration: none
+            transition: all 0.3s
+            cursor: pointer
+            &:hover
+                background: #1A56FF
+                color: #fff
+        &__wrap
+            padding-bottom: 110px
+    &-quiz
+        padding-bottom: 104px
+        padding-top: 70px
+        &__text
+            max-width: 600px
+            font-size: 16px
+            line-height: 24px
+            span
+                display: block
+                margin-bottom: 12px
+        &__arrow
+            font-size: 12px
+            line-height: 16px
+            color: #A9A9A9
+            max-width: 275px
+            position: relative
+            margin-bottom: 55px
+            &::after
+                content: ""
+                width: 137px
+                height: 23px
+                background: url('../img/thx/thx-video.png') center no-repeat
+                background-size: contain
+                position: absolute
+                top: 56px
+                left: 73px
+        &__down
+            margin-bottom: 32px
+            display: inline-block
+            padding: 14px 44px
+            background: #1A56FF
+            border: 1px solid #1A56FF
+            border-radius: 8px
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+            text-decoration: none
+            span
+                opacity: 0.5
+            &:hover
+                background: transparent
+                cursor: pointer
+                color: #1A56FF
+        &__bonus
+            &-title
+                margin-bottom: 16px
+                font-weight: 600
+                font-size: 24px
+                line-height: 28px
+                color: #1A56FF
+                opacity: 0.5
+            &-block
+                display: flex
+                align-items: center
+                margin-bottom: 16px
+                img
+                    margin-right: 24px
+                span
+                    font-size: 16px
+                    line-height: 24px
+                    max-width: 270px
+        &__wrap
+            position: relative
+        &__descr
+            position: absolute
+            right: 67px
+            top: -30px
+            background: rgba(#1A56FF, 0.1)
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            &-text
+                font-size: 12px
+                line-height: 16px
+                color: #1A1C23
+                position: absolute
+                &1
+                    top: 20px
+                    right: -74px
+                    width: 148px
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 82px
+                        height: 28px
+                        left: -50px
+                        top: 32px
+                        background: url('../img/thx/thx-quiz1.png') center no-repeat
+                        background-size: contain
+                &2
+                    top: 170px
+                    left: -65px
+                    width: 148px
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 88px
+                        height: 38px
+                        background: url('../img/thx/thx-quiz2.png') center no-repeat
+                        background-size: contain
+                        left: 96px
+                        top: -31px
+                &3
+                    bottom: 140px
+                    right: -60px
+                    width: 108px
+                    &::after
+                        content: ""
+                        position: absolute
+                        width: 97px
+                        height: 56px
+                        background: url('../img/thx/thx-quiz3.png') center no-repeat
+                        background-size: contain
+                        top: -68px
+                        right: 73px
+@media(max-width: 1399px)
+    .thx
+        &-quiz
+            &__descr
+                top: 50px
+@media(max-width: 1199px)
+    .thx
+        &-quiz
+            &__descr
+                position: relative
+                top: 0
+                right: 0
+                margin: 0 auto
+                width: 472px
+                height: 472px
+                margin-bottom: 40px
+@media(max-width: 991px)
+    .thx
+        &-host__video
+            margin-top: 32px
+@media(max-width: 575px)
+    .thx
+        padding-top: 32px
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 12px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 20px
+            br
+                display: none
+        &__btn
+            width: 100%
+            padding: 14px
+            text-align: center
+        &__video
+            border-radius: 16px
+        &-cart
+            padding: 16px
+            &__wrap
+                padding-bottom: 88px
+            &__cont
+                padding: 0
+            &__img
+                display: none
+        &-host
+            padding: 24px 0
+            &__video
+                height: 210px
+            &__title
+                font-size: 20px
+                line-height: 28px
+                span
+                    font-size: 16px
+                    line-height: 24px
+                    padding: 4px 12px
+                    b
+                        font-size: 16px
+                        line-height: 24px
+                    &::before
+                        font-size: 16px
+                        line-height: 24px
+                        padding: 4px 12px
+        &-quiz
+            padding-top: 32px
+            padding-bottom: 88px
+            &__down
+                padding: 14px
+                width: 100%
+                display: flex
+                justify-content: center
+                span
+                    margin-left: 4px
+            &__descr
+                width: 200px
+                height: 200px
+                margin-bottom: 90px
+                margin-top: 80px
+                img
+                    max-width: 100%
+                &-text
+                    font-size: 12px
+                    line-height: 16px
+                    &1
+                        right: -40px
+                        left: auto
+                        top: -55px
+                        width: 140px
+                        &::after
+                            width: 50px
+                            left: -4px
+                    &2
+                        top: -55px
+                        left: -40px
+                        width: 140px
+                        &::after
+                            width: 50px
+                            left: 45px
+                            bottom: -32px
+                            top: auto
+                    &3
+                        bottom: -55px
+                        width: 150px
+                        right: -40px
+                        &::after
+                            right: 30px
+                            width: 65px
+            &__bonus
+                &-block
+                    span
+                        font-size: 14px
+                        line-height: 20px

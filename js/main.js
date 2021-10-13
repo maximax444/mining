@@ -101,3 +101,24 @@ $('.catalog-sort__filter').on('click', function () {
 $('.catalog-filter__btn, .catalog-filter__close').on('click', function () {
     $('.catalog-filter').removeClass('active');
 });
+$('.modal-open__standart').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay__standart').addClass('active');
+    $('body').css("overflow", "hidden");
+});
+$('.modal-open__black').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay__black').addClass('active');
+    $('body').css("overflow", "hidden");
+});
+$('.popup-call__close').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay').removeClass('active');
+    $('body').css("overflow", "visible");
+});
+$('.overlay').on('click', function (e) {
+    if (!(($(e.target).parents('.popup').length) || ($(e.target).hasClass('popup')))) {
+        $('body').css("overflow", "visible");
+        $(this).removeClass('active');
+    }
+});
