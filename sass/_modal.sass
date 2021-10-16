@@ -93,6 +93,124 @@
             .popup-call
                 &__title, &__name
                     color: #FFFFFF
+    &-click
+        background-color: transparent
+        display: flex
+        align-items: center
+        &__prod
+            display: flex
+            align-items: center
+            &-img
+                margin-right: 24px
+            &-title
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 4px
+                color: #1A1C23
+            &-list
+                margin: 0
+                padding: 0
+                list-style-type: none
+                display: flex
+                align-items: center
+                margin-bottom: 16px
+                li
+                    margin-right: 16px
+                    font-size: 14px
+                    line-height: 16px
+                    span
+                        opacity: 0.5
+            &-price
+                padding-bottom: 16px
+                margin-bottom: 16px
+                border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+                font-size: 24px
+                line-height: 32px
+                color: #1A1C23
+                span
+                    color: #A9A9A9
+            &-ok
+                font-size: 16px
+                line-height: 28px
+                &2
+                    font-size: 20px
+                    line-height: 32px
+                    span
+                        opacity: 0.5
+        &__form
+            padding: 80px 56px
+            padding-top: 56px
+            background: #2B2A3B
+            border-radius: 32px
+            width: 624px
+            position: relative
+            margin-left: -10px
+            .popup-call__name
+                color: #FFFFFF
+        &__left
+            width: 650px
+            padding: 40px 56px
+            background: #FFFFFF
+            border-radius: 32px 0 0 32px
+        &__title
+            font-weight: 600
+            font-size: 36px
+            line-height: 44px
+            color: #1A1C23
+            margin-bottom: 8px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 150px
+    &-host
+        &__title
+            font-weight: 600
+            font-size: 36px
+            line-height: 44px
+            margin-bottom: 24px
+        &__subtitle
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            margin-bottom: 16px
+            color: rgba(#1A56FF, 0.5)
+        &__block
+            margin-bottom: 56px
+@media(max-width: 1399px)
+    .popup
+        &-click
+            &__form
+                width: 425px
+            &__left
+                width: 550px
+                padding-left: 24px
+        &-host
+            &__form
+                padding-top: 100px
+                padding-bottom: 100px
+@media(max-width: 991px)
+    .popup
+        &-click
+            display: block
+            position: relative
+            max-width: 95%
+            &__form
+                width: 625px
+                margin-top: -35px
+                border-radius: 32px
+                position: static
+                padding: 40px
+                max-width: 100%
+                margin-left: 0
+            &__left
+                width: 625px
+                border-radius: 32px 32px 0 0
+                margin-right: 0
+                padding: 40px
+                padding-bottom: 80px
+                max-width: 100%
+            &__subtitle
+                margin-bottom: 40px
 @media(max-width: 575px)
     .overlay
         padding: 0
@@ -118,3 +236,44 @@
                 line-height: 24px
             &__tel, &__person
                 margin-bottom: 4px
+        &-click
+            max-width: 100%
+            &__left
+                padding: 16px
+                padding-top: 70px
+            &__form
+                border-radius: 0
+                padding: 24px 16px
+                margin-top: 0
+            &__title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 8px
+            &__subtitle
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 16px
+
+            &__list
+                margin-bottom: 7px
+            &__prod
+                align-items: flex-start
+                &-img
+                    width: 57px
+                    margin-right: 16px
+                    img
+                        max-width: 100%
+                &-cont
+                    width: calc(100% - 73px)
+                &-price
+                    padding-bottom: 8px
+                    margin-bottom: 8px
+        &-host
+            &__title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 0
+            &__subtitle
+                margin-bottom: 16px
+            &__block
+                margin-bottom: 24px
