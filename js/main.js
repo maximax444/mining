@@ -28,10 +28,11 @@
 
     });
 })(jQuery);
+$('input[type="tel"]').inputmask("+7 (999) 999-99-99");
 $('.home-offer__range-title').css('left', 40 / 2 + "%");
 document.querySelectorAll('.home-offer__range').forEach(inp => {
     inp.closest('.home-offer__range-wrap').querySelector('.home-offer__range-title span').innerHTML = inp.querySelector('input').value;
-    inp.addEventListener('change', function (e) {
+    inp.addEventListener('input', function (e) {
         inp.closest('.home-offer__range-wrap').querySelector('.home-offer__range-title span').innerHTML = inp.querySelector('input').value;
         $('.home-offer__range-title').css('left', (inp.querySelector('input').value) / 2 + "%");
 
@@ -40,7 +41,7 @@ document.querySelectorAll('.home-offer__range').forEach(inp => {
 $('.home-faq__name').on("click", function () {
     $(this).closest('.home-faq__block').toggleClass("active");
 });
-$('.product-left__slider img').on("click", function () {
+$('.product-left__slider > img').on("click", function () {
     $('.product-left__img img').attr("src", $(this).attr("src"));
 });
 $('.cart__next').on("click", function (e) {
@@ -58,12 +59,73 @@ $('.cart__next').on("click", function (e) {
     $(this).prev('.cart-step').removeClass('cart-step_open');
     $(this).prev('.cart-step').addClass('cart-step_prev');
 });
+
+$('.cart-steps__next').on("click", function (e) {
+    e.preventDefault();
+    var th = $('.cart-step_open');
+    var ne = $('.cart-step_close:first');
+    var nt = $('.cart-steps__block.nt:first');
+    nt.addClass('active');
+    nt.removeClass('nt');
+    th.next('.cart__next').addClass('hide');
+    ne.addClass('cart-step_open');
+    ne.removeClass('cart-step_close');
+    ne.next('.cart__next').removeClass('hide');
+    console.log(1);
+    // if (th.hasClass('cart-table')) {
+    //     $('.cart-take').addClass('cart-step_open');
+    //     $('.cart-take').removeClass('cart-step_close');
+    //     $('.cart-take').next('.cart__next').removeClass('hide');
+    // }
+    th.removeClass('cart-step_open');
+    th.addClass('cart-step_prev');
+});
+
 $('.cart__top-back').on("click", function (e) {
     e.preventDefault();
     $(this).closest('.cart-step').addClass('cart-step_open');
     $(this).closest('.cart-step').removeClass('cart-step_prev');
     $(this).closest('.cart-step').next('.cart__next').removeClass('hide');
 });
+$('.cat-card__add').on("click", function () {
+    $(this).hide();
+    $(this).next('.cat-card__col').show();
+});
+$('.product-cont__check-cart').on("click", function () {
+    $(this).hide();
+    $(this).next('.product-cont__check-col').show();
+});
+$('.cart-table__block-plus').on("click", function () {
+    var vall = $(this).closest('.cart-table__block-count').find('.cart-table__block-num span');
+    vall.html(parseInt(vall.html()) + 1);
+});
+$('.cart-table__block-min').on("click", function () {
+    var vall = $(this).closest('.cart-table__block-count').find('.cart-table__block-num span');
+    if (parseInt(vall.html()) > 1) vall.html(parseInt(vall.html()) - 1);
+    if (parseInt(vall.html()) == 1) {
+        $(this).closest('.cat-card__col').hide();
+        $(this).closest('.product-cont__check-col').hide();
+        $(this).closest('.cat-card__bottom').find('.cat-card__add').show();
+        $('.product-cont__check-cart').show();
+    }
+});
+$(".quiz__slides").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    fade: true,
+    prevArrow: ".quiz__prev",
+    nextArrow: ".quiz__next",
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                adaptiveHeight: true
+            }
+        }]
+});
+
 $('.product-left__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -160,3 +222,9 @@ $('.overlay').on('click', function (e) {
         $(this).removeClass('active');
     }
 });
+$('.product-calc__calc-input').on('submit', function (e) {
+    e.preventDefault();
+    $('.calcDoh span').html(parseInt($('.calcHash span').html()) * parseInt($('.hashPrice').val()) - parseInt($('.calcPotr span').html()) * $(this).find('input').val());
+    $('.calcDohPr span').html(Math.round((parseInt($('.calcHash span').html()) * parseInt($('.hashPrice').val()) - parseInt($('.calcPotr span').html()) * $(this).find('input').val()) / parseInt($('.prodPrice').val()), 2));
+});
+$('[data-toggle="tooltip"]').tooltip();

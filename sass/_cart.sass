@@ -282,8 +282,104 @@
                     display: block
             .cart_toprev
                 display: block
+    &-steps
+        position: fixed
+        width: 100%
+        bottom: 0
+        left: 0
+        background-color: #fff
+        z-index: 10
+        box-shadow: 0px -12px 24px rgba(31, 47, 70, 0.08)
+        padding: 8px 0
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__steps
+            display: flex
+            align-items: center
+        &__next
+            padding: 14px 82px
+            background: #1A56FF
+            border-radius: 8px
+            font-size: 16px
+            line-height: 20px
+            display: flex
+            align-items: center
+            text-align: center
+            color: #FFFFFF
+            text-decoration: none
+            transition: all 0.3s
+            &:hover
+                color: #FFFFFF
+                opacity: 0.9
+        &__num
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            width: 28px
+            height: 28px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #A9A9A9
+            background: #EBECF2
+            margin-right: 12px
+            border-radius: 50%
+        &__text
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            color: #A9A9A9
+        &__block
+            display: flex
+            align-items: center
+            margin-right: 80px
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                height: 1px
+                width: 60px
+                top: 50%
+                margin-top: -1px
+                right: -70px
+                background: #EBECF2
+            &:last-child
+                margin-right: 0
+                &::after
+                    display: none
+            &.active
+                .cart-steps
+                    &__num
+                        background: #1A56FF
+                        color: #FFFFFF
+                    &__text
+                        color: #1A1C23
+    &-steps__price
+        display: none
+        font-size: 24px
+        line-height: 32px
+        color: #1A1C23
+        small
+            font-size: 12px
+            line-height: 16px
+            color: #A9A9A9
+            display: block
+        span
+            font-size: 24px
+            line-height: 32px
+            color: #A9A9A9
+            padding-left: 4px
 @media(max-width: 1199px)
     .cart
+        &-steps
+            &__text
+                font-size: 16px
+            &__block
+                margin-right: 20px
+                &::after
+                    display: none
         &-col
             margin-bottom: 40px
         &__first
@@ -291,6 +387,11 @@
         &-step__wrap, &-else
             width: 100%
 @media(max-width: 991px)
+    .cart-steps
+        &__price
+            display: block
+        &__steps
+            display: none
     .cart-empty__required
         &-wrap
             width: 1140px
@@ -374,3 +475,6 @@
                     line-height: 32px
                 &-wrapper
                     margin-right: -12px
+        &-steps
+            &__next
+                padding: 14px 22px

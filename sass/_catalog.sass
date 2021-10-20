@@ -5,6 +5,66 @@
         position: relative
         margin-bottom: 32px
         display: block
+        transition: all 0.3s
+        border-radius: 32px
+        &:hover
+            transform: scale(1.02)
+            box-shadow: 0px 64px 64px rgba(31, 47, 70, 0.12)
+        &__col
+            display: none
+        &__bottom
+            position: absolute
+            bottom: 20px
+            right: 24px
+            .cart-table__block-count
+                width: 115px
+        &__add
+            background: #1A56FF
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 0
+            padding: 0
+            width: 40px
+            height: 40px
+            transition: all 0.3s
+            &:hover
+                opacity: 0.9
+        &__comp
+            background: transparent
+            border: 0
+            padding: 0
+            position: absolute
+            right: 34px
+            top: 54px
+            width: 20px
+            height: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #1A56FF
+        &__wish
+            background: transparent
+            border: 0
+            padding: 0
+            position: absolute
+            right: 34px
+            top: 26px
+            width: 20px
+            height: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #1A56FF
         &__img
             padding: 8px 0
             height: 180px
@@ -51,6 +111,8 @@
             font-size: 16px
             line-height: 24px
             color: #1A1C23
+            display: block
+            text-decoration: none
         &__info
             margin: 0
             margin-bottom: 32px
@@ -156,6 +218,7 @@
             width: calc(100% - 64px)
             height: 56px
             background: #4576FF
+            border: 1px solid #4576FF
             border-radius: 8px
             font-size: 16px
             line-height: 20px
@@ -168,6 +231,10 @@
             position: absolute
             bottom: 32px
             left: 32px
+            transition: all 0.3s
+            &:hover
+                color: #FFFFFF
+                background: transparent
     &__controls
         margin-top: 12px
         border-top: 1px solid #F4F5F6
@@ -335,6 +402,7 @@
             font-size: 16px
             line-height: 20px
             color: #1A1C23
+            cursor: pointer
             span
                 width: 24px
                 height: 24px
@@ -431,6 +499,13 @@
                 pointer-events: auto
                 z-index: 4
 @media(max-width: 767px)
+    .cat-card
+        padding-bottom: 80px
+        &:hover
+            transform: scale(1)
+            box-shadow: none
+        &__add
+            transform: translateY(-55px)
     .catalog
         &__title
             br
@@ -559,6 +634,12 @@
     .cat-card
         margin: 0 auto
         margin-bottom: 10px
+        padding-bottom: 32px
+        &:hover
+            transform: scale(1)
+            box-shadow: none
+        &__add
+            transform: translateY(-10px)
     .catalog
         padding-top: 4px
         padding-bottom: 88px

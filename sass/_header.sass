@@ -84,6 +84,9 @@
                 font-size: 15px
                 line-height: 20px
                 color: #1A1C23
+                transition: all 0.3s
+                &:hover
+                    color: #1A56FF
         &__consult
             span
                 max-width: 170px
@@ -137,6 +140,11 @@
             display: flex
             justify-content: center
             align-items: center
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #1A56FF
         &__cart
             border-left: 1px solid #EDEDED
             width: 145px
@@ -149,8 +157,13 @@
             color: #A9A9A9
             span
                 max-width: 70px
-            img
+            svg
                 margin-right: 17px
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #1A56FF
         &__search
             width: calc(100% - 538px)
             position: relative
@@ -161,7 +174,6 @@
                 font-family: Suisse Intl
                 padding: 0 20px
                 font-size: 16px
-                color: #A9A9A9
                 &:focus
                     outline: none
             button
@@ -172,6 +184,11 @@
                 background-color: transparent
                 width: 54px
                 height: 54px
+                path, rect
+                    transition: all 0.3s
+                &:hover
+                    path, rect
+                        stroke: #1A56FF
 
 @media(max-width: 1399px)
     .header-main__menu
@@ -210,7 +227,7 @@
                 width: 80px
                 span
                     display: none
-                img
+                svg
                     margin-right: 0
             &__menu
                 background: transparent

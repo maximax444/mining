@@ -168,13 +168,45 @@
                                     src="img/product/tooltip.png" alt=""></div>
                             <div class="product-cont__check-ok2"><span>14,46</span>месяцев</div>
                             <div class="product-cont__check-btns">
-                                <button class="product-cont__check-cart"><img src="img/product/product-cart.png" alt="">
-                                    В
-                                    корзину</button>
-                                <button class="product-cont__check-wish"><img src="img/header/wishlist.svg"
-                                        alt=""></button>
-                                <button class="product-cont__check-compare"><img src="img/header/compare.svg"
-                                        alt=""></button>
+                                <div class="product-cont__check-add">
+                                    <button class="product-cont__check-cart"><img src="img/product/product-cart.png" alt="">
+                                        В
+                                        корзину</button>
+                                        <div class="product-cont__check-col">
+                                            <div class="cart-table__block-count">
+                                                <button class="cart-table__block-min"><img src="img/cart/minus.png"
+                                                        alt="">
+                                                </button>
+                                                <div class="cart-table__block-num"><span>1</span></div>
+                                                <button class="cart-table__block-plus"><img src="img/cart/plus.png"
+                                                        alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <button class="product-cont__check-wish">
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.900391 0.5H17.1004V18.3578C17.1004 20.035 15.231 21.0355 13.8355 20.1051L9.00039 16.8817L4.16527 20.1051C2.76969 21.0355 0.900391 20.035 0.900391 18.3578V0.5ZM2.70039 2.3V18.3578C2.70039 18.5974 2.96744 18.7404 3.16679 18.6074L8.50115 15.0512C8.80347 14.8496 9.19731 14.8496 9.49959 15.0512L14.834 18.6074C15.0334 18.7404 15.3004 18.5974 15.3004 18.3578V2.3H2.70039Z"
+                                            fill="#A9A9A9" />
+                                    </svg>
+                                </button>
+                                <button class="product-cont__check-compare">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9996 2.7002C12.4967 2.7002 12.8996 3.10313 12.8996 3.6002V20.4002H11.0996V3.6002C11.0996 3.10313 11.5026 2.7002 11.9996 2.7002Z"
+                                            fill="#A9A9A9" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.4 7.5C20.897 7.5 21.3 7.90294 21.3 8.4V20.4H19.5V8.4C19.5 7.90294 19.903 7.5 20.4 7.5Z"
+                                            fill="#A9A9A9" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.59031 12.2998C4.08737 12.2992 4.49081 12.7017 4.49141 13.1987L4.5002 20.3987L2.7002 20.4009L2.69141 13.2009C2.69081 12.7038 3.09325 12.3004 3.59031 12.2998Z"
+                                            fill="#A9A9A9" />
+                                    </svg>
+                                </button>
                             </div>
                             <button class="product-cont__check-click">Купить в 1 клик</button>
                             <a href="" class="product-cont__check-host">Узнать стоимость размещения на хостинге</a>
@@ -301,30 +333,32 @@
         <div class="container">
             <h2 class="product-calc__title">Калькулятор прибыльности</h2>
             <div class="product-calc__wrap">
-                <form class="product-calc__calc">
+                <div class="product-calc__calc">
                     <label for="prod-calc">Стоимость электроэнергии</label>
-                    <div class="product-calc__calc-input">
+                    <form class="product-calc__calc-input">
                         <input type="text" id="prod-calc">
-                    </div>
+                    </form>
                     <div class="product-calc__table">
+                        <input type="hidden" class="hashPrice" value='12312'>
+                        <input type="hidden" class="prodPrice" value='123123'>
                         <div class="product-calc__table-block">
                             <div class="product-calc__table-name">Хэшрейт</div>
-                            <div class="product-calc__table-descr">84 TH/s</div>
+                            <div class="product-calc__table-descr calcHash"><span>84</span> TH/s</div>
                         </div>
                         <div class="product-calc__table-block">
                             <div class="product-calc__table-name">Потребление</div>
-                            <div class="product-calc__table-descr">3150 W</div>
+                            <div class="product-calc__table-descr calcPotr"><span>3150</span> W</div>
                         </div>
                         <div class="product-calc__table-block">
                             <div class="product-calc__table-name">Доходность, ₽/мес.</div>
-                            <div class="product-calc__table-descr">71 132,64 ₽/мес.</div>
+                            <div class="product-calc__table-descr calcDoh"><span>71 132,64</span> ₽/мес.</div>
                         </div>
                         <div class="product-calc__table-block">
                             <div class="product-calc__table-name">Доходность, %/мес.</div>
-                            <div class="product-calc__table-descr">6,92%</div>
+                            <div class="product-calc__table-descr calcDohPr"><span>6,92</span> %</div>
                         </div>
                     </div>
-                </form>
+                </div>
                 <div class="product-calc__info">
                     <div class="product-calc__info-img"><img src="img/product/product-calc.png" alt=""></div>
                     <div class="product-calc__info-cont">
@@ -361,30 +395,58 @@
             </h2>
             <div class="quiz__all">
                 <div class="quiz__main">
-                    <div class="quiz__slide">
-                        <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и окупаемости
-                            ASIC-майнеров</div>
-                        <div class="quiz__main-title">Какой у Вас опыт в майнинге <br> криптовалюты?</div>
-                        <div class="quiz__main-wrap">
-                            <label>
-                                <input type="radio" name="quiz1">
-                                <span>У меня уже была или есть своя майнинг-ферма </span>
-                            </label>
-                            <label>
-                                <input type="radio" name="quiz1">
-                                <span>Я новичок</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="quiz1">
-                                <span>У меня уже была или есть своя майнинг-ферма </span>
-                            </label>
-                            <label>
-                                <input type="radio" name="quiz1">
-                                <span>Я новичок</span>
-                            </label>
+                    <div class="quiz__slides">
+                        <div class="quiz__slide active">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
 
+                            </div>
+                        </div>
+                        <div class="quiz__slide">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и
+                                окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">2 Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+
+                            </div>
                         </div>
                     </div>
+
                     <div class="quiz__controls">
                         <div class="quiz__timeline">
                             <div class="quiz__timeline-title">Готово: <span>25%</span></div>
@@ -542,6 +604,13 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.inputmask.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
