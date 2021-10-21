@@ -1,0 +1,134 @@
+.search
+    padding-top: 20px
+    padding-bottom: 120px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        margin-bottom: 8px
+        margin-top: 0
+    &-res
+        font-size: 18px
+        line-height: 28px
+        color: #A9A9A9
+        margin-bottom: 24px
+    &__descr
+        font-size: 18px
+        line-height: 28px
+        margin-bottom: 24px
+    &__link
+        padding: 14px 115px
+        background: #1A56FF
+        border: 1px solid #1A56FF
+        border-radius: 8px
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        transition: all 0.3s
+        text-decoration: none
+        &:hover
+            color: #1A56FF
+            background-color: transparent
+    &-no
+        margin-top: 80px
+        background: #2B2A3B
+        border-radius: 24px
+        padding: 32px
+        display: flex
+        justify-content: space-between
+        &__left
+            max-width: 325px
+            font-size: 16px
+            line-height: 24px
+            color: rgba(#fff, 0.8)
+            span
+                color: #fff
+                margin-bottom: 8px
+                display: block
+                font-weight: 600
+                font-size: 20px
+                line-height: 28px
+        form
+            display: flex
+            align-items: center
+            button
+                padding: 18px 32px
+                background: #1A56FF
+                border-radius: 80px
+                margin-left: 30px
+                border: 1px solid #1A56FF
+                font-size: 16px
+                line-height: 20px
+                color: #FFFFFF
+                &:hover
+                    background-color: transparent
+            input
+                padding: 16px 24px
+                background: #F4F5F6
+                border-radius: 100px
+                border: 0
+                font-family: Suisse Intl
+                font-size: 16px
+                line-height: 24px
+                &:focus
+                    outline: none
+        &__where-title
+            font-size: 16px
+            line-height: 28px
+            color: #FFFFFF
+            margin-bottom: 12px
+            margin-right: 30px
+@media(max-width: 1399px)
+    .search
+        &-no
+            &__where-title
+                margin-right: 10px
+            form
+                button
+                    margin-left: 10px
+@media(max-width: 1199px)
+    .search
+        &-no
+            &__left
+                margin-right: 15px
+            form
+                flex-wrap: wrap
+                max-width: 570px
+            &__where
+                width: 100%
+@media(max-width: 991px)
+    .search
+        &-no
+            display: block
+            &__left
+                margin-bottom: 20px
+@media(max-width: 991px)
+    .search
+        &-no
+            form
+                input
+                    width: 100%
+                    margin-bottom: 16px
+                button
+                    width: 100%
+                    margin-left: 0
+@media(max-width: 575px)
+    .search
+        padding-top: 16px
+        &__title
+            font-size: 24px
+            line-height: 32px
+        &__descr
+            font-size: 16px
+            line-height: 24px
+            br
+                display: none
+        &__link
+            display: block
+            text-align: center
+            width: 100%
+        &-res
+            font-size: 16px
+        &-no
+            padding: 16px
+            margin-top: 40px
