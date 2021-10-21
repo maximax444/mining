@@ -1,0 +1,295 @@
+.blog
+    padding-top: 32px
+    padding-bottom: 120px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+        margin-bottom: 32px
+    &__nav
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 20px
+        align-items: center
+        a
+            margin-right: 12px
+            background: #F4F5F6
+            border-radius: 50px
+            padding: 4px 16px
+            font-size: 16px
+            line-height: 24px
+            text-decoration: none
+            color: #1A1C23
+            margin-bottom: 12px
+            transition: all 0.3s
+            display: none
+            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+                display: block
+            &.active, &:hover
+                background: #1A56FF
+                color: #fff
+        &-btn
+            padding: 14px 16px
+            border: 0
+            border-radius: 50px
+            display: flex
+            align-items: center
+            margin-bottom: 12px
+            transition: all 0.3s
+            svg
+                margin: 0 1px
+            circle
+                transition: all 0.3s
+            &:hover
+                background: #1A56FF
+                circle
+                    fill: #fff
+    &__article
+        display: block
+        text-decoration: none
+        color: #1A1C23
+        padding-bottom: 12px
+        margin-bottom: 32px
+        border-bottom: 1px solid rgba(#C1C9D2, 0.3)
+        transition: all 0.3s
+        &:hover
+            color: #1A1C23
+            transform: translateY(5px)
+            .blog__article-title
+                color: #1A56FF
+        &-img
+            border-radius: 8px
+            margin-bottom: 12px
+            height: 220px
+            display: block
+            img
+                border-radius: 8px
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &-cat
+            display: block
+            font-size: 14px
+            line-height: 20px
+            color: #A9A9A9
+            position: relative
+            padding-left: 10px
+            margin-bottom: 4px
+            &::before
+                content: ""
+                background-color: #A9A9A9
+                width: 4px
+                height: 4px
+                border-radius: 50%
+                display: block
+                position: absolute
+                top: 50%
+                margin-top: -2px
+                left: 0
+        &-title
+            display: block
+            margin-bottom: 16px
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            transition: all 0.3s
+        &-bottom
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+        &-date
+            font-size: 14px
+            line-height: 20px
+            margin-right: 24px
+        &-time
+            font-size: 14px
+            line-height: 20px
+            color: #A9A9A9
+            display: flex
+            align-items: center
+            img
+                margin-right: 5px
+    &__more
+        padding: 18px 0
+        width: 296px
+        display: block
+        border: 1px solid #1A56FF
+        border-radius: 80px
+        font-size: 18px
+        line-height: 20px
+        color: #1A56FF
+        margin: 0 auto
+        background-color: transparent
+        transition: all 0.3s
+        &:hover
+            background-color: #1A56FF
+            color: #fff
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__aside
+        width: 296px
+        &-title
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 1px
+            color: #1A1C23
+        &-block
+            padding: 12px 0
+            border-bottom: 1px solid #C1C9D2
+            text-decoration: none
+            display: block
+            color: #1A1C23
+            &:hover
+                color: #1A1C23
+                .blog__aside-name
+                    color: #1A56FF
+        &-name
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 12px
+            display: block
+            transition: all 0.3s
+        &-tg
+            margin-top: 32px
+            background: #1A56FF url(../img/blog/blog-tg-bg.png) center bottom no-repeat
+            background-size: contain
+            &-descr
+                margin-bottom: 36px
+            &-logo
+                margin-bottom: 36px
+                display: flex
+                justify-content: center
+                align-items: center
+    &__main
+        width: calc(100% - 296px - 32px)
+.article
+    padding-top: 28px
+    padding-bottom: 70px
+    &__title
+        max-width: 875px
+    &__top
+        margin-bottom: 8px
+        &-cat
+            margin-bottom: 0
+            margin-right: 16px
+    &__wrap
+        max-width: 875px
+        h2
+            margin: 0
+            padding: 24px 0
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #1A1C23
+        h3
+            margin: 0
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            color: #1A1C23
+            padding: 24px 0
+        p
+            margin-top: 0
+            margin-bottom: 24px
+            font-size: 18px
+            line-height: 28px
+            color: #1A1C23
+        ul
+            padding-left: 14px
+            margin: 0
+            margin-bottom: 24px
+            li
+                margin-bottom: 12px
+                font-size: 16px
+                line-height: 24px
+        ol
+            counter-reset: mC
+            padding-left: 32px
+            margin-bottom: 24px
+            li
+                list-style: none
+                position: relative
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 16px
+                &::before
+                    counter-increment: mC
+                    content: counter(mC) "."
+                    position: absolute
+                    top: 0
+                    left: -32px
+                    margin-right: 15px
+                    transition: margin-right
+        .quote
+            display: block
+            margin: 48px 0
+            padding: 24px 0
+            border-top: 1px solid rgba(#C1C9D2, 0.3)
+            border-bottom: 1px solid rgba(#C1C9D2, 0.3)
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            span
+                padding-top: 16px
+                display: block
+                font-weight: normal
+                font-size: 16px
+                line-height: 24px
+                color: #A9A9A9
+    &-more
+        padding-bottom: 120px
+        &__title
+            font-weight: 600
+            font-size: 36px
+            line-height: 48px
+            margin-bottom: 24px
+    &__img
+        margin-bottom: 12px
+        img
+            width: 100%
+            border-radius: 24px
+    &__descr
+        text-align: center
+        margin-bottom: 16px
+        font-size: 14px
+        line-height: 28px
+        color: #A9A9A9
+        a
+            color: #A9A9A9
+@media(max-width: 767px)
+    .blog
+        &__title
+            br
+                display: none
+        &__wrap
+            display: block
+        &__main, &__aside
+            width: 100%
+        &__main
+            padding-bottom: 50px
+@media(max-width: 575px)
+    .blog
+        padding-bottom: 88px
+        padding-top: 24px
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 20px
+    .article
+        padding-top: 12px
+        &__img img
+            border-radius: 16px
+        &__wrap
+            h2, h3
+                padding: 16px 0
+            p
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 16px
+            .quote
+                margin: 24px 0
+        &-more
+            padding-bottom: 78px

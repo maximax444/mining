@@ -109,6 +109,10 @@ $('.cart-table__block-min').on("click", function () {
         $('.product-cont__check-cart').show();
     }
 });
+$('.blog__nav-btn').on('click', function () {
+    $(this).hide();
+    $('.blog__nav a').show();
+});
 $(".quiz__slides").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
