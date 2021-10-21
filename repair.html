@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <ul class="header-top__nav">
+                    <li><a href="">Магазин</a></li>
+                    <li><a href="">Хостинг</a></li>
+                    <li><a href="">Ремонт</a></li>
+                </ul>
+                <div class="header-top__dop">
+                    <a href="tel:+7 (499) 229 22 89" class="header-top__phone">+7 (499) 229 22 89 <span
+                            class="header-top__info"><img src="img/header/header-info.svg" alt=""></span></a>
+                    <a href="" class="header-top__call">Обратный звонок</a>
+                    <a href="" class="header-top__lk">Личный кабинет <img src="img/header/lk-dt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-main__nav">
+                    <a href="/" class="header-main__logo"><img src="img/header/logo.svg" alt=""></a>
+                    <div class="header-main__subtitle">Оборудование для майнинга</div>
+                    <ul class="header-main__menu">
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Возврат</a></li>
+                        <li><a href="">Мои заказы</a></li>
+                        <li><a href="">Qubity-блог</a></li>
+                        <li><a href="">О компании</a></li>
+                    </ul>
+                </div>
+                <div class="header-main__consult">
+                    <span>Получите консультацию в мессенджерах</span>
+                    <a href="" class="header-main__soc wa"><img src="img/header/header-wa.svg" alt=""></a>
+                    <a href="" class="header-main__soc viber"><img src="img/header/header-viber.svg" alt=""></a>
+                    <a href="" class="header-main__soc tg"><img src="img/header/header-tg.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom__menu"><img src="img/header/burger.svg" alt=""> <span>Каталог
+                        оборудования</span></div>
+                <form action="" class="header-bottom__search">
+                    <input type="text" placeholder="Поиск по товарам или категориям....">
+                    <button class="header-bottom__search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8984 15.6484L21.588 21.338" stroke="#A9A9A9" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="3" y="3" width="14.6765" height="14.757" rx="7.33823" stroke="#A9A9A9"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="header-bottom__last">
+                    <a href="/wishlist.html" class="header-bottom__link">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.900391 0.5H17.1004V18.3578C17.1004 20.035 15.231 21.0355 13.8355 20.1051L9.00039 16.8817L4.16527 20.1051C2.76969 21.0355 0.900391 20.035 0.900391 18.3578V0.5ZM2.70039 2.3V18.3578C2.70039 18.5974 2.96744 18.7404 3.16679 18.6074L8.50115 15.0512C8.80347 14.8496 9.19731 14.8496 9.49959 15.0512L14.834 18.6074C15.0334 18.7404 15.3004 18.5974 15.3004 18.3578V2.3H2.70039Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/compare.html" class="header-bottom__link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.9996 2.7002C12.4967 2.7002 12.8996 3.10313 12.8996 3.6002V20.4002H11.0996V3.6002C11.0996 3.10313 11.5026 2.7002 11.9996 2.7002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.4 7.5C20.897 7.5 21.3 7.90294 21.3 8.4V20.4H19.5V8.4C19.5 7.90294 19.903 7.5 20.4 7.5Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59031 12.2998C4.08737 12.2992 4.49081 12.7017 4.49141 13.1987L4.5002 20.3987L2.7002 20.4009L2.69141 13.2009C2.69081 12.7038 3.09325 12.3004 3.59031 12.2998Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/cart.html" class="header-bottom__cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.00019 22.8002C9.99431 22.8002 10.8002 21.9943 10.8002 21.0002C10.8002 20.0061 9.99431 19.2002 9.00019 19.2002C8.00608 19.2002 7.2002 20.0061 7.2002 21.0002C7.2002 21.9943 8.00608 22.8002 9.00019 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.3996 22.8002C18.3937 22.8002 19.1996 21.9943 19.1996 21.0002C19.1996 20.0061 18.3937 19.2002 17.3996 19.2002C16.4055 19.2002 15.5996 20.0061 15.5996 21.0002C15.5996 21.9943 16.4055 22.8002 17.3996 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.13057 4.5002H1.2002V2.7002H4.8002C5.19765 2.7002 5.54804 2.9609 5.66224 3.34158L8.74913 13.6312C8.93948 14.2657 9.52345 14.7002 10.1859 14.7002H17.3899C18.0596 14.7002 18.6482 14.2562 18.8322 13.6123L20.407 8.1002H12.6002V6.3002H21.6002C21.8826 6.3002 22.1486 6.43276 22.3188 6.65822C22.4888 6.88368 22.5432 7.1759 22.4655 7.44744L20.5629 14.1068C20.1582 15.5235 18.8632 16.5002 17.3899 16.5002H10.1859C8.72856 16.5002 7.4438 15.5443 7.02504 14.1484L4.13057 4.5002Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                        <span>В корзине
+                            нет
+                            товаров</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="repair-main">
+        <div class="container">
+            <div class="repair-main__wrap">
+                <div class="repair-main__cont">
+                    <h1 class="repair-main__title">Ремонт ASIC-майнеров за 14 дней <br> в специализированном сервисном
+                        <br>
+                        центре с гарантией 30 дней
+                    </h1>
+                    <div class="repair-main__descr">Заберем Ваше оборудование и привезем обратно</div>
+                    <a href="" class="repair-main__link">Рассчитать стоимость и сроки ремонта</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="features">
+        <div class="container">
+            <div class="features__wrap">
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features1.svg" alt="">
+                    </div>
+                    <span>Сертификаты <br> от производителя</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features2.svg" alt="">
+                    </div>
+                    <span>Легальный ввоз <br> через таможню</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features3.svg" alt="">
+                    </div>
+                    <span>5 способов оплаты. <br> Даже криптовалютой</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features4.svg" alt="">
+                    </div>
+                    <span>Предпродажная проверка перед отправкой и в офисе</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="home-info repair-info">
+        <div class="container">
+            <h2 class="home-info__title repair-info__title">Отремонтируем ASIC любой модели <br> и года выпуска с
+                бесплатной диагностикой</h2>
+            <div class="repair-info__subtitle">с полным контролем статуса ремонта в личном кабинете </div>
+            <div class="home-info__cont-block active">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Ремонт в кратчайшие сроки</span>Срок ремонта прописываем
+                                в договоре. Если нужной запчасти нет в наличии или проблема оказалась сложнее —
+                                предложим аренду нашего оборудования или скидку на ремонт, чтобы вы продолжали
+                                зарабатывать </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Ремонтируем только то, что сломалось </span>Бесплатно
+                                диагностируем и озвучиваем проблему, стоимость ремонта, без навязывания ненужных услуг
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Контроль с любого устройства</span>Удобный личный кабинет
+                                с информацией об этапах ремонта, стоимости и доставке</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Гарантия на ремонт 30 дней</span><a href="">Смотреть
+                                    выписку из договора</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Специалисты с опытом 5+ лет <br> и сертификатами
+                                    Bitmain</span><a href="">Смотреть сертификаты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-info__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Только оригинальные запчасти </span>Имеем прямые
+                                контракты с производителями комплектующих 20+ основных брендов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="repair-problem">
+        <div class="container">
+            <h2 class="repair-problem__title">Какая у вас проблема с ASIC-майнером?</h2>
+            <div class="repair-problem__wrap">
+                <div class="repair-problem__block">
+                    <div class="repair-problem__name">Неисправность цепи питания
+                    </div>
+                    <div class="repair-problem__text">В большинстве случаев неисправность Вашего Асика связана с
+                        повреждением цепей питания hash dord a. С возрастанием нагрузок на электросеть увеличивается
+                        вероятность скачков напряжения, что приводит неисправности
+                    </div>
+                    <a href="" class="repair-problem__btn">Это моя проблема</a>
+                </div>
+                <div class="repair-problem__block">
+                    <div class="repair-problem__name">Не определяются чипы
+                    </div>
+                    <div class="repair-problem__text">Одна из самых распространённых проблем - это потеря чипов. Самая
+                        большая нагрузка ложится как раз на них, именно чипы позволяют заработать биткоины.
+                    </div>
+                    <a href="" class="repair-problem__btn">Это моя проблема</a>
+                </div>
+                <div class="repair-problem__block">
+                    <div class="repair-problem__name">ASIC не включается
+                    </div>
+                    <div class="repair-problem__text">За весь процесс майнинга отвечает контроллер и за частую от частых
+                        перезагрузок или постоянной загрузки выходит из строя
+
+                    </div>
+                    <a href="" class="repair-problem__btn">Это моя проблема</a>
+                </div>
+                <div class="repair-problem__block">
+                    <div class="repair-problem__name">На ASIC попал вирус
+                    </div>
+                    <div class="repair-problem__text">При попадании вируса асик начинает работать на пул хакера, который
+                        разработал вирус. Такие же вирусы блокируют перенастройку оборудования на ваш пул.
+                    </div>
+                    <a href="" class="repair-problem__btn">Это моя проблема</a>
+                </div>
+                <div class="repair-problem__block">
+                    <div class="repair-problem__name">Снизился Hashrate
+                    </div>
+                    <div class="repair-problem__text">Причиной этого может стать как выход из строя некоторых чипов, так
+                        и неисправность микросхем.
+                        В такой ситуации частая перезагрузка или замена блока питания решают проблему лишь временно.
+                    </div>
+                    <a href="" class="repair-problem__btn">Это моя проблема</a>
+                </div>
+                <div class="repair-problem__end">
+                    <div class="repair-problem__end-title">Не нашли свою <br> неисправность?</div>
+                    <div class="repair-problem__end-subtitle">Опишите проблему своими словами и получите
+                        экспресс-диагностику </div>
+                    <div class="repair-problem__end-bonus">
+                        <img src="img/home/home-calc.png" alt="">
+                        <span>Чек-лист «ТОП5 неочевидных причин, почему ломается ASIC»</span>
+                    </div>
+                    <a href="" class="repair-problem__end-btn">Получить экспресс-диагностику</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="repair-price">
+        <div class="container">
+            <h2 class="repair-price__title">Стоимость ремонта ASIC-майнеров*</h2>
+            <div class="repair-price__subtitle">*цены приведены примерно, т.к. у каждого устройства отличается стоимость
+                комплектующих и степень поломки</div>
+            <div class="home-faq__block repair-price__block">
+                <div class="home-faq__name repair-price__name repair-price__name_empty">Диагностика <div
+                        class="repair-price__name-free">
+                        бесплатно</div>
+                </div>
+                <div class="home-faq__cont">1</div>
+            </div>
+            <div class="home-faq__block repair-price__block">
+                <div class="home-faq__name repair-price__name repair-price__name_empty">Обновление и установка ПО <div
+                        class="repair-price__name-price">от 40 $</div>
+                </div>
+                <div class="home-faq__cont">2</div>
+            </div>
+            <div class="home-faq__block repair-price__block">
+                <div class="home-faq__name repair-price__name">Профилактика <div class="repair-price__name-price">от 10
+                        $</div>
+                </div>
+                <div class="home-faq__cont">
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-faq__block repair-price__block">
+                <div class="home-faq__name repair-price__name">Плата управления <div class="repair-price__name-price">от
+                        10 $</div>
+                </div>
+                <div class="home-faq__cont">
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-faq__block repair-price__block">
+                <div class="home-faq__name repair-price__name">Хеш-плата <div class="repair-price__name-price">от 40 $
+                    </div>
+                </div>
+                <div class="home-faq__cont">
+                    <div class="repair-price__line">
+                        <div class="repair-price__line-title">Общая профилактика охлаждения</div>
+                        <div class="repair-price__line-cont">от 15 $</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="repair-features">
+        <div class="container">
+            <div class="repair-features__wrap">
+                <div class="repair-features__top">
+                    <div class="repair-features__titles">
+                        <h2 class="repair-features__title">Оставьте заявку на ремонт ASIC в 2 клика</h2>
+                        <div class="repair-features__subtitle">и получите заключение после бесплатной диагностики уже
+                            через 1 день</div>
+                    </div>
+                    <a href="" class="repair-features__btn">Заказать ремонт</a>
+                </div>
+                <div class="repair-features__main">
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"></div>
+                        <div class="repair-features__name">Заявка на сайте</div>
+                        <div class="repair-features__descr">Напишите нам в мессенджере или в чате на сайте</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-info repair-video">
+        <div class="container">
+            <h2 class="home-info__title repair-info__title">Работаем легально и прозрачно уже 10 лет <br> на рынке
+                майнеров в России</h2>
+            <div class="repair-info__subtitle">Предоставляем полный цикл услуг - магазин, хостинг, сервисный центр
+            </div>
+            <div class="home-info__cont-block active">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Собственный сервисный <br> центр по ремонту ASIC </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Команда профессионалов <br> с опытом в майнинге 5+
+                                    лет</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Дата-центр на 4320 майнеров <br> с охраной 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Налаженная цепочка поставок <br> напрямую из Китая</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="repair-video__video">
+                <a href="" class="thx__video">
+                    <img src="img/thx/thx-video-bg.jpg" alt="">
+                    <div class="thx__center">
+                        <span class="thx__video-play repair-video__play">
+                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.6993 7.95148C15.4335 9.20018 15.4335 12.27 13.6993 13.5187L3.97621 20.5194C2.21732 21.7858 -8.91986e-08 20.2336 0 17.7358L2.1775e-06 3.73442C2.26669e-06 1.23666 2.21733 -0.315627 3.97621 0.950787L13.6993 7.95148Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <div class="thx__center-text">Посмотрите видео <br> о команде Qubity</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="home-faq">
+        <div class="container">
+            <h2 class="home-faq__title">Часто задаваемые <br> вопросы</h2>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Вы работаете официально?</div>
+                <div class="home-faq__cont">1</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Блок питания входит в стоимость?</div>
+                <div class="home-faq__cont">2</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Какие гарантии даёт Ваша компания?</div>
+                <div class="home-faq__cont">3</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Вы работаете по договору? </div>
+                <div class="home-faq__cont">4</div>
+            </div>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="container">
+            <div class="quiz__subtitle">Сомневаетесь в выборе модели?</div>
+            <h2 class="quiz__title">
+                Пройдите тест и получите подборку <br> ASIC-майнеров с окупаемостью <span class="month">за 9-12</span>
+                месяцев <br> и прибылью от <span class="price">40.000</span> в
+                месяц
+            </h2>
+            <div class="quiz__all">
+                <div class="quiz__main">
+                    <div class="quiz__slides">
+                        <div class="quiz__slide active">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="quiz__slide">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и
+                                окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">2 Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz__controls">
+                        <div class="quiz__timeline">
+                            <div class="quiz__timeline-title">Готово: <span>25%</span></div>
+                            <div class="quiz__timeline-line">
+                                <span style="width: 25%;"></span>
+                            </div>
+                        </div>
+                        <div class="quiz__right">
+                            <div class="quiz__btns">
+                                <button class="quiz__prev"><img src="img/home/quiz-prev.png" alt=""></button>
+                                <button class="quiz__next">Далее</button>
+                            </div>
+                            <span>или нажмите Enter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__col">
+                    <div class="quiz__autor">
+                        <div class="quiz__autor-img"><img src="img/home/quiz-autor.png" alt=""></div>
+                        <div class="quiz__autor-text"><span>Максим Поляков</span>Менеджер</div>
+                    </div>
+                    <div class="quiz__quote">Ответьте на все вопросы и получите подборку ASIC-майнеров с окупаемостью за
+                        9-12 месяцев и прибылью от 40.000 в месяц + получите бонусы</div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Чек-лист «ТОП5 ASIC-майнеров 2021 года»</span>
+                    </div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Как оптимизировать майнинг-ферму</span>
+                    </div>
+                    <div class="quiz__marq">Сделано в Marquiz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer__top-title">Получите консультацию <span>по телефону или в мессенджерах</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="tel:+7 (499) 229-22-89" class="footer__top-phone">+7 (499) 229-22-89</a>
+                        <a href="mailto:order@qubity.ru" class="footer__top-mail">order@qubity.ru</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__top-soc">
+                            <a class="wa" href=""><img src="img/header/header-wa.svg" alt=""></a>
+                            <a class="viber" href=""><img src="img/header/header-viber.svg" alt=""></a>
+                            <a class="tg" href=""><img src="img/header/header-tg.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Магазин</a>
+                        <a href="" class="footer__main-link">Доставка</a>
+                        <a href="" class="footer__main-link">Оплата</a>
+                        <a href="" class="footer__main-link">Обмен и возврат</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Сервисный центр</a>
+                        <a href="" class="footer__main-link">Условия ремонта</a>
+                        <a href="" class="footer__main-link">Условия гарантии</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Хостинг</a>
+                        <a href="" class="footer__main-link">Панель управления</a>
+                        <a href="" class="footer__main-link">Мои устройства</a>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="footer__main-adresses">
+                            <div class="footer__main-adress">Офис в Москве:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                            <div class="footer__main-adress">Офис в Иркутске:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__courses">
+                <div class="footer__courses-title">Курсы криптовалют <span>(на 25.04.2021)</span></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses1.png" alt=""></div>
+                            <div class="footer__courses-name">LTC</div>
+                            <div class="footer__courses-full">Litecoin</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">376,07 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses2.png" alt=""></div>
+                            <div class="footer__courses-name">XRP</div>
+                            <div class="footer__courses-full">Ripple</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">1 489 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses3.png" alt=""></div>
+                            <div class="footer__courses-name">BTC</div>
+                            <div class="footer__courses-full">Bitcoin</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">56 468,40$</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses4.png" alt=""></div>
+                            <div class="footer__courses-name">BCH</div>
+                            <div class="footer__courses-full">Bitcoin Cash</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">1 455,68 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses5.png" alt=""></div>
+                            <div class="footer__courses-name">ETH</div>
+                            <div class="footer__courses-full">Ethereum</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">4 305,43 $</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__end">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="footer__end-text">©2021 ООО «Кьюбити Майнинг»»</div>
+                    </div>
+                    <div class="col-md-7 col-lg-6">
+                        <div class="footer__end-links">
+                            <a href="/rekv.html">Реквизиты</a>
+                            <a href="/privacy.html">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer__end-text footer__end-text_right">Разработка сайта – <a
+                                href="">NameCompany</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

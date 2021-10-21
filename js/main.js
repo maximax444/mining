@@ -38,7 +38,7 @@ document.querySelectorAll('.home-offer__range').forEach(inp => {
 
     });
 });
-$('.home-faq__name').on("click", function () {
+$('.home-faq__name:not(.repair-price__name_empty)').on("click", function () {
     $(this).closest('.home-faq__block').toggleClass("active");
 });
 $('.product-left__slider > img').on("click", function () {
