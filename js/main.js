@@ -129,7 +129,16 @@ $(".quiz__slides").slick({
             }
         }]
 });
-
+$(".repair-reviews__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: false,
+    variableWidth: true,
+    prevArrow: ".repair-reviews__prev",
+    nextArrow: ".repair-reviews__next"
+});
 $('.product-left__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -148,8 +157,31 @@ $('.product-left__slider').slick({
         }
     }]
 });
+$('.repair-reviews__listen').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).attr('data-play') == 0) {
+        $(this).find('span').html('Пауза');
+        $(this).attr('data-play', 1);
+        $(this).next('audio').trigger('play');
 
-
+    } else {
+        $(this).find('span').html('Слушать');
+        $(this).attr('data-play', 0);
+        $(this).next('audio').trigger('pause');
+    }
+});
+$('.repair-reviews__all').on('click', function (e) {
+    e.preventDefault();
+    if ($(this).attr('data-hide') == 1) {
+        $(this).html('Скрыть');
+        $(this).attr('data-hide', 0);
+        $(this).closest('.repair-reviews__main').find('p:not(:first)').show();
+    } else {
+        $(this).html('Читать полностью');
+        $(this).attr('data-hide', 1);
+        $(this).closest('.repair-reviews__main').find('p:not(:first):not(:eq(1))').hide();
+    }
+});
 
 $(".inp1").on("change", function () {
     $(this).closest(".catalog-filter__ranges").find(".slider-1").val($(this).val());
