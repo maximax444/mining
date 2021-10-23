@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <ul class="header-top__nav">
+                    <li><a href="">Магазин</a></li>
+                    <li><a href="">Хостинг</a></li>
+                    <li><a href="">Ремонт</a></li>
+                </ul>
+                <div class="header-top__dop">
+                    <a href="tel:+7 (499) 229 22 89" class="header-top__phone">+7 (499) 229 22 89 <span
+                            class="header-top__info"><img src="img/header/header-info.svg" alt=""></span></a>
+                    <a href="" class="header-top__call">Обратный звонок</a>
+                    <a href="" class="header-top__lk">Личный кабинет <img src="img/header/lk-dt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-main__nav">
+                    <a href="/" class="header-main__logo"><img src="img/header/logo.svg" alt=""></a>
+                    <div class="header-main__subtitle">Оборудование для майнинга</div>
+                    <ul class="header-main__menu">
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Возврат</a></li>
+                        <li><a href="">Мои заказы</a></li>
+                        <li><a href="">Qubity-блог</a></li>
+                        <li><a href="">О компании</a></li>
+                    </ul>
+                </div>
+                <div class="header-main__consult">
+                    <span>Получите консультацию в мессенджерах</span>
+                    <a href="" class="header-main__soc wa"><img src="img/header/header-wa.svg" alt=""></a>
+                    <a href="" class="header-main__soc viber"><img src="img/header/header-viber.svg" alt=""></a>
+                    <a href="" class="header-main__soc tg"><img src="img/header/header-tg.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom__menu"><img src="img/header/burger.svg" alt=""> <span>Каталог
+                        оборудования</span></div>
+                <form action="" class="header-bottom__search">
+                    <input type="text" placeholder="Поиск по товарам или категориям....">
+                    <button class="header-bottom__search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8984 15.6484L21.588 21.338" stroke="#A9A9A9" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="3" y="3" width="14.6765" height="14.757" rx="7.33823" stroke="#A9A9A9"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="header-bottom__last">
+                    <a href="/wishlist.html" class="header-bottom__link">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.900391 0.5H17.1004V18.3578C17.1004 20.035 15.231 21.0355 13.8355 20.1051L9.00039 16.8817L4.16527 20.1051C2.76969 21.0355 0.900391 20.035 0.900391 18.3578V0.5ZM2.70039 2.3V18.3578C2.70039 18.5974 2.96744 18.7404 3.16679 18.6074L8.50115 15.0512C8.80347 14.8496 9.19731 14.8496 9.49959 15.0512L14.834 18.6074C15.0334 18.7404 15.3004 18.5974 15.3004 18.3578V2.3H2.70039Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/compare.html" class="header-bottom__link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.9996 2.7002C12.4967 2.7002 12.8996 3.10313 12.8996 3.6002V20.4002H11.0996V3.6002C11.0996 3.10313 11.5026 2.7002 11.9996 2.7002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.4 7.5C20.897 7.5 21.3 7.90294 21.3 8.4V20.4H19.5V8.4C19.5 7.90294 19.903 7.5 20.4 7.5Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59031 12.2998C4.08737 12.2992 4.49081 12.7017 4.49141 13.1987L4.5002 20.3987L2.7002 20.4009L2.69141 13.2009C2.69081 12.7038 3.09325 12.3004 3.59031 12.2998Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/cart.html" class="header-bottom__cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.00019 22.8002C9.99431 22.8002 10.8002 21.9943 10.8002 21.0002C10.8002 20.0061 9.99431 19.2002 9.00019 19.2002C8.00608 19.2002 7.2002 20.0061 7.2002 21.0002C7.2002 21.9943 8.00608 22.8002 9.00019 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.3996 22.8002C18.3937 22.8002 19.1996 21.9943 19.1996 21.0002C19.1996 20.0061 18.3937 19.2002 17.3996 19.2002C16.4055 19.2002 15.5996 20.0061 15.5996 21.0002C15.5996 21.9943 16.4055 22.8002 17.3996 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.13057 4.5002H1.2002V2.7002H4.8002C5.19765 2.7002 5.54804 2.9609 5.66224 3.34158L8.74913 13.6312C8.93948 14.2657 9.52345 14.7002 10.1859 14.7002H17.3899C18.0596 14.7002 18.6482 14.2562 18.8322 13.6123L20.407 8.1002H12.6002V6.3002H21.6002C21.8826 6.3002 22.1486 6.43276 22.3188 6.65822C22.4888 6.88368 22.5432 7.1759 22.4655 7.44744L20.5629 14.1068C20.1582 15.5235 18.8632 16.5002 17.3899 16.5002H10.1859C8.72856 16.5002 7.4438 15.5443 7.02504 14.1484L4.13057 4.5002Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                        <span>В корзине
+                            нет
+                            товаров</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="conditions">
+        <div class="container">
+            <h1 class="conditions__title">Условия ремонта</h1>
+
+            <div class="features__wrap">
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features1.svg" alt="">
+                    </div>
+                    <span>Бесплатная <br> диагностика</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features2.svg" alt="">
+                    </div>
+                    <span>Сроки и стоимость,<br> фиксированные в<br>договоре</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features3.svg" alt="">
+                    </div>
+                    <span>Гарантия на ремонт <br> 30 дней</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features4.svg" alt="">
+                    </div>
+                    <span>Контроль ремонта <br> в личном кабинете</span>
+
+                </div>
+            </div>
+
+            <div class="conditions__text">
+                <ol>
+                    <li>Ремонтные работы осуществляются по расценкам сервисного центра, в отдельных случаях допускается
+                        применение договорных цен</li>
+                    <li>Аппаратная и программная диагностика выполняется в течение 3-х (трех) рабочих дней с момента
+                        получения оборудования</li>
+                    <li>Вскрытие и обследование оборудования происходит в отсутствии заказчика</li>
+                    <li>Работы по устранению выявленных в процессе диагностики неисправностей оборудования
+                        осуществляются в наиболее короткий срок, но не более 30 (тридцати) календарных дней с момента
+                        принятия оборудования</li>
+                    <li>Сервисный центр маркирует все детали сданного оборудования штрих-кодами для дальнейшего учета
+                    </li>
+                    <li>Сервисный центр предоставляет гарантию на качество выполненных работ и замененных деталей на 30
+                        (тридцать) календарных дней со дня приема работ заказчиком. На программное обеспечение гарантия
+                        не распространяется</li>
+                    <li>Заказчик принимает на себя риск, связанный с возможным проявлением в сданном оборудовании
+                        дефектов, которые не были указаны в обращении, а также риск возможной полной или частичной
+                        утраты работоспособности оборудования в процессе ремонта в случае нарушения заказчиком условий
+                        эксплуатации, о чем свидетельствуют следы коррозии, механические повреждения и пр.</li>
+                    <li>Заказчик согласен, что все неисправности и внутренние повреждения, которые могут быть обнаружены
+                        в сданном оборудовании в процессе технического обслуживания, возникли до приема устройства
+                        сервисным центром</li>
+                    <li>Стоимость ремонта оборудования может быть изменена после диагностики</li>
+                    <li>Сервисный центр не несет ответственности за возможную потерю данных в индивидуальной памяти
+                        устройств, связанную с перепрограммированием, заменой блоков памяти, других носителей
+                        информации, плат и установкой программного обеспечения</li>
+                    <li>Оборудование, полученное от транспортных компаний, принимается без осмотра</li>
+                    <li>Доставку оборудования до сервисного центра организовывает и совершает заказчик за свой счет.
+                        Возврат оборудования осуществляется аналогичным способом</li>
+                    <li>Сервисный центр не несет ответственности за некачественно упакованную деталь или повреждения,
+                        возникшие при транспортировке</li>
+                    <li>Заказчик согласен на обработку персональных данных, а также несет ответственность за
+                        достоверность предоставленной информации.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz">
+        <div class="container">
+            <div class="quiz__subtitle">Сомневаетесь в выборе модели?</div>
+            <h2 class="quiz__title">
+                Пройдите тест и получите подборку <br> ASIC-майнеров с окупаемостью <span class="month">за 9-12</span>
+                месяцев <br> и прибылью от <span class="price">40.000</span> в
+                месяц
+            </h2>
+            <div class="quiz__all">
+                <div class="quiz__main">
+                    <div class="quiz__slides">
+                        <div class="quiz__slide active">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="quiz__slide">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и
+                                окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">2 Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz__controls">
+                        <div class="quiz__timeline">
+                            <div class="quiz__timeline-title">Готово: <span>25%</span></div>
+                            <div class="quiz__timeline-line">
+                                <span style="width: 25%;"></span>
+                            </div>
+                        </div>
+                        <div class="quiz__right">
+                            <div class="quiz__btns">
+                                <button class="quiz__prev"><img src="img/home/quiz-prev.png" alt=""></button>
+                                <button class="quiz__next">Далее</button>
+                            </div>
+                            <span>или нажмите Enter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__col">
+                    <div class="quiz__autor">
+                        <div class="quiz__autor-img"><img src="img/home/quiz-autor.png" alt=""></div>
+                        <div class="quiz__autor-text"><span>Максим Поляков</span>Менеджер</div>
+                    </div>
+                    <div class="quiz__quote">Ответьте на все вопросы и получите подборку ASIC-майнеров с окупаемостью за
+                        9-12 месяцев и прибылью от 40.000 в месяц + получите бонусы</div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Чек-лист «ТОП5 ASIC-майнеров 2021 года»</span>
+                    </div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Как оптимизировать майнинг-ферму</span>
+                    </div>
+                    <div class="quiz__marq">Сделано в Marquiz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer__top-title">Получите консультацию <span>по телефону или в мессенджерах</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="tel:+7 (499) 229-22-89" class="footer__top-phone">+7 (499) 229-22-89</a>
+                        <a href="mailto:order@qubity.ru" class="footer__top-mail">order@qubity.ru</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__top-soc">
+                            <a class="wa" href=""><img src="img/header/header-wa.svg" alt=""></a>
+                            <a class="viber" href=""><img src="img/header/header-viber.svg" alt=""></a>
+                            <a class="tg" href=""><img src="img/header/header-tg.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Магазин</a>
+                        <a href="" class="footer__main-link">Доставка</a>
+                        <a href="" class="footer__main-link">Оплата</a>
+                        <a href="" class="footer__main-link">Обмен и возврат</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Сервисный центр</a>
+                        <a href="" class="footer__main-link">Условия ремонта</a>
+                        <a href="" class="footer__main-link">Условия гарантии</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Хостинг</a>
+                        <a href="" class="footer__main-link">Панель управления</a>
+                        <a href="" class="footer__main-link">Мои устройства</a>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="footer__main-adresses">
+                            <div class="footer__main-adress">Офис в Москве:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                            <div class="footer__main-adress">Офис в Иркутске:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__courses">
+                <div class="footer__courses-title">Курсы криптовалют <span>(на 25.04.2021)</span></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses1.png" alt=""></div>
+                            <div class="footer__courses-name">LTC</div>
+                            <div class="footer__courses-full">Litecoin</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">376,07 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses2.png" alt=""></div>
+                            <div class="footer__courses-name">XRP</div>
+                            <div class="footer__courses-full">Ripple</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">1 489 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses3.png" alt=""></div>
+                            <div class="footer__courses-name">BTC</div>
+                            <div class="footer__courses-full">Bitcoin</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">56 468,40$</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses4.png" alt=""></div>
+                            <div class="footer__courses-name">BCH</div>
+                            <div class="footer__courses-full">Bitcoin Cash</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">1 455,68 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses5.png" alt=""></div>
+                            <div class="footer__courses-name">ETH</div>
+                            <div class="footer__courses-full">Ethereum</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">4 305,43 $</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__end">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="footer__end-text">©2021 ООО «Кьюбити Майнинг»»</div>
+                    </div>
+                    <div class="col-md-7 col-lg-6">
+                        <div class="footer__end-links">
+                            <a href="/rekv.html">Реквизиты</a>
+                            <a href="/privacy.html">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer__end-text footer__end-text_right">Разработка сайта – <a
+                                href="">NameCompany</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

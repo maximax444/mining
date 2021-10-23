@@ -28,6 +28,12 @@
 
     });
 })(jQuery);
+$('.tables__input input').on('change', function () {
+    $('.tables-main__block').each(function () {
+        $(this).find('.tables-main__top-money span').html(parseInt($(this).find('.tables-main__top-hash span').html()) * parseFloat($(this).find('input[name=hashPrice]').val()) - parseInt($(this).find('.tables-main__top-el span').html()) * parseInt($('.tables__input input').val()) / 1000);
+        $(this).find('.tables-main__top-days span').html(parseInt(parseInt($(this).find('input[name=prodPrice]').val()) / (parseInt($(this).find('.tables-main__top-hash span').html()) * parseFloat($(this).find('input[name=hashPrice]').val()) - parseInt($(this).find('.tables-main__top-el span').html()) * parseInt($('.tables__input input').val()) / 1000)));
+    });
+});
 $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
 $('.home-offer__range-title').css('left', 40 / 2 + "%");
 document.querySelectorAll('.home-offer__range').forEach(inp => {
@@ -113,6 +119,7 @@ $('.blog__nav-btn').on('click', function () {
     $(this).hide();
     $('.blog__nav a').show();
 });
+
 $(".quiz__slides").slick({
     slidesToShow: 1,
     slidesToScroll: 1,

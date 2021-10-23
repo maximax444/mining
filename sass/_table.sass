@@ -1,0 +1,141 @@
+
+.tables
+    padding-top: 32px
+    padding-bottom: 120px
+    &__title
+        margin-top: 0
+        margin-bottom: 12px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+    &__subtitle
+        margin-bottom: 24px
+        font-size: 16px
+        line-height: 24px
+        color: #1A1C23
+    &__btn
+        padding: 14px 47px
+        display: inline-block
+        background: #1A56FF
+        border-radius: 8px
+        border: 1px solid #1A56FF
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        transition: all 0.3s
+        text-decoration: none
+        &:hover
+            background-color: transparent
+            color: #1A56FF
+    &__input
+        display: block
+        font-size: 18px
+        line-height: 28px
+        color: #1A1C23
+        padding-top: 56px
+        input
+            padding: 16px 24px
+            width: 410px
+            max-width: 100%
+            font-size: 16px
+            line-height: 24px
+            color: #1A1C23
+            background: #F4F5F6
+            border-radius: 100px
+            border: 0
+            &:focus
+                outline: none
+        span
+            display: block
+        &-wrap
+            padding: 0
+            max-width: 100%
+            display: inline-block
+            position: relative
+            margin-top: 16px
+            &::after
+                content: "₽/Квт"
+                position: absolute
+                top: 16px
+                right: 16px
+                pointer-events: none
+                font-size: 16px
+                line-height: 24px
+                text-align: right
+                color: #A9A9A9
+    &-main
+        padding-top: 56px
+        &__title
+            margin-bottom: 8px
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #1A1C23
+        &__block
+            display: flex
+            padding: 16px 0
+            border-bottom: 1px solid #F4F5F6
+            .normal
+                font-size: 16px
+                line-height: 20px
+                color: #1A1C23
+            .bold
+                font-weight: 600
+                font-size: 16px
+                line-height: 20px
+                color: #1A1C23
+        &__top
+            display: flex
+            padding: 16px 0
+            border-bottom: 1px solid #F4F5F6
+            .normal
+                font-size: 16px
+                line-height: 20px
+                color: #1A1C23
+            .grey
+                font-size: 14px
+                line-height: 20px
+                color: #A9A9A9
+            &-model
+                width: 20%
+                text-decoration: none
+            &-date, &-hash, &-el, &-alg, &-days
+                width: 11%
+            &-money
+                width: 13%
+            &-compare
+                width: 12%
+                text-align: right
+                .catalog-filter__check
+                    justify-content: flex-end
+                    margin-bottom: 0
+                    span
+                        margin-right: 0
+@media(max-width: 991px)
+    .tables
+        &-main
+            &__block
+                flex-wrap: wrap
+            &__top
+                display: none
+                &-model
+                    width: 100%
+                    margin-bottom: 10px
+                &-date, &-hash, &-el, &-alg, &-days, &-money
+                    width: 50%
+                    margin: 5px 0
+                &-compare
+                    display: none
+@media(max-width: 575px)
+    .tables
+        padding-bottom: 80px
+        &__title
+            font-size: 24px
+            line-height: 32px
+        &__btn
+            width: 100%
+            text-align: center
+        &__input
+            padding-top: 32px
+            font-size: 16px
