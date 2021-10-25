@@ -1,0 +1,124 @@
+.compare
+    padding-top: 56px
+    padding-bottom: 120px
+    &__title
+        margin-top: 0
+        margin-bottom: 9px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+    &__tabs
+        display: flex
+        button
+            margin-right: 32px
+            font-size: 18px
+            line-height: 28px
+            color: #1A1C23
+            padding: 15px 0
+            border: 0
+            border-bottom: 2px solid transparent
+            background-color: transparent
+            transition: all 0.3s
+            span
+                color: #A9A9A9
+            &.active, &:hover
+                border-bottom: 2px solid #1A1C23
+    &__cont
+        &-block
+            padding-top: 24px
+            display: none
+            &.active
+                display: block
+    &__top
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 32px
+        &-title
+            margin-top: 48px
+            margin-bottom: 16px
+            font-weight: 600
+            font-size: 24px
+            line-height: 32px
+            color: #1A1C23
+    &__name
+        margin-top: 32px
+        margin-bottom: 24px
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+        color: #1A1C23
+    &__row
+        padding: 10px 0
+        font-size: 16px
+        line-height: 24px
+        color: #1A1C23
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 32px
+        transition: all 0.3s
+        &:hover
+            background: #F4F5F6
+        &-el
+            padding-left: 32px
+            &:first-child
+                padding-left: 0px
+@media(max-width: 1399px)
+    .compare
+        &__top
+            display: flex
+            .cat-card
+                max-width: 22%
+@media(max-width: 991px)
+    .compare
+        &__cont
+            overflow-x: scroll
+            &-block
+                width: 960px
+        &__top
+            flex-wrap: wrap
+            .cat-card
+                width: 296px
+            &-first
+                width: 100%
+            &-title
+                display: none
+            .cat-card
+                max-width: 100%
+        &__row
+            display: flex
+            padding-top: 42px
+            position: relative
+            &-el
+                width: 296px
+                padding-left: 0
+                &:first-child
+                    position: absolute
+                    left: 0
+                    top: 10px
+                    color: #A9A9A9
+            &:nth-child(2n)
+                background: #F4F5F6
+@media(max-width: 575px)
+    .compare
+        padding-top: 24px
+        padding-bottom: 80px
+        &__title
+            font-size: 24px
+            line-height: 32px
+        &__tabs
+            button
+                font-size: 14px
+                margin-right: 15px
+                padding: 10px 0
+        &__top
+            grid-gap: 10px
+            .cat-card
+                width: 260px
+        &__row
+            grid-gap: 10px
+            &-el
+                width: 260px
+        &__cont
+            &-block
+                width: 800px

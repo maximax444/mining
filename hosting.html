@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <ul class="header-top__nav">
+                    <li><a href="">Магазин</a></li>
+                    <li><a href="">Хостинг</a></li>
+                    <li><a href="">Ремонт</a></li>
+                </ul>
+                <div class="header-top__dop">
+                    <a href="tel:+7 (499) 229 22 89" class="header-top__phone">+7 (499) 229 22 89 <span
+                            class="header-top__info"><img src="img/header/header-info.svg" alt=""></span></a>
+                    <a href="" class="header-top__call">Обратный звонок</a>
+                    <a href="" class="header-top__lk">Личный кабинет <img src="img/header/lk-dt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-main__nav">
+                    <a href="/" class="header-main__logo"><img src="img/header/logo.svg" alt=""></a>
+                    <div class="header-main__subtitle">Оборудование для майнинга</div>
+                    <ul class="header-main__menu">
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Возврат</a></li>
+                        <li><a href="">Мои заказы</a></li>
+                        <li><a href="">Qubity-блог</a></li>
+                        <li><a href="">О компании</a></li>
+                    </ul>
+                </div>
+                <div class="header-main__consult">
+                    <span>Получите консультацию в мессенджерах</span>
+                    <a href="" class="header-main__soc wa"><img src="img/header/header-wa.svg" alt=""></a>
+                    <a href="" class="header-main__soc viber"><img src="img/header/header-viber.svg" alt=""></a>
+                    <a href="" class="header-main__soc tg"><img src="img/header/header-tg.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom__menu"><img src="img/header/burger.svg" alt=""> <span>Каталог
+                        оборудования</span></div>
+                <form action="" class="header-bottom__search">
+                    <input type="text" placeholder="Поиск по товарам или категориям....">
+                    <button class="header-bottom__search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8984 15.6484L21.588 21.338" stroke="#A9A9A9" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="3" y="3" width="14.6765" height="14.757" rx="7.33823" stroke="#A9A9A9"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="header-bottom__last">
+                    <a href="/wishlist.html" class="header-bottom__link">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.900391 0.5H17.1004V18.3578C17.1004 20.035 15.231 21.0355 13.8355 20.1051L9.00039 16.8817L4.16527 20.1051C2.76969 21.0355 0.900391 20.035 0.900391 18.3578V0.5ZM2.70039 2.3V18.3578C2.70039 18.5974 2.96744 18.7404 3.16679 18.6074L8.50115 15.0512C8.80347 14.8496 9.19731 14.8496 9.49959 15.0512L14.834 18.6074C15.0334 18.7404 15.3004 18.5974 15.3004 18.3578V2.3H2.70039Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/compare.html" class="header-bottom__link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.9996 2.7002C12.4967 2.7002 12.8996 3.10313 12.8996 3.6002V20.4002H11.0996V3.6002C11.0996 3.10313 11.5026 2.7002 11.9996 2.7002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.4 7.5C20.897 7.5 21.3 7.90294 21.3 8.4V20.4H19.5V8.4C19.5 7.90294 19.903 7.5 20.4 7.5Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59031 12.2998C4.08737 12.2992 4.49081 12.7017 4.49141 13.1987L4.5002 20.3987L2.7002 20.4009L2.69141 13.2009C2.69081 12.7038 3.09325 12.3004 3.59031 12.2998Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                    </a>
+                    <a href="/cart.html" class="header-bottom__cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.00019 22.8002C9.99431 22.8002 10.8002 21.9943 10.8002 21.0002C10.8002 20.0061 9.99431 19.2002 9.00019 19.2002C8.00608 19.2002 7.2002 20.0061 7.2002 21.0002C7.2002 21.9943 8.00608 22.8002 9.00019 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.3996 22.8002C18.3937 22.8002 19.1996 21.9943 19.1996 21.0002C19.1996 20.0061 18.3937 19.2002 17.3996 19.2002C16.4055 19.2002 15.5996 20.0061 15.5996 21.0002C15.5996 21.9943 16.4055 22.8002 17.3996 22.8002Z"
+                                fill="#A9A9A9" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.13057 4.5002H1.2002V2.7002H4.8002C5.19765 2.7002 5.54804 2.9609 5.66224 3.34158L8.74913 13.6312C8.93948 14.2657 9.52345 14.7002 10.1859 14.7002H17.3899C18.0596 14.7002 18.6482 14.2562 18.8322 13.6123L20.407 8.1002H12.6002V6.3002H21.6002C21.8826 6.3002 22.1486 6.43276 22.3188 6.65822C22.4888 6.88368 22.5432 7.1759 22.4655 7.44744L20.5629 14.1068C20.1582 15.5235 18.8632 16.5002 17.3899 16.5002H10.1859C8.72856 16.5002 7.4438 15.5443 7.02504 14.1484L4.13057 4.5002Z"
+                                fill="#A9A9A9" />
+                        </svg>
+                        <span>В корзине
+                            нет
+                            товаров</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="repair-main">
+        <div class="container">
+            <div class="repair-main__wrap hosting-main__wrap">
+                <div class="repair-main__cont">
+                    <h1 class="repair-main__title">Разместите оборудование в <br> майнинг-отеле с бесперебойной <br>
+                        работой и обслуживанием 24/7
+                    </h1>
+                    <div class="repair-main__descr hosting-main__descr">
+                        <ul>
+                            <li>Оплата 3,7 Р за кВтч с НДС;</li>
+                            <li>Отслеживайте заработок с любого устройства в системе мониторинга.</li>
+                        </ul>
+                    </div>
+                    <a href="" class="repair-main__link">Рассчитать стоимость размещения и прибыль</a>
+                </div>
+                <a href="" class="thx__center hosting-main__center">
+                    <span class="thx__video-play repair-video__play">
+                        <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.6993 7.95148C15.4335 9.20018 15.4335 12.27 13.6993 13.5187L3.97621 20.5194C2.21732 21.7858 -8.91986e-08 20.2336 0 17.7358L2.1775e-06 3.73442C2.26669e-06 1.23666 2.21733 -0.315627 3.97621 0.950787L13.6993 7.95148Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <div class="thx__center-text">Посмотрите видео <br> о нашем дата-центре</div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="features">
+        <div class="container">
+            <div class="features__wrap">
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features1.svg" alt="">
+                    </div>
+                    <span>Оплата по факту <br> за размещение</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features2.svg" alt="">
+                    </div>
+                    <span>Консультации 24/7 <br> от наших инженеров</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features3.svg" alt="">
+                    </div>
+                    <span>Легальная оплата <br> за «розетку» с НДС</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features4.svg" alt="">
+                    </div>
+                    <span>Материальная <br> ответственность <br> по договору</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hosting-pay">
+        <div class="container">
+            <h2 class="hosting-pay__title">
+                Зарабатывайте от <span class="green">8 000 ₽</span> в месяц, даже <br> без опыта в майнинге и окупите
+                свои вложения <br> за <span class="blue">10 месяцев</span>
+            </h2>
+            <div class="features__wrap hosting-pay__features">
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features1.svg" alt="">
+                    </div>
+                    <span>Оплата по факту <br> за размещение</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features2.svg" alt="">
+                    </div>
+                    <span>Консультации 24/7 <br> от наших инженеров</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features3.svg" alt="">
+                    </div>
+                    <span>Легальная оплата <br> за «розетку» с НДС</span>
+                </div>
+                <div class="features__block">
+                    <div class="features__block-img">
+                        <img src="img/home/features4.svg" alt="">
+                    </div>
+                    <span>Материальная <br> ответственность <br> по договору</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hosting-situations">
+        <div class="container">
+            <h2 class="hosting-situations__title">В каких ситуациях подходит размещение в дата-центре?</h2>
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations1.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">Вы ищете стабильный источник пассивного дохода</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations2.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">Если нет условий для создания домашней фермы</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations3.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">У вас нет времени для обслуживания майнинг-оборудования
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations4.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">Вы начинающий майнер и хотите войти в майнинг с
+                            минимальными рисками</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations5.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">Вы уже не новичок и хотите увеличить свои мощности</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="hosting-situations__block">
+                        <div class="hosting-situations__img"><img src="img/hosting/hosting-situations6.jpg" alt="">
+                        </div>
+                        <div class="hosting-situations__text">У вас уже есть неудачный опыт домашнего майнинга</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hosting-data">
+        <div class="container">
+            <div class="hosting-data__subtitle">Разместите оборудование в</div>
+            <h2 class="hosting-data__title">Современном дата-центр на базе ГТЭС <br> Терешково с бесперебойной работой
+                <br> оборудования и охраной <span>24/7</span>
+            </h2>
+            <div class="hosting-data__place">
+                <div class="hosting-data__place-left">
+                    <div class="hosting-data__place-block">
+                        <div class="hosting-data__place-title"><span>4320</span> МЕСТ</div>
+                        <div class="hosting-data__place-text">в контейнере в дата-центре</div>
+                    </div>
+                    <div class="hosting-data__place-block">
+                        <div class="hosting-data__place-title"><span>170</span> МВТ</div>
+                        <div class="hosting-data__place-text">доступная мощность для <br> размещения оборудования</div>
+                    </div>
+                </div>
+                <a href="" class="hosting-data__place-link">Что входит в стоимость размещения?</a>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="home-info__block hosting-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                        <div class="home-info__text"><span>Новейшее оборудование <br>
+                                от компании General Electric </span>Мощные генетаторы для постоянной подачи
+                            электроэнергии за 3,7 КВтч, оборудование для обеспечения энергии в аварийной ситуации
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="home-info__block hosting-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                        <div class="home-info__text"><span>Техническое обслуживание 24/7</span>Ваше оборудование всегда
+                            находится под контролем инженеров, мы организуем быстрый ремонт с заменой деталей и
+                            бесплатным восстановлением ПО</div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="home-info__block hosting-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                        <div class="home-info__text"><span>Контроль температуры и система <br> пожаротушения</span>
+                            На объекте установлена новейшая система газового пожаротушения моментального реагирования,
+                            поддерживается стабильная температура 30-35 градусов</div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="home-info__block hosting-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                        <div class="home-info__text"><span>Стабильный интернет и ап-тайм 100%</span>Обеспечиваем
+                            бесперебойную работу оборудования 24/7, Ваши устройства не
+                            простаивают, не теряют характеристики из-за постоянных отключений
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-calc">
+        <div class="container">
+            <div class="home-calc__all">
+                <h2 class="home-calc__title">Забронируйте место в нашем дата центре
+                    <br> и получите прогноз вашего будущего заработка
+                </h2>
+                <div class="home-calc__features-wrap">
+                    <div class="home-calc__features">
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Чек-лист
+                                «‎ТОП5 <br> ASIC-майнеров <br> 2021 года»</span></div>
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>«‎Как
+                                оптимизировать <br> домашнюю майнинг-ферму <br> с минимальными вложениями»</span></div>
+                        <div class="home-calc__features-block"><img src="img/home/home-calc.png" alt=""><span>Подборка
+                                ASIC-майнеров <br> в 3х вариантов с расчетом <br> прибыльности </span></div>
+                        <div class="home-calc__features-dop">+ получите бонусы</div>
+                    </div>
+                </div>
+                <form action="" class="home-calc__form">
+                    <div class="home-calc__form-title">Какую сумму вы хотите инвестировать в майнинг?</div>
+                    <div class="home-calc__form-sum">
+                        <label>
+                            <input type="radio" name="calc_price">
+                            <span>До 10 000$</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="calc_price">
+                            <span>10-20 тыс.$</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="calc_price">
+                            <span>20-30 тыс. $</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="calc_price">
+                            <span>30-50 тыс. $</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="calc_price">
+                            <span>более 50 тыс. $</span>
+                        </label>
+                    </div>
+
+                    <div class="home-calc__form-main">
+                        <label class="home-calc__form-tel">
+                            <div class="home-calc__form-name">Введите номер телефона</div>
+
+                            <input type="tel" name="calc_tel" required placeholder="+7 (___)-___-__-__">
+                        </label>
+                        <div class="home-calc__form-soc">
+                            <div class="home-calc__form-name">Куда Вам выслать расчет?</div>
+                            <div class="home-calc__form-soc-wrap">
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="wa">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 18.3599L1.28443 13.798C0.458467 12.3948 0.0235906 10.7983 0.0235906 9.15823C0.0235906 4.10837 4.13196 0 9.18182 0C14.2317 0 18.34 4.10837 18.34 9.15823C18.34 14.2081 14.2317 18.3165 9.18182 18.3165C7.60832 18.3165 6.06755 17.9137 4.70452 17.1489L0 18.3599ZM4.94503 15.4828L5.22536 15.6539C6.41376 16.3794 7.78191 16.7629 9.18182 16.7629C13.3751 16.7629 16.7865 13.3515 16.7865 9.15823C16.7865 4.965 13.3751 1.55354 9.18182 1.55354C4.98859 1.55354 1.57713 4.965 1.57713 9.15823C1.57713 10.6193 1.99239 12.0382 2.7779 13.2614L2.96669 13.5553L2.22703 16.1824L4.94503 15.4828Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.60939 4.89578L6.01514 4.86338C5.82848 4.8532 5.64539 4.91557 5.50431 5.03813C5.21621 5.2883 4.75556 5.77197 4.61407 6.40225C4.40308 7.34203 4.72915 8.4928 5.57307 9.64357C6.41699 10.7943 7.98969 12.6356 10.7707 13.4219C11.6669 13.6753 12.3718 13.5045 12.9157 13.1566C13.3465 12.881 13.6435 12.4387 13.7505 11.9387L13.8454 11.4956C13.8755 11.3547 13.804 11.2118 13.6732 11.1515L11.6648 10.2257C11.5344 10.1657 11.3798 10.2036 11.2921 10.3173L10.5037 11.3394C10.4441 11.4166 10.3422 11.4472 10.2501 11.4149C9.71015 11.2251 7.90148 10.4676 6.90906 8.55597C6.86602 8.47306 6.87672 8.37243 6.93777 8.30171L7.69129 7.43C7.76828 7.34099 7.78773 7.21584 7.74147 7.10767L6.87574 5.08226C6.82965 4.97443 6.72637 4.90216 6.60939 4.89578Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="viber">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4829 4.18958L16.4778 4.16946C16.0711 2.52514 14.2374 0.7607 12.5534 0.39362L12.5344 0.389709C9.8106 -0.129903 7.04884 -0.129903 4.32563 0.389709L4.30607 0.39362C2.62264 0.7607 0.788916 2.52514 0.381607 4.16946L0.377137 4.18958C-0.125712 6.48592 -0.125712 8.81468 0.377137 11.111L0.381607 11.1311C0.77154 12.7053 2.46871 14.3887 4.08985 14.8516V16.6871C4.08985 17.3514 4.89943 17.6777 5.35982 17.1984L7.21953 15.2652C7.62287 15.2878 8.02643 15.3004 8.43 15.3004C9.8011 15.3004 11.1728 15.1708 12.5344 14.9109L12.5534 14.907C14.2374 14.54 16.0711 12.7755 16.4778 11.1312L16.4829 11.1111C16.9857 8.81468 16.9857 6.48592 16.4829 4.18958ZM15.0112 10.778C14.7397 11.8508 13.3473 13.1844 12.241 13.4308C10.7928 13.7062 9.33306 13.824 7.8748 13.7836C7.8458 13.7828 7.81792 13.794 7.79769 13.8148C7.59074 14.0272 6.43983 15.2087 6.43983 15.2087L4.99553 16.691C4.88994 16.8011 4.70444 16.7262 4.70444 16.5742V13.5335C4.70444 13.4833 4.66857 13.4406 4.61924 13.431C4.61896 13.4309 4.61868 13.4308 4.6184 13.4308C3.51213 13.1844 2.12035 11.8507 1.84825 10.778C1.39569 8.70232 1.39569 6.59817 1.84825 4.52252C2.12035 3.44977 3.51213 2.1161 4.6184 1.86971C7.14773 1.38865 9.71227 1.38865 12.241 1.86971C13.3479 2.1161 14.7397 3.44977 15.0112 4.52252C15.4643 6.59823 15.4643 8.70237 15.0112 10.778Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.8365 12.1817C10.6664 12.1301 10.5043 12.0954 10.3538 12.0329C8.79408 11.3858 7.35861 10.551 6.22155 9.27123C5.57495 8.5435 5.06885 7.72189 4.64104 6.85241C4.43817 6.44007 4.2672 6.01159 4.09293 5.5859C3.93403 5.1977 4.16808 4.79665 4.41453 4.50415C4.64579 4.22965 4.94336 4.01957 5.26564 3.86475C5.51717 3.7439 5.7653 3.81357 5.94901 4.02678C6.34615 4.48773 6.71094 4.97225 7.00634 5.50656C7.18798 5.8352 7.13814 6.23692 6.80894 6.46058C6.72893 6.51494 6.65602 6.57875 6.58148 6.64015C6.51611 6.69396 6.4546 6.74832 6.40979 6.82118C6.32788 6.95449 6.32397 7.11171 6.37671 7.25665C6.78268 8.3723 7.46695 9.23983 8.58987 9.70709C8.76955 9.78185 8.95002 9.8689 9.15703 9.84476C9.50371 9.80425 9.61596 9.42399 9.85889 9.2253C10.0964 9.03115 10.3998 9.02858 10.6556 9.19044C10.9114 9.35236 11.1594 9.52618 11.4059 9.70184C11.6479 9.87426 11.8888 10.0429 12.1121 10.2395C12.3267 10.4285 12.4006 10.6765 12.2797 10.933C12.0585 11.4028 11.7365 11.7936 11.2721 12.0431C11.141 12.1134 10.9844 12.1362 10.8365 12.1817C10.9844 12.1362 10.6664 12.13 10.8365 12.1817Z"
+                                                fill="black" />
+                                            <path
+                                                d="M8.4352 3.328C10.4754 3.38515 12.151 4.73911 12.5101 6.7561C12.5713 7.09977 12.5931 7.45115 12.6203 7.79996C12.6318 7.94668 12.5487 8.08608 12.3903 8.08798C12.2268 8.08993 12.1532 7.9531 12.1426 7.80644C12.1216 7.51613 12.107 7.22453 12.067 6.93662C11.8558 5.41684 10.6439 4.15949 9.1312 3.88968C8.90358 3.84906 8.67059 3.83839 8.44001 3.8142C8.29424 3.79889 8.10332 3.79006 8.07103 3.60887C8.04393 3.45695 8.17216 3.33599 8.31681 3.32822C8.35614 3.32604 8.3957 3.32783 8.4352 3.328C8.3957 3.32783 10.4754 3.38515 8.4352 3.328Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.535 7.34669C11.5316 7.37217 11.5298 7.43206 11.5149 7.48849C11.4608 7.69332 11.1502 7.71897 11.0787 7.51224C11.0575 7.45089 11.0543 7.38111 11.0542 7.31507C11.0535 6.88295 10.9596 6.45128 10.7417 6.07531C10.5177 5.6889 10.1755 5.36406 9.77409 5.1675C9.53138 5.04866 9.26889 4.9748 9.00289 4.93077C8.88662 4.91155 8.76912 4.89987 8.65229 4.88361C8.51071 4.86395 8.43511 4.77371 8.44182 4.6342C8.44807 4.50346 8.54362 4.40943 8.68609 4.41747C9.1543 4.44407 9.60653 4.54525 10.0228 4.76567C10.8692 5.21393 11.3528 5.9215 11.4939 6.8663C11.5003 6.9091 11.5105 6.9515 11.5138 6.99447C11.5218 7.10057 11.5268 7.20678 11.535 7.34669C11.5268 7.20678 11.5316 7.37217 11.535 7.34669Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.2666 7.29778C10.0959 7.30086 10.0046 7.20638 9.98699 7.04988C9.97475 6.94076 9.96508 6.83019 9.93905 6.72403C9.88776 6.51496 9.77662 6.32119 9.60074 6.19308C9.51771 6.13257 9.42362 6.08848 9.32506 6.06005C9.19985 6.0239 9.06983 6.03384 8.9449 6.00322C8.80924 5.96998 8.7342 5.86014 8.75555 5.73286C8.77494 5.61703 8.88763 5.52663 9.01418 5.5358C9.80518 5.5929 10.3705 6.00183 10.4512 6.93299C10.4569 6.9987 10.4636 7.06815 10.449 7.13101C10.424 7.23862 10.3443 7.29253 10.2666 7.29778C10.3443 7.29253 10.0959 7.30086 10.2666 7.29778Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="tg">
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.39489 5.55662L15.0167 0.304515C15.6489 0.076111 16.2011 0.458747 15.9963 1.41475L15.9974 1.41357L13.6781 12.3405C13.5062 13.1151 13.0458 13.3035 12.4018 12.9385L8.86982 10.3354L7.16621 11.9767C6.97784 12.165 6.8189 12.324 6.45392 12.324L6.70469 8.72955L13.2507 2.81578C13.5356 2.56501 13.1871 2.42373 12.8116 2.67332L4.72205 7.76649L1.23477 6.67863C0.477742 6.43845 0.46126 5.9216 1.39489 5.55662Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="home-calc__form-btn">Подобрать и рассчитать окупаемость + получить бонусы </button>
+                    <div class="home-calc__form-small">Или пишите - подберем Вам оборудование в мессенджере</div>
+                    <div class="home-calc__form-mess">
+                        <a class="wa" href="">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 18.3599L1.28443 13.798C0.458467 12.3948 0.0235906 10.7983 0.0235906 9.15823C0.0235906 4.10837 4.13196 0 9.18182 0C14.2317 0 18.34 4.10837 18.34 9.15823C18.34 14.2081 14.2317 18.3165 9.18182 18.3165C7.60832 18.3165 6.06755 17.9137 4.70452 17.1489L0 18.3599ZM4.94503 15.4828L5.22536 15.6539C6.41376 16.3794 7.78191 16.7629 9.18182 16.7629C13.3751 16.7629 16.7865 13.3515 16.7865 9.15823C16.7865 4.965 13.3751 1.55354 9.18182 1.55354C4.98859 1.55354 1.57713 4.965 1.57713 9.15823C1.57713 10.6193 1.99239 12.0382 2.7779 13.2614L2.96669 13.5553L2.22703 16.1824L4.94503 15.4828Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.60939 4.89578L6.01514 4.86338C5.82848 4.8532 5.64539 4.91557 5.50431 5.03813C5.21621 5.2883 4.75556 5.77197 4.61407 6.40225C4.40308 7.34203 4.72915 8.4928 5.57307 9.64357C6.41699 10.7943 7.98969 12.6356 10.7707 13.4219C11.6669 13.6753 12.3718 13.5045 12.9157 13.1566C13.3465 12.881 13.6435 12.4387 13.7505 11.9387L13.8454 11.4956C13.8755 11.3547 13.804 11.2118 13.6732 11.1515L11.6648 10.2257C11.5344 10.1657 11.3798 10.2036 11.2921 10.3173L10.5037 11.3394C10.4441 11.4166 10.3422 11.4472 10.2501 11.4149C9.71015 11.2251 7.90148 10.4676 6.90906 8.55597C6.86602 8.47306 6.87672 8.37243 6.93777 8.30171L7.69129 7.43C7.76828 7.34099 7.78773 7.21584 7.74147 7.10767L6.87574 5.08226C6.82965 4.97443 6.72637 4.90216 6.60939 4.89578Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="viber" href="">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4829 4.18958L16.4778 4.16946C16.0711 2.52514 14.2374 0.7607 12.5534 0.39362L12.5344 0.389709C9.8106 -0.129903 7.04884 -0.129903 4.32563 0.389709L4.30607 0.39362C2.62264 0.7607 0.788916 2.52514 0.381607 4.16946L0.377137 4.18958C-0.125712 6.48592 -0.125712 8.81468 0.377137 11.111L0.381607 11.1311C0.77154 12.7053 2.46871 14.3887 4.08985 14.8516V16.6871C4.08985 17.3514 4.89943 17.6777 5.35982 17.1984L7.21953 15.2652C7.62287 15.2878 8.02643 15.3004 8.43 15.3004C9.8011 15.3004 11.1728 15.1708 12.5344 14.9109L12.5534 14.907C14.2374 14.54 16.0711 12.7755 16.4778 11.1312L16.4829 11.1111C16.9857 8.81468 16.9857 6.48592 16.4829 4.18958ZM15.0112 10.778C14.7397 11.8508 13.3473 13.1844 12.241 13.4308C10.7928 13.7062 9.33306 13.824 7.8748 13.7836C7.8458 13.7828 7.81792 13.794 7.79769 13.8148C7.59074 14.0272 6.43983 15.2087 6.43983 15.2087L4.99553 16.691C4.88994 16.8011 4.70444 16.7262 4.70444 16.5742V13.5335C4.70444 13.4833 4.66857 13.4406 4.61924 13.431C4.61896 13.4309 4.61868 13.4308 4.6184 13.4308C3.51213 13.1844 2.12035 11.8507 1.84825 10.778C1.39569 8.70232 1.39569 6.59817 1.84825 4.52252C2.12035 3.44977 3.51213 2.1161 4.6184 1.86971C7.14773 1.38865 9.71227 1.38865 12.241 1.86971C13.3479 2.1161 14.7397 3.44977 15.0112 4.52252C15.4643 6.59823 15.4643 8.70237 15.0112 10.778Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.8365 12.1817C10.6664 12.1301 10.5043 12.0954 10.3538 12.0329C8.79408 11.3858 7.35861 10.551 6.22155 9.27123C5.57495 8.5435 5.06885 7.72189 4.64104 6.85241C4.43817 6.44007 4.2672 6.01159 4.09293 5.5859C3.93403 5.1977 4.16808 4.79665 4.41453 4.50415C4.64579 4.22965 4.94336 4.01957 5.26564 3.86475C5.51717 3.7439 5.7653 3.81357 5.94901 4.02678C6.34615 4.48773 6.71094 4.97225 7.00634 5.50656C7.18798 5.8352 7.13814 6.23692 6.80894 6.46058C6.72893 6.51494 6.65602 6.57875 6.58148 6.64015C6.51611 6.69396 6.4546 6.74832 6.40979 6.82118C6.32788 6.95449 6.32397 7.11171 6.37671 7.25665C6.78268 8.3723 7.46695 9.23983 8.58987 9.70709C8.76955 9.78185 8.95002 9.8689 9.15703 9.84476C9.50371 9.80425 9.61596 9.42399 9.85889 9.2253C10.0964 9.03115 10.3998 9.02858 10.6556 9.19044C10.9114 9.35236 11.1594 9.52618 11.4059 9.70184C11.6479 9.87426 11.8888 10.0429 12.1121 10.2395C12.3267 10.4285 12.4006 10.6765 12.2797 10.933C12.0585 11.4028 11.7365 11.7936 11.2721 12.0431C11.141 12.1134 10.9844 12.1362 10.8365 12.1817C10.9844 12.1362 10.6664 12.13 10.8365 12.1817Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.4352 3.328C10.4754 3.38515 12.151 4.73911 12.5101 6.7561C12.5713 7.09977 12.5931 7.45115 12.6203 7.79996C12.6318 7.94668 12.5487 8.08608 12.3903 8.08798C12.2268 8.08993 12.1532 7.9531 12.1426 7.80644C12.1216 7.51613 12.107 7.22453 12.067 6.93662C11.8558 5.41684 10.6439 4.15949 9.1312 3.88968C8.90358 3.84906 8.67059 3.83839 8.44001 3.8142C8.29424 3.79889 8.10332 3.79006 8.07103 3.60887C8.04393 3.45695 8.17216 3.33599 8.31681 3.32822C8.35614 3.32604 8.3957 3.32783 8.4352 3.328C8.3957 3.32783 10.4754 3.38515 8.4352 3.328Z"
+                                    fill="black" />
+                                <path
+                                    d="M11.535 7.34669C11.5316 7.37217 11.5298 7.43206 11.5149 7.48849C11.4608 7.69332 11.1502 7.71897 11.0787 7.51224C11.0575 7.45089 11.0543 7.38111 11.0542 7.31507C11.0535 6.88295 10.9596 6.45128 10.7417 6.07531C10.5177 5.6889 10.1755 5.36406 9.77409 5.1675C9.53138 5.04866 9.26889 4.9748 9.00289 4.93077C8.88662 4.91155 8.76912 4.89987 8.65229 4.88361C8.51071 4.86395 8.43511 4.77371 8.44182 4.6342C8.44807 4.50346 8.54362 4.40943 8.68609 4.41747C9.1543 4.44407 9.60653 4.54525 10.0228 4.76567C10.8692 5.21393 11.3528 5.9215 11.4939 6.8663C11.5003 6.9091 11.5105 6.9515 11.5138 6.99447C11.5218 7.10057 11.5268 7.20678 11.535 7.34669C11.5268 7.20678 11.5316 7.37217 11.535 7.34669Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.2666 7.29778C10.0959 7.30086 10.0046 7.20638 9.98699 7.04988C9.97475 6.94076 9.96508 6.83019 9.93905 6.72403C9.88776 6.51496 9.77662 6.32119 9.60074 6.19308C9.51771 6.13257 9.42362 6.08848 9.32506 6.06005C9.19985 6.0239 9.06983 6.03384 8.9449 6.00322C8.80924 5.96998 8.7342 5.86014 8.75555 5.73286C8.77494 5.61703 8.88763 5.52663 9.01418 5.5358C9.80518 5.5929 10.3705 6.00183 10.4512 6.93299C10.4569 6.9987 10.4636 7.06815 10.449 7.13101C10.424 7.23862 10.3443 7.29253 10.2666 7.29778C10.3443 7.29253 10.0959 7.30086 10.2666 7.29778Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="tg" href="">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.39489 5.55662L15.0167 0.304515C15.6489 0.076111 16.2011 0.458747 15.9963 1.41475L15.9974 1.41357L13.6781 12.3405C13.5062 13.1151 13.0458 13.3035 12.4018 12.9385L8.86982 10.3354L7.16621 11.9767C6.97784 12.165 6.8189 12.324 6.45392 12.324L6.70469 8.72955L13.2507 2.81578C13.5356 2.56501 13.1871 2.42373 12.8116 2.67332L4.72205 7.76649L1.23477 6.67863C0.477742 6.43845 0.46126 5.9216 1.39489 5.55662Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="repair-mob">
+        <div class="container">
+            <h2 class="repair-mob__title">Современном дата-центр на базе ГТЭС Терешково с бесперебойной работой
+                оборудования и охраной</h2>
+            <div class="repair-mob__wrap">
+                <div class="repair-mob__main">
+                    <img src="img/home/home-mobile.png" alt="">
+                </div>
+                <div class="repair-mob__block repair-mob__block1">
+                    <div class="repair-mob__img"><img src="img/home/home-info1.svg" alt=""></div>
+                    <span>Контролируйте заработок и расход с ап-таймом 100%</span>
+                </div>
+                <div class="repair-mob__block repair-mob__block2">
+                    <div class="repair-mob__img"><img src="img/home/home-info1.svg" alt=""></div>
+                    <span>Получайте выплаты по запросу по окончанию периода размещения</span>
+                </div>
+                <div class="repair-mob__block repair-mob__block3">
+                    <div class="repair-mob__img"><img src="img/home/home-info1.svg" alt=""></div>
+                    <span>Размещайте и продлевайте подписку в 1 клик</span>
+                </div>
+                <div class="repair-mob__block repair-mob__block4">
+                    <div class="repair-mob__img"><img src="img/home/home-info1.svg" alt=""></div>
+                    <span>Просматривайте статус размещенных устройств</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="repair-features hosting-features">
+        <div class="container">
+            <div class="repair-features__wrap hosting-features__wrap">
+                <div class="repair-features__top">
+                    <div class="repair-features__titles">
+                        <h2 class="repair-features__title">Размещайте ASIC-майнеры <br> на хостинге за 1 день</h2>
+                        <div class="repair-features__subtitle">Как работает хостинг Qubity?
+                        </div>
+                    </div>
+
+                </div>
+                <div class="repair-features__main">
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Заявка в 3 клика</div>
+                        <div class="repair-features__descr">Вы оформляете заявку на размещение на сайте или через личный
+                            кабинет</div>
+                    </div>
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Размещение оборудования за 1 день</div>
+                        <div class="repair-features__descr hosting-features__descr">Покупаете в нашем магазине,
+                            привозите свое самостоятельно или заказываете доставку
+                            <span><a href="/catalog.html">Выбрать ASIC-майнер</a></span>
+                        </div>
+                    </div>
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Заключение договора</div>
+                        <div class="repair-features__descr">Фиксируем сроки, стоимость размещения и материальную
+                            ответственность</div>
+                    </div>
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Отслеживаете майнинг 24/7</div>
+                        <div class="repair-features__descr hosting-features__descr">Следим за бесперебойном работой,
+                            ремонтируем и восстанавливаем ПО при необходимости. Заработок контролируете через <a
+                                href="">систему мониторинга</a></div>
+                    </div>
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Оплата по факту</div>
+                        <div class="repair-features__descr">Оплачиваете по факту по стоимости, зафиксированной в
+                            договоре</div>
+                    </div>
+                    <div class="repair-features__block">
+                        <div class="repair-features__img"><img src="img/repair/repair-features1.svg" alt=""></div>
+                        <div class="repair-features__name">Удобный вывод средств</div>
+                        <div class="repair-features__descr">Выводите прибыль удобным способом или обновляете размещение
+                            на хостинге
+                        </div>
+                    </div>
+                </div>
+                <div class="hosting-features__bottom">
+                    <div class="hosting-features__bottom__left">
+                        <div class="hosting-features__bottom-title"><span>432</span> машиноместа</div>
+                        <div class="hosting-features__bottom-subtitle">свободно по состоянию на 10 мая</div>
+                    </div>
+                    <a href="" class="hosting-features__bottom-link">Разместить ASIC-майнер на хостинге</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-offer">
+        <div class="container">
+            <div class="home-offer__wrap hosting-offer__wrap">
+                <div class="home-offer__main">
+                    <h2 class="home-offer__title hosting-offer__title">Рассчитайте окупаемость вложений в майнинг и Вашу
+                        прибыль на 2021-2023
+                        год
+                    </h2>
+
+                    <div class="home-offer__bonus">
+                        <div class="home-offer__bonus-block">
+                            <img src="img/home/home-calc.png" alt=""><span>Инструкцию «Как заработать на оборудовании
+                                <br> для майнинга, даже если курс BTC упал‎»</span>
+                        </div>
+                        <div class="home-offer__bonus-dop">+ получите бонусы</div>
+                    </div>
+                </div>
+                <form action="" class="home-offer__form hosting-offer__form">
+                    <div class="home-offer__form-top">
+                        <div class="home-offer__form-name">Какую сумму вы хотите инвестировать в майнинг?</div>
+                        <div class="home-offer__range-wrap">
+                            <div class="home-offer__range-title"> <span>40</span> шт</div>
+                            <div class="home-offer__range">
+                                <input type="range" id="count" name="count" value="40" min="1" max="200">
+                            </div>
+                            <div class="home-offer__range-before">1</div>
+                            <div class="home-offer__range-after">200</div>
+                        </div>
+                    </div>
+                    <div class="home-offer__form-main">
+
+                        <div class="home-calc__form-soc">
+                            <div class="home-calc__form-name home-offer__form-name">Куда Вам выслать расчет?</div>
+                            <div class="home-calc__form-soc-wrap home-offer__form-soc-wrap">
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="wa">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 18.3599L1.28443 13.798C0.458467 12.3948 0.0235906 10.7983 0.0235906 9.15823C0.0235906 4.10837 4.13196 0 9.18182 0C14.2317 0 18.34 4.10837 18.34 9.15823C18.34 14.2081 14.2317 18.3165 9.18182 18.3165C7.60832 18.3165 6.06755 17.9137 4.70452 17.1489L0 18.3599ZM4.94503 15.4828L5.22536 15.6539C6.41376 16.3794 7.78191 16.7629 9.18182 16.7629C13.3751 16.7629 16.7865 13.3515 16.7865 9.15823C16.7865 4.965 13.3751 1.55354 9.18182 1.55354C4.98859 1.55354 1.57713 4.965 1.57713 9.15823C1.57713 10.6193 1.99239 12.0382 2.7779 13.2614L2.96669 13.5553L2.22703 16.1824L4.94503 15.4828Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.60939 4.89578L6.01514 4.86338C5.82848 4.8532 5.64539 4.91557 5.50431 5.03813C5.21621 5.2883 4.75556 5.77197 4.61407 6.40225C4.40308 7.34203 4.72915 8.4928 5.57307 9.64357C6.41699 10.7943 7.98969 12.6356 10.7707 13.4219C11.6669 13.6753 12.3718 13.5045 12.9157 13.1566C13.3465 12.881 13.6435 12.4387 13.7505 11.9387L13.8454 11.4956C13.8755 11.3547 13.804 11.2118 13.6732 11.1515L11.6648 10.2257C11.5344 10.1657 11.3798 10.2036 11.2921 10.3173L10.5037 11.3394C10.4441 11.4166 10.3422 11.4472 10.2501 11.4149C9.71015 11.2251 7.90148 10.4676 6.90906 8.55597C6.86602 8.47306 6.87672 8.37243 6.93777 8.30171L7.69129 7.43C7.76828 7.34099 7.78773 7.21584 7.74147 7.10767L6.87574 5.08226C6.82965 4.97443 6.72637 4.90216 6.60939 4.89578Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="viber">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4829 4.18958L16.4778 4.16946C16.0711 2.52514 14.2374 0.7607 12.5534 0.39362L12.5344 0.389709C9.8106 -0.129903 7.04884 -0.129903 4.32563 0.389709L4.30607 0.39362C2.62264 0.7607 0.788916 2.52514 0.381607 4.16946L0.377137 4.18958C-0.125712 6.48592 -0.125712 8.81468 0.377137 11.111L0.381607 11.1311C0.77154 12.7053 2.46871 14.3887 4.08985 14.8516V16.6871C4.08985 17.3514 4.89943 17.6777 5.35982 17.1984L7.21953 15.2652C7.62287 15.2878 8.02643 15.3004 8.43 15.3004C9.8011 15.3004 11.1728 15.1708 12.5344 14.9109L12.5534 14.907C14.2374 14.54 16.0711 12.7755 16.4778 11.1312L16.4829 11.1111C16.9857 8.81468 16.9857 6.48592 16.4829 4.18958ZM15.0112 10.778C14.7397 11.8508 13.3473 13.1844 12.241 13.4308C10.7928 13.7062 9.33306 13.824 7.8748 13.7836C7.8458 13.7828 7.81792 13.794 7.79769 13.8148C7.59074 14.0272 6.43983 15.2087 6.43983 15.2087L4.99553 16.691C4.88994 16.8011 4.70444 16.7262 4.70444 16.5742V13.5335C4.70444 13.4833 4.66857 13.4406 4.61924 13.431C4.61896 13.4309 4.61868 13.4308 4.6184 13.4308C3.51213 13.1844 2.12035 11.8507 1.84825 10.778C1.39569 8.70232 1.39569 6.59817 1.84825 4.52252C2.12035 3.44977 3.51213 2.1161 4.6184 1.86971C7.14773 1.38865 9.71227 1.38865 12.241 1.86971C13.3479 2.1161 14.7397 3.44977 15.0112 4.52252C15.4643 6.59823 15.4643 8.70237 15.0112 10.778Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.8365 12.1817C10.6664 12.1301 10.5043 12.0954 10.3538 12.0329C8.79408 11.3858 7.35861 10.551 6.22155 9.27123C5.57495 8.5435 5.06885 7.72189 4.64104 6.85241C4.43817 6.44007 4.2672 6.01159 4.09293 5.5859C3.93403 5.1977 4.16808 4.79665 4.41453 4.50415C4.64579 4.22965 4.94336 4.01957 5.26564 3.86475C5.51717 3.7439 5.7653 3.81357 5.94901 4.02678C6.34615 4.48773 6.71094 4.97225 7.00634 5.50656C7.18798 5.8352 7.13814 6.23692 6.80894 6.46058C6.72893 6.51494 6.65602 6.57875 6.58148 6.64015C6.51611 6.69396 6.4546 6.74832 6.40979 6.82118C6.32788 6.95449 6.32397 7.11171 6.37671 7.25665C6.78268 8.3723 7.46695 9.23983 8.58987 9.70709C8.76955 9.78185 8.95002 9.8689 9.15703 9.84476C9.50371 9.80425 9.61596 9.42399 9.85889 9.2253C10.0964 9.03115 10.3998 9.02858 10.6556 9.19044C10.9114 9.35236 11.1594 9.52618 11.4059 9.70184C11.6479 9.87426 11.8888 10.0429 12.1121 10.2395C12.3267 10.4285 12.4006 10.6765 12.2797 10.933C12.0585 11.4028 11.7365 11.7936 11.2721 12.0431C11.141 12.1134 10.9844 12.1362 10.8365 12.1817C10.9844 12.1362 10.6664 12.13 10.8365 12.1817Z"
+                                                fill="black" />
+                                            <path
+                                                d="M8.4352 3.328C10.4754 3.38515 12.151 4.73911 12.5101 6.7561C12.5713 7.09977 12.5931 7.45115 12.6203 7.79996C12.6318 7.94668 12.5487 8.08608 12.3903 8.08798C12.2268 8.08993 12.1532 7.9531 12.1426 7.80644C12.1216 7.51613 12.107 7.22453 12.067 6.93662C11.8558 5.41684 10.6439 4.15949 9.1312 3.88968C8.90358 3.84906 8.67059 3.83839 8.44001 3.8142C8.29424 3.79889 8.10332 3.79006 8.07103 3.60887C8.04393 3.45695 8.17216 3.33599 8.31681 3.32822C8.35614 3.32604 8.3957 3.32783 8.4352 3.328C8.3957 3.32783 10.4754 3.38515 8.4352 3.328Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.535 7.34669C11.5316 7.37217 11.5298 7.43206 11.5149 7.48849C11.4608 7.69332 11.1502 7.71897 11.0787 7.51224C11.0575 7.45089 11.0543 7.38111 11.0542 7.31507C11.0535 6.88295 10.9596 6.45128 10.7417 6.07531C10.5177 5.6889 10.1755 5.36406 9.77409 5.1675C9.53138 5.04866 9.26889 4.9748 9.00289 4.93077C8.88662 4.91155 8.76912 4.89987 8.65229 4.88361C8.51071 4.86395 8.43511 4.77371 8.44182 4.6342C8.44807 4.50346 8.54362 4.40943 8.68609 4.41747C9.1543 4.44407 9.60653 4.54525 10.0228 4.76567C10.8692 5.21393 11.3528 5.9215 11.4939 6.8663C11.5003 6.9091 11.5105 6.9515 11.5138 6.99447C11.5218 7.10057 11.5268 7.20678 11.535 7.34669C11.5268 7.20678 11.5316 7.37217 11.535 7.34669Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.2666 7.29778C10.0959 7.30086 10.0046 7.20638 9.98699 7.04988C9.97475 6.94076 9.96508 6.83019 9.93905 6.72403C9.88776 6.51496 9.77662 6.32119 9.60074 6.19308C9.51771 6.13257 9.42362 6.08848 9.32506 6.06005C9.19985 6.0239 9.06983 6.03384 8.9449 6.00322C8.80924 5.96998 8.7342 5.86014 8.75555 5.73286C8.77494 5.61703 8.88763 5.52663 9.01418 5.5358C9.80518 5.5929 10.3705 6.00183 10.4512 6.93299C10.4569 6.9987 10.4636 7.06815 10.449 7.13101C10.424 7.23862 10.3443 7.29253 10.2666 7.29778C10.3443 7.29253 10.0959 7.30086 10.2666 7.29778Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="calc_soc">
+                                    <span class="tg">
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.39489 5.55662L15.0167 0.304515C15.6489 0.076111 16.2011 0.458747 15.9963 1.41475L15.9974 1.41357L13.6781 12.3405C13.5062 13.1151 13.0458 13.3035 12.4018 12.9385L8.86982 10.3354L7.16621 11.9767C6.97784 12.165 6.8189 12.324 6.45392 12.324L6.70469 8.72955L13.2507 2.81578C13.5356 2.56501 13.1871 2.42373 12.8116 2.67332L4.72205 7.76649L1.23477 6.67863C0.477742 6.43845 0.46126 5.9216 1.39489 5.55662Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <label class="home-calc__form-tel home-offer__form-tel">
+                            <div class="home-calc__form-name home-offer__form-name">Введите номер телефона</div>
+
+                            <input type="tel" name="calc_tel" required placeholder="+7 (___)-___-__-__">
+                        </label>
+
+
+                    </div>
+                    <button class="home-offer__form-btn">Получить прайс-лист + бонусы</button>
+                    <div class="home-calc__form-small home-offer__form-small">Или пишите - подберем Вам оборудование в
+                        мессенджере</div>
+                    <div class="home-calc__form-mess">
+                        <a class="wa" href="">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 18.3599L1.28443 13.798C0.458467 12.3948 0.0235906 10.7983 0.0235906 9.15823C0.0235906 4.10837 4.13196 0 9.18182 0C14.2317 0 18.34 4.10837 18.34 9.15823C18.34 14.2081 14.2317 18.3165 9.18182 18.3165C7.60832 18.3165 6.06755 17.9137 4.70452 17.1489L0 18.3599ZM4.94503 15.4828L5.22536 15.6539C6.41376 16.3794 7.78191 16.7629 9.18182 16.7629C13.3751 16.7629 16.7865 13.3515 16.7865 9.15823C16.7865 4.965 13.3751 1.55354 9.18182 1.55354C4.98859 1.55354 1.57713 4.965 1.57713 9.15823C1.57713 10.6193 1.99239 12.0382 2.7779 13.2614L2.96669 13.5553L2.22703 16.1824L4.94503 15.4828Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.60939 4.89578L6.01514 4.86338C5.82848 4.8532 5.64539 4.91557 5.50431 5.03813C5.21621 5.2883 4.75556 5.77197 4.61407 6.40225C4.40308 7.34203 4.72915 8.4928 5.57307 9.64357C6.41699 10.7943 7.98969 12.6356 10.7707 13.4219C11.6669 13.6753 12.3718 13.5045 12.9157 13.1566C13.3465 12.881 13.6435 12.4387 13.7505 11.9387L13.8454 11.4956C13.8755 11.3547 13.804 11.2118 13.6732 11.1515L11.6648 10.2257C11.5344 10.1657 11.3798 10.2036 11.2921 10.3173L10.5037 11.3394C10.4441 11.4166 10.3422 11.4472 10.2501 11.4149C9.71015 11.2251 7.90148 10.4676 6.90906 8.55597C6.86602 8.47306 6.87672 8.37243 6.93777 8.30171L7.69129 7.43C7.76828 7.34099 7.78773 7.21584 7.74147 7.10767L6.87574 5.08226C6.82965 4.97443 6.72637 4.90216 6.60939 4.89578Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="viber" href="">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4829 4.18958L16.4778 4.16946C16.0711 2.52514 14.2374 0.7607 12.5534 0.39362L12.5344 0.389709C9.8106 -0.129903 7.04884 -0.129903 4.32563 0.389709L4.30607 0.39362C2.62264 0.7607 0.788916 2.52514 0.381607 4.16946L0.377137 4.18958C-0.125712 6.48592 -0.125712 8.81468 0.377137 11.111L0.381607 11.1311C0.77154 12.7053 2.46871 14.3887 4.08985 14.8516V16.6871C4.08985 17.3514 4.89943 17.6777 5.35982 17.1984L7.21953 15.2652C7.62287 15.2878 8.02643 15.3004 8.43 15.3004C9.8011 15.3004 11.1728 15.1708 12.5344 14.9109L12.5534 14.907C14.2374 14.54 16.0711 12.7755 16.4778 11.1312L16.4829 11.1111C16.9857 8.81468 16.9857 6.48592 16.4829 4.18958ZM15.0112 10.778C14.7397 11.8508 13.3473 13.1844 12.241 13.4308C10.7928 13.7062 9.33306 13.824 7.8748 13.7836C7.8458 13.7828 7.81792 13.794 7.79769 13.8148C7.59074 14.0272 6.43983 15.2087 6.43983 15.2087L4.99553 16.691C4.88994 16.8011 4.70444 16.7262 4.70444 16.5742V13.5335C4.70444 13.4833 4.66857 13.4406 4.61924 13.431C4.61896 13.4309 4.61868 13.4308 4.6184 13.4308C3.51213 13.1844 2.12035 11.8507 1.84825 10.778C1.39569 8.70232 1.39569 6.59817 1.84825 4.52252C2.12035 3.44977 3.51213 2.1161 4.6184 1.86971C7.14773 1.38865 9.71227 1.38865 12.241 1.86971C13.3479 2.1161 14.7397 3.44977 15.0112 4.52252C15.4643 6.59823 15.4643 8.70237 15.0112 10.778Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.8365 12.1817C10.6664 12.1301 10.5043 12.0954 10.3538 12.0329C8.79408 11.3858 7.35861 10.551 6.22155 9.27123C5.57495 8.5435 5.06885 7.72189 4.64104 6.85241C4.43817 6.44007 4.2672 6.01159 4.09293 5.5859C3.93403 5.1977 4.16808 4.79665 4.41453 4.50415C4.64579 4.22965 4.94336 4.01957 5.26564 3.86475C5.51717 3.7439 5.7653 3.81357 5.94901 4.02678C6.34615 4.48773 6.71094 4.97225 7.00634 5.50656C7.18798 5.8352 7.13814 6.23692 6.80894 6.46058C6.72893 6.51494 6.65602 6.57875 6.58148 6.64015C6.51611 6.69396 6.4546 6.74832 6.40979 6.82118C6.32788 6.95449 6.32397 7.11171 6.37671 7.25665C6.78268 8.3723 7.46695 9.23983 8.58987 9.70709C8.76955 9.78185 8.95002 9.8689 9.15703 9.84476C9.50371 9.80425 9.61596 9.42399 9.85889 9.2253C10.0964 9.03115 10.3998 9.02858 10.6556 9.19044C10.9114 9.35236 11.1594 9.52618 11.4059 9.70184C11.6479 9.87426 11.8888 10.0429 12.1121 10.2395C12.3267 10.4285 12.4006 10.6765 12.2797 10.933C12.0585 11.4028 11.7365 11.7936 11.2721 12.0431C11.141 12.1134 10.9844 12.1362 10.8365 12.1817C10.9844 12.1362 10.6664 12.13 10.8365 12.1817Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.4352 3.328C10.4754 3.38515 12.151 4.73911 12.5101 6.7561C12.5713 7.09977 12.5931 7.45115 12.6203 7.79996C12.6318 7.94668 12.5487 8.08608 12.3903 8.08798C12.2268 8.08993 12.1532 7.9531 12.1426 7.80644C12.1216 7.51613 12.107 7.22453 12.067 6.93662C11.8558 5.41684 10.6439 4.15949 9.1312 3.88968C8.90358 3.84906 8.67059 3.83839 8.44001 3.8142C8.29424 3.79889 8.10332 3.79006 8.07103 3.60887C8.04393 3.45695 8.17216 3.33599 8.31681 3.32822C8.35614 3.32604 8.3957 3.32783 8.4352 3.328C8.3957 3.32783 10.4754 3.38515 8.4352 3.328Z"
+                                    fill="black" />
+                                <path
+                                    d="M11.535 7.34669C11.5316 7.37217 11.5298 7.43206 11.5149 7.48849C11.4608 7.69332 11.1502 7.71897 11.0787 7.51224C11.0575 7.45089 11.0543 7.38111 11.0542 7.31507C11.0535 6.88295 10.9596 6.45128 10.7417 6.07531C10.5177 5.6889 10.1755 5.36406 9.77409 5.1675C9.53138 5.04866 9.26889 4.9748 9.00289 4.93077C8.88662 4.91155 8.76912 4.89987 8.65229 4.88361C8.51071 4.86395 8.43511 4.77371 8.44182 4.6342C8.44807 4.50346 8.54362 4.40943 8.68609 4.41747C9.1543 4.44407 9.60653 4.54525 10.0228 4.76567C10.8692 5.21393 11.3528 5.9215 11.4939 6.8663C11.5003 6.9091 11.5105 6.9515 11.5138 6.99447C11.5218 7.10057 11.5268 7.20678 11.535 7.34669C11.5268 7.20678 11.5316 7.37217 11.535 7.34669Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.2666 7.29778C10.0959 7.30086 10.0046 7.20638 9.98699 7.04988C9.97475 6.94076 9.96508 6.83019 9.93905 6.72403C9.88776 6.51496 9.77662 6.32119 9.60074 6.19308C9.51771 6.13257 9.42362 6.08848 9.32506 6.06005C9.19985 6.0239 9.06983 6.03384 8.9449 6.00322C8.80924 5.96998 8.7342 5.86014 8.75555 5.73286C8.77494 5.61703 8.88763 5.52663 9.01418 5.5358C9.80518 5.5929 10.3705 6.00183 10.4512 6.93299C10.4569 6.9987 10.4636 7.06815 10.449 7.13101C10.424 7.23862 10.3443 7.29253 10.2666 7.29778C10.3443 7.29253 10.0959 7.30086 10.2666 7.29778Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="tg" href="">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.39489 5.55662L15.0167 0.304515C15.6489 0.076111 16.2011 0.458747 15.9963 1.41475L15.9974 1.41357L13.6781 12.3405C13.5062 13.1151 13.0458 13.3035 12.4018 12.9385L8.86982 10.3354L7.16621 11.9767C6.97784 12.165 6.8189 12.324 6.45392 12.324L6.70469 8.72955L13.2507 2.81578C13.5356 2.56501 13.1871 2.42373 12.8116 2.67332L4.72205 7.76649L1.23477 6.67863C0.477742 6.43845 0.46126 5.9216 1.39489 5.55662Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="hosting-maining">
+        <div class="container">
+            <h1 class="hosting-maining__title">Майнинг криптовалюты <span>24/7</span> в<br> современном Qubiti-хостинге
+                полностью<br> легально и на Ваших условиях</h1>
+            <div class="hosting-maining__subtitle">и получите заключение после бесплатной диагностики уже через 1 день
+            </div>
+            <div class="hosting-maining__wrap">
+                <div class="hosting-maining__main">
+
+                    <div class="home-info__block repair-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info2.svg" alt=""></div>
+                        <div class="home-info__text"><span>5 удобных способов оплаты </span>Наличные, банковской картой,
+                            BTC по курсу Binance, USDT, безналичный расчет + 15%
+                        </div>
+                    </div>
+
+
+                    <div class="home-info__block repair-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                        <div class="home-info__text"><span>Возможность забрать оборудование в любой момент</span>Вы
+                            можете расторгнуть договор и получить свое оборудование, когда захотите</div>
+                    </div>
+
+
+                    <div class="home-info__block repair-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info5.svg" alt=""></div>
+                        <div class="home-info__text"><span>Trade-in выкуп вашего старого оборудования или обмен на
+                                новое</span>Если Ваше оборудование устарело, то мы можем выкупить его или обменять на
+                            новое из нашего магазина
+                        </div>
+                    </div>
+
+
+                    <div class="home-info__block repair-video__block">
+                        <div class="home-info__img"><img src="img/home/home-info3.svg" alt=""></div>
+                        <div class="home-info__text"><span>Легальная оплата за электроэнергию напрямую с НДС</span>Все
+                            сделки проводим через юридическое лицо и за каждую платим налоги <a href="">Смотреть
+                                документы</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hosting-maining__img"><img src="img/hosting/hosting-maining.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="repair-reviews hosting-reviews">
+        <div class="container">
+            <div class="repair-reviews__top">
+                <h2 class="repair-reviews__title">Заработали для своих клиентов <br> уже <span>40.000$</span> за 1 год
+                </h2>
+                <div class="repair-reviews__subtitle">Вот что говорят наши клиенты</div>
+                <div class="repair-reviews__cloud">999+<span>Отремонтировано
+                        майнеров</span></div>
+            </div>
+            <div class="repair-reviews__slider">
+                <div class="repair-reviews__slide">
+                    <div class="repair-reviews__wrapper">
+                        <div class="repair-reviews__main">
+                            <div class="repair-reviews__name">Олег В.</div>
+                            <div class="repair-reviews__attr"><span>Оборудование:</span>ANTMINER S9</div>
+                            <div class="repair-reviews__attr"><span>Поломка:</span>не работали платы управления</div>
+                            <div class="repair-reviews__attr"><span>Срок:</span>3 дня</div>
+                            <div class="repair-reviews__text">
+                                <p>Не знал, почему ASIC начал работать с перебоями, отремонтировали за 3 дня, стал
+                                    работать лучше, чем раньше</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю)) За упаковку и отправку отдельное
+                                    спасибо! Сервис на высоте!...</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю)) За упаковку и отправку отдельное
+                                    спасибо! Сервис на высоте!...</p>
+                            </div>
+                            <a href="" class="repair-reviews__all" data-hide="1">Читать полностью</a>
+                        </div>
+                        <div class="repair-reviews__img">
+                            <img src="img/repair/repair-reviews-video.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="repair-reviews__slide">
+                    <div class="repair-reviews__wrapper">
+                        <div class="repair-reviews__main">
+                            <div class="repair-reviews__name">Олег В.</div>
+                            <div class="repair-reviews__attr"><span>Оборудование:</span>ANTMINER S9</div>
+                            <div class="repair-reviews__attr"><span>Поломка:</span>не работали платы управления</div>
+                            <div class="repair-reviews__attr"><span>Срок:</span>3 дня</div>
+                            <div class="repair-reviews__text">
+                                <p>Не знал, почему ASIC начал работать с перебоями, отремонтировали за 3 дня, стал
+                                    работать лучше, чем раньше</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю))</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю)) За упаковку и отправку отдельное
+                                    спасибо! Сервис на высоте!...</p>
+                            </div>
+                            <a href="" class="repair-reviews__all" data-hide="1">Читать полностью</a>
+                            <a href="" class="repair-reviews__listen" data-play="0"><img
+                                    src="img/repair/repair-reviews-play.svg" alt=""><span>Слушать</span></a>
+                            <audio>
+                                <source src="./audio/Poets Of The Fall - My Dark Disquiet.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair-reviews__slide">
+                    <div class="repair-reviews__wrapper">
+                        <div class="repair-reviews__video">
+                            <a href="" class="thx__video">
+                                <img src="img/repair/repair-reviews-video.jpg" alt="">
+                                <div class="thx__center">
+                                    <span class="thx__video-play repair-video__play">
+                                        <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.6993 7.95148C15.4335 9.20018 15.4335 12.27 13.6993 13.5187L3.97621 20.5194C2.21732 21.7858 -8.91986e-08 20.2336 0 17.7358L2.1775e-06 3.73442C2.26669e-06 1.23666 2.21733 -0.315627 3.97621 0.950787L13.6993 7.95148Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <div class="thx__center-text"><span>Видеотзыв от:</span> <br> Александр Владыко
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair-reviews__slide">
+                    <div class="repair-reviews__wrapper">
+                        <div class="repair-reviews__main">
+                            <div class="repair-reviews__name">Олег В.</div>
+                            <div class="repair-reviews__attr"><span>Оборудование:</span>ANTMINER S9</div>
+                            <div class="repair-reviews__attr"><span>Поломка:</span>не работали платы управления</div>
+                            <div class="repair-reviews__attr"><span>Срок:</span>3 дня</div>
+                            <div class="repair-reviews__text">
+                                <p>Не знал, почему ASIC начал работать с перебоями, отремонтировали за 3 дня, стал
+                                    работать лучше, чем раньше</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю)) За упаковку и отправку отдельное
+                                    спасибо! Сервис на высоте!...</p>
+                                <p>Все хорошо. Машинки получил, уже трудятся во всю)) За упаковку и отправку отдельное
+                                    спасибо! Сервис на высоте!...</p>
+                            </div>
+                            <a href="" class="repair-reviews__all" data-hide="1">Читать полностью</a>
+                        </div>
+                        <div class="repair-reviews__img">
+                            <img src="img/repair/repair-reviews-video.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="repair-reviews__bottom">
+                <div class="repair-reviews__arrow repair-reviews__prev"><img src="img/repair/prev.svg" alt=""></div>
+                <div class="repair-reviews__arrow repair-reviews__next"><img src="img/repair/next.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-info repair-video">
+        <div class="container">
+            <h2 class="home-info__title repair-info__title">Работаем легально и прозрачно уже 10 лет <br> на рынке
+                майнеров в России</h2>
+            <div class="repair-info__subtitle">Предоставляем полный цикл услуг - магазин, хостинг, сервисный центр
+            </div>
+            <div class="home-info__cont-block active">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Собственный сервисный <br> центр по ремонту ASIC </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Команда профессионалов <br> с опытом в майнинге 5+
+                                    лет</span></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Дата-центр на 4320 майнеров <br> с охраной 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="home-info__block repair-video__block">
+                            <div class="home-info__img"><img src="img/home/home-info1.svg" alt=""></div>
+                            <div class="home-info__text"><span>Налаженная цепочка поставок <br> напрямую из Китая</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="repair-video__video">
+                <a href="" class="thx__video">
+                    <img src="img/thx/thx-video-bg.jpg" alt="">
+                    <div class="thx__center">
+                        <span class="thx__video-play repair-video__play">
+                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.6993 7.95148C15.4335 9.20018 15.4335 12.27 13.6993 13.5187L3.97621 20.5194C2.21732 21.7858 -8.91986e-08 20.2336 0 17.7358L2.1775e-06 3.73442C2.26669e-06 1.23666 2.21733 -0.315627 3.97621 0.950787L13.6993 7.95148Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <div class="thx__center-text">Посмотрите видео <br> о команде Qubity</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="home-faq">
+        <div class="container">
+            <h2 class="home-faq__title">Часто задаваемые <br> вопросы</h2>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Вы работаете официально?</div>
+                <div class="home-faq__cont">1</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Блок питания входит в стоимость?</div>
+                <div class="home-faq__cont">2</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Какие гарантии даёт Ваша компания?</div>
+                <div class="home-faq__cont">3</div>
+            </div>
+            <div class="home-faq__block">
+                <div class="home-faq__name">Вы работаете по договору? </div>
+                <div class="home-faq__cont">4</div>
+            </div>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="container">
+            <div class="quiz__subtitle">Сомневаетесь в выборе модели?</div>
+            <h2 class="quiz__title">
+                Пройдите тест и получите подборку <br> ASIC-майнеров с окупаемостью <span class="month">за 9-12</span>
+                месяцев <br> и прибылью от <span class="price">40.000</span> в
+                месяц
+            </h2>
+            <div class="quiz__all">
+                <div class="quiz__main">
+                    <div class="quiz__slides">
+                        <div class="quiz__slide active">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz1">
+                                    <span>Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="quiz__slide">
+                            <div class="quiz__main-subtitle">Пройдите тест и получите расчет Вашей прибыли и
+                                окупаемости
+                                ASIC-майнеров</div>
+                            <div class="quiz__main-title">2 Какой у Вас опыт в майнинге <br> криптовалюты?</div>
+                            <div class="quiz__main-wrap">
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 У меня уже была или есть своя майнинг-ферма </span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="quiz2">
+                                    <span>2 Я новичок</span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quiz__controls">
+                        <div class="quiz__timeline">
+                            <div class="quiz__timeline-title">Готово: <span>25%</span></div>
+                            <div class="quiz__timeline-line">
+                                <span style="width: 25%;"></span>
+                            </div>
+                        </div>
+                        <div class="quiz__right">
+                            <div class="quiz__btns">
+                                <button class="quiz__prev"><img src="img/home/quiz-prev.png" alt=""></button>
+                                <button class="quiz__next">Далее</button>
+                            </div>
+                            <span>или нажмите Enter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__col">
+                    <div class="quiz__autor">
+                        <div class="quiz__autor-img"><img src="img/home/quiz-autor.png" alt=""></div>
+                        <div class="quiz__autor-text"><span>Максим Поляков</span>Менеджер</div>
+                    </div>
+                    <div class="quiz__quote">Ответьте на все вопросы и получите подборку ASIC-майнеров с окупаемостью за
+                        9-12 месяцев и прибылью от 40.000 в месяц + получите бонусы</div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Чек-лист «ТОП5 ASIC-майнеров 2021 года»</span>
+                    </div>
+                    <div class="quiz__prize">
+                        <div class="quiz__prize-img"><img src="img/home/quiz-prize.png" alt=""></div>
+                        <span>Как оптимизировать майнинг-ферму</span>
+                    </div>
+                    <div class="quiz__marq">Сделано в Marquiz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer__top-title">Получите консультацию <span>по телефону или в мессенджерах</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="tel:+7 (499) 229-22-89" class="footer__top-phone">+7 (499) 229-22-89</a>
+                        <a href="mailto:order@qubity.ru" class="footer__top-mail">order@qubity.ru</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer__top-soc">
+                            <a class="wa" href=""><img src="img/header/header-wa.svg" alt=""></a>
+                            <a class="viber" href=""><img src="img/header/header-viber.svg" alt=""></a>
+                            <a class="tg" href=""><img src="img/header/header-tg.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Магазин</a>
+                        <a href="" class="footer__main-link">Доставка</a>
+                        <a href="" class="footer__main-link">Оплата</a>
+                        <a href="" class="footer__main-link">Обмен и возврат</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Сервисный центр</a>
+                        <a href="" class="footer__main-link">Условия ремонта</a>
+                        <a href="" class="footer__main-link">Условия гарантии</a>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <a href="" class="footer__main-link footer__main-link_bold">Хостинг</a>
+                        <a href="" class="footer__main-link">Панель управления</a>
+                        <a href="" class="footer__main-link">Мои устройства</a>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="footer__main-adresses">
+                            <div class="footer__main-adress">Офис в Москве:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                            <div class="footer__main-adress">Офис в Иркутске:<span><img
+                                        src="img/footer/footer-location.png" alt=""> ул. Пресненская Набережная, д.
+                                    12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__courses">
+                <div class="footer__courses-title">Курсы криптовалют <span>(на 25.04.2021)</span></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses1.png" alt=""></div>
+                            <div class="footer__courses-name">LTC</div>
+                            <div class="footer__courses-full">Litecoin</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">376,07 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses2.png" alt=""></div>
+                            <div class="footer__courses-name">XRP</div>
+                            <div class="footer__courses-full">Ripple</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">1 489 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses3.png" alt=""></div>
+                            <div class="footer__courses-name">BTC</div>
+                            <div class="footer__courses-full">Bitcoin</div>
+                            <div class="footer__courses-proc">15,64%</div>
+                            <div class="footer__courses-price">56 468,40$</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses4.png" alt=""></div>
+                            <div class="footer__courses-name">BCH</div>
+                            <div class="footer__courses-full">Bitcoin Cash</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">1 455,68 $</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer__courses-block">
+                            <div class="footer__courses-img"><img src="img/footer/footer-courses5.png" alt=""></div>
+                            <div class="footer__courses-name">ETH</div>
+                            <div class="footer__courses-full">Ethereum</div>
+                            <div class="footer__courses-proc">5,64%</div>
+                            <div class="footer__courses-price">4 305,43 $</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__end">
+                <div class="row">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="footer__end-text">©2021 ООО «Кьюбити Майнинг»»</div>
+                    </div>
+                    <div class="col-md-7 col-lg-6">
+                        <div class="footer__end-links">
+                            <a href="/rekv.html">Реквизиты</a>
+                            <a href="/privacy.html">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer__end-text footer__end-text_right">Разработка сайта – <a
+                                href="">NameCompany</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

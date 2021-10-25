@@ -24,6 +24,12 @@
                 .closest('.product-info').find('.product-info__cont-block').removeClass('active').eq($(this).index()).addClass('active');
         });
 
+        $('.compare__tabs').on('click', 'button:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.compare').find('.compare__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
 
 
     });
