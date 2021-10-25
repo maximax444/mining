@@ -246,6 +246,30 @@ $('.catalog-sort__filter').on('click', function () {
 $('.catalog-filter__btn, .catalog-filter__close').on('click', function () {
     $('.catalog-filter').removeClass('active');
 });
+$('.header-bottom__search-btn').on('click', function (e) {
+    if (!$(this).hasClass('active') && $(window).width() <= 992) {
+        e.preventDefault();
+        $(this).closest('.header-bottom__search').find('input').show();
+        $(this).addClass('active');
+    }
+});
+$('.header-bottom__menu').on('click', function () {
+    $('.menu__first').toggleClass('active');
+    $(this).toggleClass('active');
+});
+$('.menu__first a').on('click', function (e) {
+    if ($(window).width() <= 992) {
+        e.preventDefault();
+        $(this).next('.menu__second').show();
+        $(this).next('.menu__third').hide();
+    }
+});
+$('.menu__second a').on('click', function (e) {
+    if ($(window).width() <= 992) {
+        e.preventDefault();
+        $(this).next('.menu__third').show();
+    }
+});
 $('.modal-open__standart').on('click', function (e) {
     e.preventDefault();
     $('.overlay__standart').addClass('active');
