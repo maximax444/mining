@@ -30,6 +30,12 @@
                 .closest('.compare').find('.compare__cont-block').removeClass('active').eq($(this).index()).addClass('active');
         });
 
+        $('.lk__tabs').on('click', 'button:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.lk').find('.lk__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
 
 
     });
@@ -253,6 +259,16 @@ $('.modal-open__black').on('click', function (e) {
 $('.modal-open__click').on('click', function (e) {
     e.preventDefault();
     $('.overlay__click').addClass('active');
+    $('body').css("overflow", "hidden");
+});
+$('.modal-open__adress').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay__adress').addClass('active');
+    $('body').css("overflow", "hidden");
+});
+$('.modal-open__adressadd').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay__adressadd').addClass('active');
     $('body').css("overflow", "hidden");
 });
 $('.modal-open__host').on('click', function (e) {

@@ -1,0 +1,200 @@
+.lk
+    padding-top: 32px
+    padding-bottom: 120px
+    &__title
+        margin-bottom: 9px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+    &__tabs
+        display: flex
+        border-bottom: 1px solid #F4F5F6
+        button
+            margin-right: 32px
+            border: 0
+            background-color: #fff
+            padding: 15px 0
+            border-bottom: 2px solid transparent
+            &.active, &:hover
+                border-bottom: 2px solid #1A1C23
+    &__cont
+        &-block
+            display: none
+            &.active
+                display: block
+    &-pass
+        padding-top: 32px
+        &__title
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #1A1C23
+            margin-bottom: 24px
+        form
+            input
+                margin-bottom: 16px
+                width: 625px
+                display: block
+                max-width: 100%
+                background: #F4F5F6
+                border-radius: 100px
+                padding: 18px 20px
+                font-family: Suisse Intl
+                font-size: 14px
+                line-height: 20px
+                border: 0
+                &:focus
+                    outline: none
+            button
+                padding: 18px 47px
+                font-size: 18px
+                line-height: 20px
+                background: #1A56FF
+                border: 1px solid #1A56FF
+                border-radius: 80px
+                color: #FFFFFF
+                transition: all 0.3s
+                &:hover
+                    background-color: transparent
+                    color: #1A56FF
+                &:disabled
+                    background-color: transparent
+                    color: #A9A9A9
+                    border: 1px solid #F4F5F6
+    &-personal
+        padding-top: 32px
+        form
+            input
+                margin-bottom: 16px
+                width: 625px
+                display: block
+                max-width: 100%
+                background: #F4F5F6
+                border-radius: 100px
+                padding: 18px 20px
+                padding-top: 26px
+                padding-bottom: 10px
+                font-family: Suisse Intl
+                font-size: 14px
+                line-height: 20px
+                border: 0
+                &:focus
+                    outline: none
+            label
+                max-width: 100%
+                position: relative
+                &.date
+                    position: relative
+                    &::after
+                        content: ""
+                        width: 50px
+                        height: 50px
+                        position: absolute
+                        right: 0
+                        display: block
+                        pointer-events: none
+                        border-radius: 50%
+                        top: 3px
+                        background: #F4F5F6 url('../img/lk/calendar.svg') center no-repeat
+            span
+                position: absolute
+                top: 8px
+                left: 20px
+                font-size: 12px
+                line-height: 18px
+                color: #A9A9A9
+            button
+                padding: 18px 47px
+                font-size: 18px
+                line-height: 20px
+                background: #1A56FF
+                border: 1px solid #1A56FF
+                border-radius: 80px
+                color: #FFFFFF
+                transition: all 0.3s
+                &:hover
+                    background-color: transparent
+                    color: #1A56FF
+                &:disabled
+                    background-color: transparent
+                    color: #A9A9A9
+                    border: 1px solid #F4F5F6
+    &-adresses
+        padding-top: 8px
+        &__top
+            padding: 10px 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__title
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #1A1C23
+        &__add
+            font-size: 18px
+            line-height: 20px
+            color: #FFFFFF
+            padding: 18px 28px
+            background: #1A56FF
+            border: 1px solid #1A56FF
+            border-radius: 80px
+            text-decoration: none
+            &:hover
+                background: transparent
+                color: #1A56FF
+        &__block
+            background: #F4F5F6
+            border-radius: 32px
+            margin-bottom: 16px
+            padding: 24px 32px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-main
+                font-size: 18px
+                line-height: 20px
+                color: #1A1C23
+                span
+                    font-size: 14px
+                    line-height: 16px
+                    display: block
+                    margin-bottom: 8px
+                    color: #A9A9A9
+        &__btns
+            display: flex
+            align-items: center
+            a
+                margin-left: 12px
+                &:hover
+                    path
+                        stroke: #1A56FF
+@media(max-width: 991px)
+    .lk
+        &-personal
+            form
+                margin-bottom: 40px
+@media(max-width: 575px)
+    .lk
+        padding-bottom: 80px
+        &__title
+            font-size: 24px
+            line-height: 32px
+        &-personal, &-pass
+        &__tabs
+            button
+                font-size: 12px
+                padding: 10px 0
+                margin-right: 8px
+@media(max-width: 370px)
+    .lk
+        &-adresses
+            &__top
+                display: block
+            &__add
+                display: block
+                text-align: center
+                margin-top: 12px
+            &__block
+                padding: 16px
