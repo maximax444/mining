@@ -1,0 +1,175 @@
+.orders
+    padding-top: 32px
+    padding-bottom: 120px
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        margin-bottom: 24px
+        color: #1A1C23
+    &__notion
+        padding: 21px 27px
+        background: #F4F5F6
+        border-radius: 16px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        font-size: 16px
+        line-height: 24px
+        color: #1A1C23
+        margin-bottom: 15px
+        img
+            margin-right: 20px
+        a
+            text-decoration: none
+            padding-left: 4px
+    &__top
+        padding: 17px 0
+        display: flex
+        border-bottom: 1px solid #EBECF2
+        &-img
+            width: 10%
+        &-model
+            width: 40%
+        &-price
+            width: 20%
+        &-stat
+            width: 15%
+    &__block
+        display: flex
+        align-items: center
+        padding: 16px 0
+        border-bottom: 1px solid #EBECF2
+    &__info
+        margin-bottom: 4px
+    &__img
+        width: 10%
+        img
+            max-width: 85px
+    &__main
+        width: 40%
+    &__price
+        width: 20%
+        font-size: 24px
+        line-height: 32px
+        color: #1A1C23
+        span
+            color: #A9A9A9
+        &-dop
+            font-size: 14px
+            line-height: 16px
+            color: #A9A9A9
+    &__name
+        font-size: 16px
+        line-height: 24px
+        color: #1A1C23
+        margin-bottom: 4px
+        text-decoration: none
+    &__stat
+        width: 15%
+        &-del
+            padding: 4px 8px
+            background: rgba(247, 147, 26, 0.1)
+            border-radius: 6px
+            font-size: 10px
+            line-height: 16px
+            letter-spacing: 0.2px
+            text-transform: uppercase
+            color: #F7931A
+            display: inline-block
+        &-delivered
+            padding: 4px 8px
+            background: #3ED085
+            border-radius: 6px
+            font-size: 10px
+            line-height: 16px
+            letter-spacing: 0.2px
+            text-transform: uppercase
+            color: #FFFFFF
+            display: inline-block
+        &-pay
+            padding: 4px 8px
+            background: rgba(62, 208, 133, 0.2)
+            border-radius: 6px
+            font-size: 10px
+            line-height: 16px
+            letter-spacing: 0.2px
+            text-transform: uppercase
+            color: #3ED085
+            display: inline-block
+        &-nonpayed
+            padding: 4px 8px
+            background: #FFE8E1
+            border-radius: 6px
+            font-size: 10px
+            line-height: 16px
+            letter-spacing: 0.2px
+            text-transform: uppercase
+            color: #FF6F71
+            display: inline-block
+    &__pay
+        text-align: right
+        width: 15%
+        &-btn
+            text-decoration: none
+            padding: 16px 20px
+            border: 1px solid #1A56FF
+            border-radius: 80px
+            font-size: 16px
+            line-height: 16px
+            color: #1A56FF
+            &:hover
+                color: #fff
+                background: #1A56FF
+@media(max-width: 1199px)
+    .orders__notion
+        font-size: 14px
+        img
+            margin-right: 12px
+        span
+            max-width: calc(100% - 40px)
+@media(max-width: 991px)
+    .orders
+        &__top
+            display: none
+        &__block
+            flex-wrap: wrap
+        &__img
+            width: 20%
+            margin-bottom: 25px
+        &__main
+            width: 80%
+            margin-bottom: 25px
+        &__price
+            width: 50%
+        &__stat, &__pay
+            width: 25%
+@media(max-width: 575px)
+    .orders
+        padding-bottom: 80px
+        &__block
+            position: relative
+            align-items: flex-start
+        &__img
+            width: 24%
+            img
+                max-width: 62px
+        &__main
+            width: 76%
+            margin-bottom: 0
+            padding-top: 30px
+        &__stat
+            width: 70%
+            position: absolute
+            left: 24%
+            top: 10px
+        &__price
+            width: 70%
+            left: 24%
+            position: relative
+        &__pay
+            width: 100%
+            &-btn
+                display: block
+                text-align: center
+                margin-top: 10px
