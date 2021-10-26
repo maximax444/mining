@@ -108,6 +108,7 @@
             <a href="/lk.html" class="thx__btn">Личный кабинет</a>
             <a href="/" class="thx__btn modal-open__adressadd">Личный кабинет - адрес доб (модалка)</a>
             <a href="/" class="thx__btn modal-open__adress">Личный кабинет - адрес ред (модалка)</a>
+            <a href="/" class="thx__btn modal-open__lk">Вход/регистрация (модалка)</a>
         </div>
     </div>
 
@@ -465,6 +466,42 @@
                 <input type="text" name="" class="popup-call__person" placeholder="Квартира" required>
                 <button class="popup-call__btn">Добавить адрес</button>
             </form>
+        </div>
+    </div>
+    <div class="overlay overlay__lk">
+        <div class="popup popup-call">
+            <div class="popup-call__close">
+                <img src="img/catalog/close.png" alt="">
+            </div>
+            <div class="popup-lk__tabs">
+                <button class="active">Вход</button> /
+                <button>Регистрация</button>
+            </div>
+            <div class="popup-lk__cont">
+                <div class="popup-lk__cont-block active">
+                    <form action="" class="popup-call__form">
+                        <input type="text" name="" class="popup-call__person" placeholder="Email или телефон" required>
+                        <input type="text" name="" class="popup-call__person" placeholder="Пароль" required>
+                        <button class="popup-call__btn">Войти</button>
+                    </form>
+                </div>
+                <div class="popup-lk__cont-block">
+                    <form action="" class="popup-call__form">
+                        <input type="text" name="" class="popup-call__person" placeholder="ФИО *" required>
+                        <input type="email" name="" class="popup-call__person" placeholder="Email *" required>
+                        <input type="tel" name="" class="popup-call__person" placeholder="Телефон *" required>
+                        <input type="text" name="" class="popup-call__person" placeholder="Придумайте пароль *"
+                            required>
+                        <div class="popup-lk__pass">Минимум 6 символов (букв, цифр и спец. знаков)</div>
+                        <input type="text" name="" class="popup-call__person" placeholder="Подтвердите пароль *"
+                            required>
+                        <div class="popup-lk__polit">Я принимаю условия <a href="">Публичной оферты</a> и <a
+                                href="">Пользовательского соглашения</a></div>
+                        <button class="popup-call__btn">Войти</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer class="footer">

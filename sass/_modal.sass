@@ -178,6 +178,38 @@
             color: rgba(#1A56FF, 0.5)
         &__block
             margin-bottom: 56px
+    &-lk
+        &__tabs
+            font-weight: 600
+            font-size: 24px
+            line-height: 32px
+            color: #A9A9A9
+            margin-bottom: 24px
+            button
+                background-color: #fff
+                border: 0
+                padding: 0
+                color: #A9A9A9
+                transition: all 0.3s
+                &.active, &:hover
+                    color: #1A1C23
+        &__cont
+            &-block
+                display: none
+                &.active
+                    display: block
+        &__pass
+            padding-left: 19px
+            margin-bottom: 16px
+            font-size: 14px
+            line-height: 16px
+            color: #1A1C23
+        &__polit
+            font-size: 14px
+            line-height: 16px
+            color: #1A1C23
+            a
+                text-decoration: none
 @media(max-width: 1399px)
     .popup
         &-click
