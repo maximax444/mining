@@ -1,0 +1,376 @@
+.mainers
+    padding-top: 32px
+    padding-bottom: 120px
+    &__titles
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        margin-bottom: 24px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+    &__add
+        padding: 18px 28px
+        background: #1A56FF
+        border-radius: 80px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 18px
+        line-height: 20px
+        color: #FFFFFF
+        border: 1px solid #1A56FF
+        text-decoration: none
+        &:hover
+            color: #1A56FF
+            background-color: transparent
+    &__tabs
+        display: flex
+        border-bottom: 1px solid #F4F5F6
+        margin-bottom: 20px
+        button
+            background-color: transparent
+            border: 0
+            padding: 0
+            padding-bottom: 17px
+            margin-right: 32px
+            border-bottom: 2px solid transparent
+            transition: all 0.3s
+            display: flex
+            align-items: center
+            span
+                font-weight: 600
+                font-size: 11px
+                line-height: 20px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background: #F4F5F6
+                display: flex
+                align-items: center
+                text-align: center
+                justify-content: center
+                color: #1A56FF
+                margin-left: 8px
+            &:hover, &.active
+                border-bottom: 2px solid #1A1C23
+                font-weight: 600
+    &-note
+        background: #F4F5F6
+        border-radius: 16px
+        padding: 18px 24px
+        padding-right: 120px
+        margin-bottom: 16px
+        display: flex
+        align-items: center
+        position: relative
+        &__btn
+            border: 1px solid #1A56FF
+            border-radius: 80px
+            font-size: 16px
+            line-height: 16px
+            color: #1A56FF
+            padding: 16px 20px
+            text-decoration: none
+            position: absolute
+            top: 16px
+            right: 24px
+            &:hover
+                background-color: #1A56FF
+                color: #fff
+        &__text
+            b
+                display: block
+                margin-bottom: 4px
+        &__img
+            margin-right: 22px
+    &__top
+        padding: 16px 0
+        border-bottom: 1px solid #F4F5F6
+        display: flex
+        font-size: 14px
+        line-height: 20px
+        color: #1A1C23
+        span
+            color: #A9A9A9
+            display: block
+        .mainers__chooze
+            padding-top: 8px
+            label
+                margin-bottom: 0
+    &__chooze
+        width: 5%
+    &__name
+        width: 13%
+    &__ind
+        width: 13%
+    &__hash
+        width: 10%
+    &__prosh
+        width: 13%
+    &__pul
+        width: 19%
+        font-size: 12px
+        line-height: 16px
+        &-block
+            padding-left: 14px
+            position: relative
+            &::before
+                content: ""
+                width: 8px
+                height: 8px
+                display: block
+                border-radius: 50%
+                background: #3ED085
+                position: absolute
+                left: 0
+                top: 4px
+            &.middle
+                &::before
+                    opacity: 0.5
+            &.low
+                &::before
+                    opacity: 0.2
+    &__days
+        width: 10%
+    &__stat
+        width: 13%
+    &__drop
+        width: 4%
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+        position: relative
+        &-name
+            cursor: pointer
+            opacity: 0.5
+            &:hover
+                opacity: 1
+        &-links
+            position: absolute
+            display: none
+            right: 0
+            top: 33px
+            width: 200px
+            padding: 10px 0px
+            background: #FFFFFF
+            box-shadow: 0px 6px 40px rgba(99, 109, 137, 0.15)
+            border-radius: 16px
+            z-index: 3
+            a
+                display: block
+                font-size: 14px
+                line-height: 20px
+                color: #141C40
+                text-decoration: none
+                padding: 6px 20px
+                &:hover
+                    background: #F4F5F6
+            &.active
+                display: block
+    &__block
+        display: flex
+        padding: 20px 0
+        font-size: 14px
+        line-height: 20px
+        border-bottom: 1px solid #F4F5F6
+    &__cont
+        &-block
+            display: none
+            &.active
+                display: block
+    &-bottom
+        display: none
+        background: #FFFFFF
+        box-shadow: 0px -12px 24px rgba(31, 47, 70, 0.08)
+        &.active
+            display: block
+            position: fixed
+            bottom: 0
+            left: 0
+            width: 100%
+        &__wrap
+            height: 64px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__main
+            display: flex
+            align-items: center
+        &__block
+            display: flex
+            align-items: center
+            margin-right: 50px
+            text-decoration: none
+            font-size: 14px
+            line-height: 20px
+            color: #141C40
+            img
+                margin-right: 10px
+        &__close
+            width: 26px
+            height: 26px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            background: rgba(#A9A9A9, 0.25)
+            cursor: pointer
+@media(max-width: 1199px)
+    .mainers
+        &__top
+            div
+                display: none
+                &.mainers__chooze
+                    display: block
+                    width: 100%
+                    padding-left: 50%
+                    label
+
+        &__block
+            flex-wrap: wrap
+            font-size: 16px
+            line-height: 20px
+        &__stat
+            order: -5
+            width: 100%
+            margin-bottom: 5px
+        &__name
+            width: 50%
+            order: -4
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+        &__chooze
+            order: -3
+            width: calc(50% - 25px)
+            label::after
+                content: "Выбрать"
+                font-size: 14px
+                line-height: 20px
+                color: #1A1C23
+        &__drop
+            order: -2
+            width: 20px
+        &__ind
+            width: 100%
+            display: flex
+            margin-bottom: 4px
+            &::before
+                width: 50%
+                content: "Индекс (Размещение)"
+                color: #A9A9A9
+        &__hash
+            width: 100%
+            display: flex
+            margin-bottom: 4px
+            &::before
+                width: 50%
+                content: "Хешрэйт (10 мин)"
+                color: #A9A9A9
+        &__prosh
+            width: 100%
+            display: flex
+            margin-bottom: 4px
+            &::before
+                width: 50%
+                content: "Прошивка (Производитель)"
+                color: #A9A9A9
+        &__pul
+            width: 100%
+            margin-bottom: 4px
+            position: relative
+            padding-left: 50%
+            font-size: 16px
+            line-height: 20px
+            &::before
+                width: 50%
+                position: absolute
+                left: 0
+                top: 0
+                content: "Пул (Воркер)"
+                color: #A9A9A9
+        &__days
+            width: 100%
+            display: flex
+            margin-bottom: 4px
+            &::before
+                width: 50%
+                content: "Тариф (Дней осталось)"
+                color: #A9A9A9
+@media(max-width: 991px)
+    .mainers
+        &__tabs
+            width: 740px
+            &-wrap
+                overflow-x: scroll
+@media(max-width: 767px)
+    .mainers
+        &__titles
+            flex-direction: column
+            align-items: flex-start
+            margin-bottom: 20px
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 8px
+        &__add
+            font-size: 16px
+            line-height: 24px
+            padding: 8px 16px
+        &-note
+            padding: 12px 16px
+            padding-bottom: 64px
+            position: relative
+            align-items: flex-start
+            &__img
+                width: 56px
+                margin-right: 0
+                padding-top: 11px
+            &__text
+                width: calc(100% - 56px)
+            &__btn
+                display: block
+                bottom: 12px
+                left: 72px
+                top: auto
+                right: auto
+                position: absolute
+                padding: 10px 16px
+        &-bottom
+            span
+                display: none
+@media(max-width: 575px)
+    .mainers
+        padding-bottom: 64px
+        padding-top: 24px
+        &__block, &__pul
+            font-size: 12px
+        &__days, &__prosh, &__hash, &__ind
+            &::before
+                width: 40%
+        &__pul
+            padding-left: 40%
+        &__block
+            position: relative
+        &__drop
+            position: absolute
+            top: 16px
+            right: 12px
+        &__name
+            width: 65%
+        &__chooze
+            width: 35%
+        &-note__text
+            font-size: 14px
+            line-height: 18px
+        &-bottom
+            &__block
+                margin-right: 5px
+@media(max-width: 350px)
+    .mainers
+        &__pul
+            padding-left: 0
+            padding-top: 22px

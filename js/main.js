@@ -69,6 +69,11 @@ $('.product-left__slider').slick({
                 .addClass('active').siblings().removeClass('active')
                 .closest('.repair-orders').find('.repair-orders__cont-block').removeClass('active').eq($(this).index()).addClass('active');
         });
+        $('.mainers__tabs').on('click', 'button:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.mainers').find('.mainers__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
 
     });
 })(jQuery);
@@ -78,6 +83,44 @@ $('.tables__input input').on('change', function () {
         $(this).find('.tables-main__top-days span').html(parseInt(parseInt($(this).find('input[name=prodPrice]').val()) / (parseInt($(this).find('.tables-main__top-hash span').html()) * parseFloat($(this).find('input[name=hashPrice]').val()) - parseInt($(this).find('.tables-main__top-el span').html()) * parseInt($('.tables__input input').val()) / 1000)));
     });
 });
+function checkCheck() {
+    var i = 0;
+    console.log(i);
+    if ($('.mainers__top input').is(':checked')) {
+        i = 1;
+    }
+    console.log(i);
+    $('.mainers__block').each(function () {
+        if ($(this).find('input').is(':checked')) {
+            i = 1;
+        }
+    });
+    console.log(i);
+    if (i == 1) {
+        $('.mainers-bottom').addClass('active');
+    } else {
+        $('.mainers-bottom').removeClass('active');
+    }
+};
+$('.mainers__top input').on('change', function () {
+
+    if ($(this).is(':checked')) {
+        $('.mainers__block').each(function () {
+            $(this).find('input').prop('checked', true);
+        });
+    } else {
+        $('.mainers__block').each(function () {
+            $(this).find('input').prop('checked', false);
+        });
+    }
+    checkCheck();
+
+});
+$('.mainers__block input').on('change', function () {
+    checkCheck();
+
+});
+
 $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
 $('.home-offer__range-title').css('left', 40 / 2 + "%");
 document.querySelectorAll('.home-offer__range').forEach(inp => {
@@ -284,6 +327,9 @@ $('.menu__second a').on('click', function (e) {
         e.preventDefault();
         $(this).next('.menu__third').show();
     }
+});
+$('.mainers__drop-name').on('click', function (e) {
+    $(this).next('.mainers__drop-links').toggleClass('active');
 });
 $('.modal-open__standart').on('click', function (e) {
     e.preventDefault();
