@@ -1,0 +1,187 @@
+.repair-orders
+    padding-top: 32px
+    padding-bottom: 120px
+    &__title
+        margin-bottom: 24px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        color: #1A1C23
+    &__tabs
+        display: flex
+        border-bottom: 1px solid #F4F5F6
+        margin-bottom: 8px
+        button
+            background-color: transparent
+            border: 0
+            padding: 0
+            padding-bottom: 17px
+            margin-right: 32px
+            border-bottom: 2px solid transparent
+            transition: all 0.3s
+            display: flex
+            align-items: center
+            span
+                font-weight: 600
+                font-size: 11px
+                line-height: 20px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background: #F4F5F6
+                display: flex
+                align-items: center
+                text-align: center
+                justify-content: center
+                color: #1A56FF
+                margin-left: 8px
+            &:hover, &.active
+                border-bottom: 2px solid #1A1C23
+                font-weight: 600
+    &__cont
+        &-block
+            display: none
+            &.active
+                display: block
+    &__top
+        padding: 16px 0
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #F4F5F6
+        font-size: 14px
+        line-height: 20px
+        color: #1A1C23
+    &__block
+        padding: 16px 0
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #F4F5F6
+        font-size: 14px
+        line-height: 20px
+        color: #1A1C23
+    &__num
+        width: 10%
+        padding-bottom: 20px
+        &.top
+            padding-bottom: 0px
+    &__date
+        width: 10%
+        span
+            display: block
+            color: #A9A9A9
+    &__name
+        width: 40%
+        padding-bottom: 20px
+        &.top
+            padding-bottom: 0px
+    &__pay
+        width: 10%
+        padding-bottom: 20px
+        &.top
+            padding-bottom: 0px
+    &__stat
+        width: 15%
+        padding-bottom: 20px
+        &.top
+            padding-bottom: 0px
+    &__last
+        display: flex
+        justify-content: flex-end
+        width: 15%
+    &__more
+        border: 1px solid #F4F5F6
+        border-radius: 80px
+        font-size: 16px
+        line-height: 16px
+        color: #1A56FF
+        padding: 16px 20px
+        text-decoration: none
+        &:hover
+            background-color: #1A56FF
+            border: 1px solid #1A56FF
+            color: #fff
+@media(max-width: 991px)
+    .repair
+        &-orders
+            &__title
+                font-size: 24px
+                line-height: 32px
+                margin-bottom: 5px
+            &__tabs
+                margin-bottom: 0
+                button
+                    padding: 15px 0
+                    font-size: 16px
+                    line-height: 28px
+                    margin-right: 20px
+            &__top
+                display: none
+            &__num
+                width: 100%
+                font-weight: 600
+                order: -4
+                padding-bottom: 4px
+                &::before
+                    content: "№"
+            &__block
+                width: 100%
+                padding-top: 16px
+                padding-bottom: 16px
+                flex-direction: column
+                align-items: flex-start
+            &__stat
+                width: 100%
+                order: -5
+                padding-bottom: 8px
+            &__name
+                width: 100%
+                order: -3
+                font-weight: 600
+                padding-bottom: 12px
+            &__date
+                width: 100%
+                position: relative
+                padding-left: 50%
+                display: flex
+                padding-bottom: 6px
+                span
+                    padding-left: 5px
+                &::before
+                    content: "Дата заявки"
+                    position: absolute
+                    left: 0
+                    top: 0px
+                    font-size: 14px
+                    line-height: 20px
+                    color: #A9A9A9
+            &__pay
+                width: 100%
+                position: relative
+                padding-left: 50%
+                display: flex
+                padding-bottom: 20px
+                font-weight: 600
+                &::before
+                    content: "Оплачено, ₽ "
+                    position: absolute
+                    left: 0
+                    top: 0px
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 20px
+            &__last
+                width: 100%
+                justify-content: flex-start
+@media(max-width: 575px)
+    .repair-orders
+        padding-top: 24px
+        padding-bottom: 64px
+        &__date, &__pay
+            justify-content: flex-end
+@media(max-width: 358px)
+    .repair-orders
+        &__tabs
+            button
+                margin-right: 8px
+                span
+                    margin-left: 4px

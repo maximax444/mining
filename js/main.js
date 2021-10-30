@@ -1,3 +1,21 @@
+$('.product-left__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    slide: 'img',
+    prevArrow: ".product-left__slider-prev",
+    nextArrow: ".product-left__slider-next",
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false
+        }
+    }]
+});
 (function ($) {
     $(function () {
 
@@ -40,7 +58,17 @@
                 .addClass('active').siblings().removeClass('active')
                 .closest('.popup-call').find('.popup-lk__cont-block').removeClass('active').eq($(this).index()).addClass('active');
         });
-
+        $('.popup-rorders__tabs').on('click', 'button:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.popup-call').find('.popup-rorders__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+            $('.product-left__slider').slick('slickPrev');
+        });
+        $('.repair-orders__tabs').on('click', 'button:not(.active)', function () {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('.repair-orders').find('.repair-orders__cont-block').removeClass('active').eq($(this).index()).addClass('active');
+        });
 
     });
 })(jQuery);
@@ -63,7 +91,7 @@ document.querySelectorAll('.home-offer__range').forEach(inp => {
 $('.home-faq__name:not(.repair-price__name_empty)').on("click", function () {
     $(this).closest('.home-faq__block').toggleClass("active");
 });
-$('.product-left__slider > img').on("click", function () {
+$('.product-left__slider .slick-track > img').on("click", function () {
     $('.product-left__img img').attr("src", $(this).attr("src"));
 });
 $('.cart__next').on("click", function (e) {
@@ -162,24 +190,7 @@ $(".repair-reviews__slider").slick({
     prevArrow: ".repair-reviews__prev",
     nextArrow: ".repair-reviews__next"
 });
-$('.product-left__slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    slide: 'img',
-    prevArrow: ".product-left__slider-prev",
-    nextArrow: ".product-left__slider-next",
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: false
-        }
-    }]
-});
+
 $('.repair-reviews__listen').on('click', function (e) {
     e.preventDefault();
     if ($(this).attr('data-play') == 0) {
@@ -287,6 +298,11 @@ $('.modal-open__black').on('click', function (e) {
 $('.modal-open__click').on('click', function (e) {
     e.preventDefault();
     $('.overlay__click').addClass('active');
+    $('body').css("overflow", "hidden");
+});
+$('.modal-open__rorders').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay__rorders').addClass('active');
     $('body').css("overflow", "hidden");
 });
 $('.modal-open__adress').on('click', function (e) {
