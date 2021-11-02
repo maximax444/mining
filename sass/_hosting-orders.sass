@@ -1,0 +1,152 @@
+.hosting-orders
+    &__no
+        width: 7%
+    &__count
+        width: 15%
+    &__date
+        &1
+            width: 10%
+        &2
+            width: 10%
+        &3
+            width: 10%
+    &__stat
+        width: 13%
+    &__type
+        width: 10%
+    &__pay
+        width: 10%
+        b
+            display: block
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+    &__last
+        width: 10%
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        &-top
+            display: flex
+            justify-content: flex-end
+            grid-gap: 20px
+            align-items: center
+            path
+                transition: all 0.3s
+            a:hover path
+                stroke: #1A56FF
+        &-pay
+            padding: 16px 20px
+            border: 1px solid #1A56FF
+            border-radius: 80px
+            font-size: 16px
+            line-height: 16px
+            color: #1A56FF
+            text-decoration: none
+            margin-top: 32px
+            &:hover
+                background-color: #1A56FF
+                color: #fff
+@media(max-width: 1199px)
+    .hosting-orders
+        &__tabs
+            width: 1010px
+            &-wrap
+                overflow-x: scroll
+        &__stat
+            order: -5
+            width: 100%
+            margin-bottom: 8px
+        &__no
+            width: 50%
+            order: -4
+            font-weight: 600
+            &::before
+                content: "№"
+        &__count
+            width: 100%
+            display: flex
+            align-items: flex-start
+            margin-bottom: 6px
+            br
+                display: none
+            &::before
+                content: "Кол-во устройств (Размещено/всего)"
+                color: #A9A9A9
+                display: block
+                width: 50%
+        &__date
+            &1
+                width: 100%
+                display: flex
+                align-items: flex-start
+                margin-bottom: 6px
+                br
+                    display: none
+                &::before
+                    content: "Дата заявки"
+                    color: #A9A9A9
+                    display: block
+                    width: 50%
+            &2
+                width: 100%
+                display: flex
+                align-items: flex-start
+                margin-bottom: 6px
+                br
+                    display: none
+                &::before
+                    content: "Дата размещения"
+                    color: #A9A9A9
+                    display: block
+                    width: 50%
+            &3
+                width: 100%
+                display: flex
+                align-items: flex-start
+                margin-bottom: 6px
+                br
+                    display: none
+                &::before
+                    content: "Дата снятия"
+                    color: #A9A9A9
+                    display: block
+                    width: 50%
+        &__last
+            width: 100%
+            padding-left: 50%
+            &-top
+                position: absolute
+                top: 18px
+                right: 7px
+            &-pay
+                width: 100%
+                text-align: center
+        &__block
+            position: relative
+        &__type
+            width: 100%
+            display: flex
+            align-items: flex-start
+            margin-bottom: 6px
+            br
+                display: none
+            &::before
+                content: "Тип оплаты"
+                color: #A9A9A9
+                display: block
+                width: 50%
+        &__pay
+            width: 100%
+            margin-bottom: 6px
+            padding-left: 50%
+            position: relative
+            br
+                display: none
+            &::before
+                content: "Оплачено, ₽ задолженность"
+                display: block
+                width: 50%
+                position: absolute
+                top: 0
+                left: 0

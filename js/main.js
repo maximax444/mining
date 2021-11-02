@@ -120,7 +120,9 @@ $('.mainers__block input').on('change', function () {
     checkCheck();
 
 });
-
+$('.mainers-bottom__close').on('click', function () {
+    $('.mainers-bottom').removeClass('active');
+});
 $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
 $('.home-offer__range-title').css('left', 40 / 2 + "%");
 document.querySelectorAll('.home-offer__range').forEach(inp => {
